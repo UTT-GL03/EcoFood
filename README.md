@@ -63,6 +63,7 @@ Nous avons réalisé une analyse des sites concurrents, et voici les résultats 
 |----------------------|-----------------|--------|---------------------|
 | [UFC Que Choisir](https://www.quechoisir.org/)      | 22               | F 🟪   | [...](./benchmark/UFC_QueChoisir/ecoindex-environmental-statement.md)                 |
 | [Qui-est-le-moins-cher](https://www.quiestlemoinscher.com/)| 79              | B 🟩   | [...](./benchmark/QuiEstLeMoinsCher/ecoindex-environmental-statement.md)                 |
+
 Tab.1 : Mesure de l'EcoIndex moyen de divers services de comparateur de prix.
 
 Les rapports EcoIndex mettent en évidence plusieurs points problématiques : pages très volumineuses et nombreux appels réseau, DOM très lourd, images et médias pas ou peu optimisés, présence de gros bundles JavaScript et scripts tiers non essentiels, et absence de stratégies de cache efficaces. Ces facteurs augmentent la consommation d'énergie, la consommation d'eau virtuelle et les émissions de GES lors du chargement des pages.
