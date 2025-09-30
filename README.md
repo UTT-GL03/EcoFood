@@ -49,3 +49,20 @@ Un même utilisateur ne reviendra donc pas souvent sur le site pour réaliser la
 3. Il sélectionne son **profil** parmi une liste déroulante (ex. : *Famille de 4, Célibataire…*).  
 4. Il a ensuite accès aux **prix moyens** d’un panier correspondant à ce profil dans chaque établissement.
 
+### Impact de l'exécution des scénarios auprès de différents services concurrents
+Il existe un moyen d'estimer l'impact numérique d'un site web : [l’EcoIndex](https://www.ecoindex.fr/).  
+Cet indicateur calcule un score (de **A à G**) en fonction de plusieurs facteurs, tels que :  
+
+- Le nombre d'appels au serveur (requêtes)  
+- La quantité d'information téléchargée  
+- La complexité et l'optimisation du site  
+
+Nous avons réalisé une analyse des sites concurrents, et voici les résultats :  
+
+| Service              | Score (sur 100) | Classe | Détail des mesures |
+|----------------------|-----------------|--------|---------------------|
+| [UFC Que Choisir](https://www.quechoisir.org/)      | 22               | F 🟪   | [...](./benchmark/UFC_QueChoisir/ecoindex-environmental-statement.md)                 |
+| [Qui-est-le-moins-cher](https://www.quiestlemoinscher.com/)| 79              | B 🟩   | [...](./benchmark/QuiEstLeMoinsCher/ecoindex-environmental-statement.md)                 |
+Tab.1 : Mesure de l'EcoIndex moyen de divers services de comparateur de prix.
+
+Les rapports EcoIndex mettent en évidence plusieurs points problématiques : pages très volumineuses et nombreux appels réseau, DOM très lourd, images et médias pas ou peu optimisés, présence de gros bundles JavaScript et scripts tiers non essentiels, et absence de stratégies de cache efficaces. Ces facteurs augmentent la consommation d'énergie, la consommation d'eau virtuelle et les émissions de GES lors du chargement des pages.
