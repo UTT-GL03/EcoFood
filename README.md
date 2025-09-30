@@ -31,3 +31,21 @@ Le passage au numérique constitue donc une alternative plus respectueuse de l�
 EcoFood peut également avoir un impact indirect sur les pratiques de consommation :  
 - **Effet positif** : réduire les déplacements inutiles en regroupant les courses, mettre en avant des commerces de proximité et encourager l’achat de produits locaux.  
 - **Risque d’effet rebond** : si l’utilisateur est incité à multiplier les trajets pour chercher la meilleure promotion, les gains écologiques du numérique peuvent être annulés.  
+
+## Scénarios d'usage et impact
+Nous faisons l'hypothèse que le site n'est pas utilisé régulièrement par le même utilisateur, mais qu'il constitue plutôt un outil ponctuel pour choisir l'endroit où consommer lorsque l'utilisateur ne connaît pas les différentes options autour de lui.  
+Un même utilisateur ne reviendra donc pas souvent sur le site pour réaliser la même analyse des prix.
+
+### Scénario 1 : Comparer un article entre différents magasins
+1. L’utilisateur se rend sur l’onglet **« comparer produit »**.  
+2. Il choisit une **ville** où regarder les informations.  
+3. Il utilise le **menu déroulant** pour voir tous les types de produits.  
+4. Il sélectionne un **type de produit**.  
+5. Il visualise les **différents prix** pour ce produit dans les différents établissements.
+
+### Scénario 2 : Comparer un ensemble de produits entre différents magasins
+1. L’utilisateur se rend sur l’onglet **« comparer panier »**.  
+2. Il choisit une **ville** où regarder les informations.  
+3. Il sélectionne son **profil** parmi une liste déroulante (ex. : *Famille de 4, Célibataire…*).  
+4. Il a ensuite accès aux **prix moyens** d’un panier correspondant à ce profil dans chaque établissement.
+
