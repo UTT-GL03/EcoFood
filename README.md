@@ -135,3 +135,11 @@ Afin de définir un modèle de financement durable et réaliste, nous avons étu
 
 Pour rester fidèle à notre démarche **écologique et d’intérêt général**, **EcoFood** sera majoritairement financé par des **aides publiques** et des **subventions territoriales**.  
 Les **dons** et la **mise en avant de producteurs locaux** viendront en complément, dans une logique participative, sans compromettre la neutralité et la sobriété du service.
+
+## Maquette de l'interface et échantillon de données.
+
+Au vu des différents services comparés, des exigences environnementales exprimées plus haut et des scénarios retenus, nous avons défini pour notre prototype une maquette de l'interface et un échantillon de données réalistes.
+
+Les ressources Web possédant une représentation sur notre application seront de deux types :
+- le comparateur de prix par type de produit autour d'une ville identifiée (avec une HTTP-URI ayant pour chemin /{ville}/{idProduit})
+- comparateur d'un panier moyen selon le nombre de personnes, autour d'une ville (avec une HTTP-URI ayant pour chemin /{ville}/panier_moyen?nombre_adultes={nbr_A}&nombre_enfants={nbr_e})
