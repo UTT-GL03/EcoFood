@@ -143,3 +143,9 @@ Au vu des différents services comparés, des exigences environnementales exprim
 Les ressources Web possédant une représentation sur notre application seront de deux types :
 - le comparateur de prix par type de produit autour d'une ville identifiée (avec une HTTP-URI ayant pour chemin /{ville}/{idProduit})
 - comparateur d'un panier moyen selon le nombre de personnes, autour d'une ville (avec une HTTP-URI ayant pour chemin /{ville}/panier_moyen?nombre_adultes={nbr_A}&nombre_enfants={nbr_e})
+
+![image](./frontend/mockup.png)
+
+Fig.1: Maquette de l'interface du prototype : a. type de page pour la comparateur ( par produit ou par panier), b. type de page des résultats.
+
+Pour des raisons d'infrastructure' , nous utilisons des données générées (avec dummy-json). Bien que fictives, ces données correspondent à la structure des services concurrents : les informations des produits et des enseignes sont présentes ([voir modèle de données](./frontend/sample_data.hbs)).
