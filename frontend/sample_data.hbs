@@ -1,0 +1,40 @@
+{
+  "Shop": [
+    {{#repeat min=20 max=30}}
+    {
+      "id": {{step 1}},
+      "name": "{{random 'Leclerc Saint-Parres' 'Carrefour' 'Intermarché' 'Lidl' 'Aldi' 'Auchan' 'Casino'}}",
+      "cityId": {{random 1 6}},
+      "url": "{{ random 'https://www.leclerc.fr' 'https://www.carrefour.fr' 'https://www.intermarche.fr' 'https://www.lidl.fr' 'https://www.aldi.fr' 'https://www.auchan.fr' 'https://www.casino.fr' }}",
+      "address": "{{random '12 rue des Lilas' '5 avenue des Champs' '3 boulevard Haussmann' '8 impasse des Fleurs' '20 place de la République'}}",
+      "average_cart_adult": {{float 10 150}},
+      "average_cart_kid": {{float 10 100}},
+      "items": [
+        {{#repeat min=20 max=30}}
+        {
+          "idProduct": {{int 1 20}},
+          "price": {{float 0.55 4.8}}
+        }{{#unless @last}},{{/unless}}
+        {{/repeat}}
+      ]
+    }{{#unless @last}},{{/unless}}
+    {{/repeat}}
+  ],
+  "City": [
+    {{#repeat 6}}
+    {
+      "id": {{step 1}},
+      "name": "{{random 'Troyes' 'Lyon' 'Paris' 'Marseille' 'Bordeaux' 'Nantes' 'Strasbourg'}}",
+      "postal_code": "{{random '10000' '69000' '75000' '13000' '33000' '44000' '67000'}}"
+    }{{#unless @last}},{{/unless}}
+    {{/repeat}}
+  ],
+  "Product": [
+    {{#repeat 20}}
+    {
+      "id": {{step 1}},
+      "name": "{{random 'Banane' 'Lait' 'Biscuits' 'Fromage' 'Yaourt' 'Poulet' 'Riz' 'Pates' 'Tomates' 'Pommes' 'Carottes' 'Poivrons' 'Oignons' 'Ail' 'Concombre' 'Salade' 'Chocolat' 'Cafe' 'Thé' 'Jus orange'}}"
+    }{{#unless @last}},{{/unless}}
+    {{/repeat}}
+  ]
+}
