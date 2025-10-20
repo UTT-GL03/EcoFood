@@ -8,7 +8,7 @@ import { Button } from 'react';
 function App() {
 	return (
 		<>
-      <BrowserRouter>
+      <BrowserRouter >
         <div className="header">
           <a href="/" className="title">
             <h1>EcoFood</h1>
