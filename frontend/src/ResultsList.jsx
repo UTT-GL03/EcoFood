@@ -1,10 +1,10 @@
 import React from "react";
+import "./resultslist.css";
 
 const ResultsList = ({ resultsArray, type }) => {
-	
 	return (
 		<div className="results-list">
-			<h2>Results</h2>
+			<h2>Résultats ({type})</h2>
 			<div className="results-container">
 				{resultsArray.map((item, index) =>
 					type === "shop" ? (
@@ -13,14 +13,12 @@ const ResultsList = ({ resultsArray, type }) => {
 							<p>{item.address}</p>
 							<p>{item.url}</p>
 						</div>
-					) : 
-					type === "city" ? (
+					) : type === "city" ? (
 						<div key={index} className="result-item">
 							<h3>{item.name}</h3>
 							<p>{item.postal_code}</p>
 						</div>
-					) :
-					type === "product" ? (
+					) : type === "product" ? (
 						<div key={index} className="result-item">
 							<h3>{item.name}</h3>
 						</div>

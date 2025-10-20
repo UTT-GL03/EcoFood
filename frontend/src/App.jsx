@@ -1,5 +1,4 @@
 import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import sampleData from "../sample_data.json";
 import ResultsList from "./ResultsList";
@@ -7,16 +6,13 @@ import ResultsList from "./ResultsList";
 function App() {
 	return (
 		<>
-			<div>
-				<a href="https://vite.dev" target="_blank">
-					<img src={viteLogo} className="logo" alt="Vite logo" />
-				</a>
-				<a href="https://react.dev" target="_blank">
+			<div className="header">
+				<a href="https://react.dev" target="_blank" className="title">
 					<img src={reactLogo} className="logo react" alt="React logo" />
+					<h1>EcoFood</h1>
 				</a>
 			</div>
-			<h1>Vite + React</h1>
-			<ResultsList resultsArray={sampleData.City} type={"city"}/>
+			<ResultsList resultsArray={sampleData.City} type={"city"} />
 		</>
 	);
 }
