@@ -38,7 +38,7 @@ const [adults, setAdults] = useState(0);
                 type="number"/>
 
             <Link to={`/results/${city}/paniermoyen?nombre_adultes=${adults}&nombre_enfants=${children}`}>
-            <button onClick={onclick}>Go to Results</button>
+            <button onClick={onclick}>Chercher le panier le moins cher</button>
             </Link>
         </div>
     </div>

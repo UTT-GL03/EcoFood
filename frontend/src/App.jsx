@@ -5,7 +5,7 @@ import ResultsList from "./ResultsList";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { useState } from "react";
 import SearchCart from "./SearchCart";
-
+import SearchProduct from "./SearchProduct";
 
 
 function App() {
@@ -27,7 +27,10 @@ function App() {
         <Routes>
           <Route path="/" element={
             <div>
-            <SearchCart>
+              <SearchProduct>
+              </SearchProduct>
+
+              <SearchCart>
               </SearchCart>
             </div>
           }></Route>
