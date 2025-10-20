@@ -8,25 +8,45 @@ const ResultsList = ({ resultsArray, type }) => {
 			<div className="results-container">
 				{resultsArray.map((item, index) =>
 					type === "shop" ? (
-						<div key={index} className="result-item">
-							<h3>{item.name}</h3>
-							<p>{item.address}</p>
-							<p>{item.url}</p>
-						</div>
+						<Shop name={item.name} address={item.address} url={item.url} index={index} />
 					) : type === "city" ? (
-						<div key={index} className="result-item">
-							<h3>{item.name}</h3>
-							<p>{item.postal_code}</p>
-						</div>
+						<City name={item.name} postal_code={item.postal_code} index={index} />
 					) : type === "product" ? (
-						<div key={index} className="result-item">
-							<h3>{item.name}</h3>
-						</div>
+						<Product name={item.name} index={index} />
 					) : null
 				)}
 			</div>
 		</div>
 	);
 };
+
+function City({name, postal_code, index}) {
+  return (
+    
+      	<div key={index} className="result-item">
+			<h3>{name}</h3>
+			<p>{postal_code}</p>
+		</div>
+  )
+}
+
+function Shop({name, address, url, index}) {
+  return (
+    <div key={index} className="result-item">
+      <h3>{name}</h3>
+      <p>{address}</p>
+      <p>{url}</p>
+    </div>
+  )
+}
+
+function Product({name, index}) {
+	  return (
+		<div key={index} className="result-item">
+			<h3>{name}</h3>
+		</div>
+	)
+
+}
 
 export default ResultsList;
