@@ -1,40 +1,61 @@
-{
-  "Shop": [
-    {{#repeat min=20 max=30}}
-    {
-      "id": {{step 1}},
-      "name": "{{random 'Leclerc Saint-Parres' 'Carrefour' 'Intermarché' 'Lidl' 'Aldi' 'Auchan' 'Casino'}}",
-      "cityId": {{random 1 6}},
-      "url": "{{ random 'https://www.leclerc.fr' 'https://www.carrefour.fr' 'https://www.intermarche.fr' 'https://www.lidl.fr' 'https://www.aldi.fr' 'https://www.auchan.fr' 'https://www.casino.fr' }}",
-      "address": "{{random '12 rue des Lilas' '5 avenue des Champs' '3 boulevard Haussmann' '8 impasse des Fleurs' '20 place de la République'}}",
-      "average_cart_adult": {{float 10 150}},
-      "average_cart_kid": {{float 10 100}},
-      "items": [
-        {{#repeat min=20 max=30}}
-        {
-          "idProduct": {{int 1 20}},
-          "price": {{float 0.55 4.8}}
-        }{{#unless @last}},{{/unless}}
-        {{/repeat}}
-      ]
-    }{{#unless @last}},{{/unless}}
-    {{/repeat}}
-  ],
-  "City": [
-    {{#repeat 6}}
-    {
-      "id": {{step 1}},
-      "name": "{{random 'Troyes' 'Lyon' 'Paris' 'Marseille' 'Bordeaux' 'Nantes' 'Strasbourg'}}",
-      "postal_code": "{{random '10000' '69000' '75000' '13000' '33000' '44000' '67000'}}"
-    }{{#unless @last}},{{/unless}}
-    {{/repeat}}
-  ],
-  "Product": [
-    {{#repeat 20}}
-    {
-      "id": {{step 1}},
-      "name": "{{random 'Banane' 'Lait' 'Biscuits' 'Fromage' 'Yaourt' 'Poulet' 'Riz' 'Pates' 'Tomates' 'Pommes' 'Carottes' 'Poivrons' 'Oignons' 'Ail' 'Concombre' 'Salade' 'Chocolat' 'Cafe' 'Thé' 'Jus orange'}}"
-    }{{#unless @last}},{{/unless}}
-    {{/repeat}}
-  ]
-}
+{ "Shop": [
+{{#repeat min=20 max=30}}
+	{ "id":
+	{{step 1}}, "name": "{{random "Leclerc Saint-Parres" "Carrefour" "Intermarché" "Lidl" "Aldi" "Auchan" "Casino"}}", "cityId":
+	{{int 1 6}}, "url": "{{random
+		"https://www.leclerc.fr"
+		"https://www.carrefour.fr"
+		"https://www.intermarche.fr"
+		"https://www.lidl.fr"
+		"https://www.aldi.fr"
+		"https://www.auchan.fr"
+		"https://www.casino.fr"
+	}}", "address": "{{random "12 rue des Lilas" "5 avenue des Champs" "3 boulevard Haussmann" "8 impasse des Fleurs" "20 place de la République"}}", "average_cart_adult":
+	{{float 10 150}}, "average_cart_kid":
+	{{float 10 100}}, "items": [
+	{{#repeat min=20 max=30}}
+		{ "idProduct":
+		{{@index}}, "price":
+		{{float 0.55 4.8}}
+		}{{#unless @last}},{{/unless}}
+	{{/repeat}}
+	] }{{#unless @last}},{{/unless}}
+{{/repeat}}
+], "City": [ { "id": 1, "name": "Troyes", "postal_code": "10000" }, { "id": 2, "name": "Lyon", "postal_code": "69000" }, { "id": 3, "name": "Paris", "postal_code": "75000" }, { "id": 4, "name":
+"Marseille", "postal_code": "13000" }, { "id": 5, "name": "Bordeaux", "postal_code": "33000" }, { "id": 6, "name": "Nantes", "postal_code": "44000" } ], "Product": [
+{{#repeat 20}}
+	{ "id":
+	{{step 1}}, "name": "{{random
+		"Bananes bio"
+		"Lait entier 1L"
+		"Biscuits petit-déjeuner"
+		"Fromage comté"
+		"Yaourt nature x12"
+		"Poulet fermier entier"
+		"Riz basmati 1kg"
+		"Pâtes penne 500g"
+		"Tomates grappe"
+		"Pommes Golden"
+		"Carottes bio 1kg"
+		"Poivrons rouges"
+		"Oignons jaunes"
+		"Ail rose"
+		"Concombre long"
+		"Salade iceberg"
+		"Chocolat noir 70%"
+		"Café arabica moulu"
+		"Thé vert bio"
+		"Jus d'orange pressé"
+		"Pain complet"
+		"Beurre demi-sel"
+		"Œufs plein air x6"
+		"Jambon blanc 4 tranches"
+		"Saumon fumé 4 tranches"
+		"Huile d'olive vierge"
+		"Vinaigre balsamique"
+		"Sel de Guérande"
+		"Poivre noir moulu"
+		"Sucre blanc 1kg"
+	}}" }{{#unless @last}},{{/unless}}
+{{/repeat}}
+] }

@@ -1,2877 +1,859 @@
 {
-  "Shop": [
-    {
-      "id": 0,
-      "name": "Leclerc Saint-Parres",
-      "cityId": 6,
-      "url": "https://www.carrefour.fr",
-      "address": "3 boulevard Haussmann",
-      "average_cart_adult": 48.20610823286346,
-      "average_cart_kid": 87.71481313701915,
-      "items": [
-        {
-          "idProduct": 8,
-          "price": 2.7076319747762136
-        },
-        {
-          "idProduct": 2,
-          "price": 2.230881978990839
-        },
-        {
-          "idProduct": 17,
-          "price": 4.476199054450524
-        },
-        {
-          "idProduct": 20,
-          "price": 3.523304517660187
-        },
-        {
-          "idProduct": 13,
-          "price": 4.238817342029832
-        },
-        {
-          "idProduct": 11,
-          "price": 4.540085576896101
-        },
-        {
-          "idProduct": 8,
-          "price": 2.8747016057816186
-        },
-        {
-          "idProduct": 4,
-          "price": 4.63291869606687
-        },
-        {
-          "idProduct": 18,
-          "price": 4.330714344517772
-        },
-        {
-          "idProduct": 17,
-          "price": 3.087818440125777
-        },
-        {
-          "idProduct": 1,
-          "price": 4.0847451901766245
-        },
-        {
-          "idProduct": 19,
-          "price": 0.8748528415321467
-        },
-        {
-          "idProduct": 19,
-          "price": 3.704630144004704
-        },
-        {
-          "idProduct": 11,
-          "price": 2.869018486470549
-        },
-        {
-          "idProduct": 13,
-          "price": 3.1992412369702032
-        },
-        {
-          "idProduct": 11,
-          "price": 2.8728546284279366
-        },
-        {
-          "idProduct": 17,
-          "price": 1.9880085668591507
-        },
-        {
-          "idProduct": 2,
-          "price": 1.082673572907504
-        },
-        {
-          "idProduct": 16,
-          "price": 3.6022113866646404
-        },
-        {
-          "idProduct": 9,
-          "price": 1.6723738963710069
-        },
-        {
-          "idProduct": 1,
-          "price": 3.8182313736379774
-        },
-        {
-          "idProduct": 15,
-          "price": 3.4384570536381256
-        },
-        {
-          "idProduct": 19,
-          "price": 3.2306067884075205
-        },
-        {
-          "idProduct": 20,
-          "price": 2.5537419130697536
-        },
-        {
-          "idProduct": 3,
-          "price": 0.8313485986898401
-        }
-      ]
-    },
-    {
-      "id": 1,
-      "name": "Aldi",
-      "cityId": 1,
-      "url": "https://www.leclerc.fr",
-      "address": "12 rue des Lilas",
-      "average_cart_adult": 50.943013443329676,
-      "average_cart_kid": 92.64593541795135,
-      "items": [
-        {
-          "idProduct": 6,
-          "price": 1.2899181717759052
-        },
-        {
-          "idProduct": 3,
-          "price": 3.2629866597817045
-        },
-        {
-          "idProduct": 16,
-          "price": 1.381927445156
-        },
-        {
-          "idProduct": 17,
-          "price": 2.4608262356820876
-        },
-        {
-          "idProduct": 10,
-          "price": 3.12722434668375
-        },
-        {
-          "idProduct": 19,
-          "price": 3.164267215791943
-        },
-        {
-          "idProduct": 14,
-          "price": 3.9940389430568315
-        },
-        {
-          "idProduct": 9,
-          "price": 2.6411200378005493
-        },
-        {
-          "idProduct": 11,
-          "price": 0.681272800832456
-        },
-        {
-          "idProduct": 9,
-          "price": 1.2032801310432824
-        },
-        {
-          "idProduct": 15,
-          "price": 3.9417656032144466
-        },
-        {
-          "idProduct": 17,
-          "price": 4.544249354122764
-        },
-        {
-          "idProduct": 12,
-          "price": 4.04248727283574
-        },
-        {
-          "idProduct": 9,
-          "price": 4.0000566095642816
-        },
-        {
-          "idProduct": 7,
-          "price": 2.893939112827799
-        },
-        {
-          "idProduct": 17,
-          "price": 0.825250886238181
-        },
-        {
-          "idProduct": 6,
-          "price": 1.0336846484014834
-        },
-        {
-          "idProduct": 4,
-          "price": 1.5572346828329355
-        },
-        {
-          "idProduct": 10,
-          "price": 1.9734833807568768
-        },
-        {
-          "idProduct": 20,
-          "price": 4.311114196097177
-        },
-        {
-          "idProduct": 14,
-          "price": 4.783403787251134
-        },
-        {
-          "idProduct": 7,
-          "price": 3.2667252014585006
-        },
-        {
-          "idProduct": 1,
-          "price": 2.370580486245917
-        },
-        {
-          "idProduct": 1,
-          "price": 4.447091697495601
-        },
-        {
-          "idProduct": 4,
-          "price": 3.6456404826359528
-        },
-        {
-          "idProduct": 3,
-          "price": 2.4541296589459227
-        },
-        {
-          "idProduct": 16,
-          "price": 2.8408282469261996
-        },
-        {
-          "idProduct": 1,
-          "price": 2.8889849286725093
-        },
-        {
-          "idProduct": 7,
-          "price": 1.9859790971696518
-        },
-        {
-          "idProduct": 5,
-          "price": 3.9708766159999582
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Intermarché",
-      "cityId": 1,
-      "url": "https://www.intermarche.fr",
-      "address": "5 avenue des Champs",
-      "average_cart_adult": 60.55735915267125,
-      "average_cart_kid": 63.01635366711617,
-      "items": [
-        {
-          "idProduct": 13,
-          "price": 2.6278234228089037
-        },
-        {
-          "idProduct": 2,
-          "price": 1.3164945503851286
-        },
-        {
-          "idProduct": 19,
-          "price": 4.288890101823956
-        },
-        {
-          "idProduct": 1,
-          "price": 1.6949775680867605
-        },
-        {
-          "idProduct": 12,
-          "price": 2.2029957229353236
-        },
-        {
-          "idProduct": 11,
-          "price": 1.9232728674061577
-        },
-        {
-          "idProduct": 15,
-          "price": 2.885425097059346
-        },
-        {
-          "idProduct": 6,
-          "price": 1.8364355342854304
-        },
-        {
-          "idProduct": 13,
-          "price": 4.526891367150172
-        },
-        {
-          "idProduct": 3,
-          "price": 4.180751368738147
-        },
-        {
-          "idProduct": 6,
-          "price": 1.7783362962839488
-        },
-        {
-          "idProduct": 17,
-          "price": 2.61836888110124
-        },
-        {
-          "idProduct": 10,
-          "price": 3.2074175373393663
-        },
-        {
-          "idProduct": 6,
-          "price": 1.7454253414412564
-        },
-        {
-          "idProduct": 18,
-          "price": 3.2761895620367785
-        },
-        {
-          "idProduct": 17,
-          "price": 1.9449961791559174
-        },
-        {
-          "idProduct": 8,
-          "price": 4.473232523289377
-        },
-        {
-          "idProduct": 13,
-          "price": 1.4060968206541842
-        },
-        {
-          "idProduct": 12,
-          "price": 2.152571539563269
-        },
-        {
-          "idProduct": 3,
-          "price": 3.761160159577021
-        },
-        {
-          "idProduct": 9,
-          "price": 2.6400896520397144
-        },
-        {
-          "idProduct": 8,
-          "price": 2.1315255122114722
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Casino",
-      "cityId": 1,
-      "url": "https://www.aldi.fr",
-      "address": "20 place de la République",
-      "average_cart_adult": 69.38678836339156,
-      "average_cart_kid": 44.48297487351045,
-      "items": [
-        {
-          "idProduct": 12,
-          "price": 1.9514133966680955
-        },
-        {
-          "idProduct": 10,
-          "price": 2.5490870792235603
-        },
-        {
-          "idProduct": 13,
-          "price": 2.2335101933026906
-        },
-        {
-          "idProduct": 8,
-          "price": 3.5828995984354908
-        },
-        {
-          "idProduct": 8,
-          "price": 1.633026236763917
-        },
-        {
-          "idProduct": 2,
-          "price": 2.407466044469764
-        },
-        {
-          "idProduct": 7,
-          "price": 0.8260802515472164
-        },
-        {
-          "idProduct": 5,
-          "price": 1.9879782629551768
-        },
-        {
-          "idProduct": 7,
-          "price": 1.3207952661459794
-        },
-        {
-          "idProduct": 19,
-          "price": 3.7758818369267377
-        },
-        {
-          "idProduct": 6,
-          "price": 3.262873352701061
-        },
-        {
-          "idProduct": 8,
-          "price": 3.1886212945247925
-        },
-        {
-          "idProduct": 15,
-          "price": 4.0577731794137915
-        },
-        {
-          "idProduct": 13,
-          "price": 2.5774042677406594
-        },
-        {
-          "idProduct": 4,
-          "price": 1.9916299849237251
-        },
-        {
-          "idProduct": 10,
-          "price": 3.679277444019439
-        },
-        {
-          "idProduct": 10,
-          "price": 0.6654149059078621
-        },
-        {
-          "idProduct": 20,
-          "price": 2.9560083979268486
-        },
-        {
-          "idProduct": 16,
-          "price": 3.270502409775478
-        },
-        {
-          "idProduct": 1,
-          "price": 4.732573637820282
-        },
-        {
-          "idProduct": 5,
-          "price": 1.0589711438627702
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Carrefour",
-      "cityId": 6,
-      "url": "https://www.auchan.fr",
-      "address": "5 avenue des Champs",
-      "average_cart_adult": 103.74041601955955,
-      "average_cart_kid": 56.35831588848717,
-      "items": [
-        {
-          "idProduct": 1,
-          "price": 3.423907212923967
-        },
-        {
-          "idProduct": 9,
-          "price": 1.3282368991564715
-        },
-        {
-          "idProduct": 17,
-          "price": 3.8658106114093655
-        },
-        {
-          "idProduct": 13,
-          "price": 3.462642937440566
-        },
-        {
-          "idProduct": 8,
-          "price": 1.680469918895123
-        },
-        {
-          "idProduct": 6,
-          "price": 3.996755368368852
-        },
-        {
-          "idProduct": 4,
-          "price": 3.97249451401042
-        },
-        {
-          "idProduct": 2,
-          "price": 2.0379517142672823
-        },
-        {
-          "idProduct": 3,
-          "price": 0.6797531622718953
-        },
-        {
-          "idProduct": 1,
-          "price": 2.2539101453872394
-        },
-        {
-          "idProduct": 19,
-          "price": 4.689812464793398
-        },
-        {
-          "idProduct": 11,
-          "price": 2.611251934298596
-        },
-        {
-          "idProduct": 18,
-          "price": 3.8919081312488943
-        },
-        {
-          "idProduct": 5,
-          "price": 2.5246391424173957
-        },
-        {
-          "idProduct": 10,
-          "price": 2.2093339081046346
-        },
-        {
-          "idProduct": 16,
-          "price": 3.8935703123906116
-        },
-        {
-          "idProduct": 14,
-          "price": 0.9209697234914846
-        },
-        {
-          "idProduct": 4,
-          "price": 3.583284503209331
-        },
-        {
-          "idProduct": 1,
-          "price": 2.465708969743787
-        },
-        {
-          "idProduct": 4,
-          "price": 2.691059533926202
-        },
-        {
-          "idProduct": 13,
-          "price": 3.677833294632122
-        },
-        {
-          "idProduct": 2,
-          "price": 2.7068132826182785
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "name": "Aldi",
-      "cityId": 1,
-      "url": "https://www.lidl.fr",
-      "address": "5 avenue des Champs",
-      "average_cart_adult": 66.59659170448289,
-      "average_cart_kid": 20.28399027960708,
-      "items": [
-        {
-          "idProduct": 14,
-          "price": 2.400135263338994
-        },
-        {
-          "idProduct": 11,
-          "price": 1.1048274701353273
-        },
-        {
-          "idProduct": 8,
-          "price": 2.9082784343559016
-        },
-        {
-          "idProduct": 10,
-          "price": 2.628626280731779
-        },
-        {
-          "idProduct": 15,
-          "price": 2.9534990962068672
-        },
-        {
-          "idProduct": 5,
-          "price": 4.068560342334317
-        },
-        {
-          "idProduct": 17,
-          "price": 4.720697061316973
-        },
-        {
-          "idProduct": 8,
-          "price": 1.6104514607739076
-        },
-        {
-          "idProduct": 12,
-          "price": 4.583227057609367
-        },
-        {
-          "idProduct": 16,
-          "price": 4.44424018879793
-        },
-        {
-          "idProduct": 11,
-          "price": 2.973884418825926
-        },
-        {
-          "idProduct": 16,
-          "price": 4.44880384968099
-        },
-        {
-          "idProduct": 12,
-          "price": 2.434107298121793
-        },
-        {
-          "idProduct": 4,
-          "price": 1.0604638633103605
-        },
-        {
-          "idProduct": 15,
-          "price": 2.077377447945276
-        },
-        {
-          "idProduct": 7,
-          "price": 2.795373528612065
-        },
-        {
-          "idProduct": 16,
-          "price": 4.743864941072904
-        },
-        {
-          "idProduct": 11,
-          "price": 2.4963821508889623
-        },
-        {
-          "idProduct": 20,
-          "price": 0.5802367461218264
-        },
-        {
-          "idProduct": 6,
-          "price": 0.8890334196557365
-        },
-        {
-          "idProduct": 9,
-          "price": 3.072964852537573
-        },
-        {
-          "idProduct": 9,
-          "price": 3.574100801558406
-        },
-        {
-          "idProduct": 7,
-          "price": 1.1760828442260705
-        },
-        {
-          "idProduct": 19,
-          "price": 3.305580795184352
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "name": "Intermarché",
-      "cityId": 6,
-      "url": "https://www.casino.fr",
-      "address": "20 place de la République",
-      "average_cart_adult": 13.866709865153998,
-      "average_cart_kid": 61.375007475646086,
-      "items": [
-        {
-          "idProduct": 8,
-          "price": 3.095484577930737
-        },
-        {
-          "idProduct": 12,
-          "price": 2.1164858212250266
-        },
-        {
-          "idProduct": 5,
-          "price": 3.2151167959487186
-        },
-        {
-          "idProduct": 7,
-          "price": 3.251802863064885
-        },
-        {
-          "idProduct": 16,
-          "price": 0.5890073926281094
-        },
-        {
-          "idProduct": 8,
-          "price": 1.4113887611372362
-        },
-        {
-          "idProduct": 20,
-          "price": 3.411523960610376
-        },
-        {
-          "idProduct": 11,
-          "price": 4.137149475691853
-        },
-        {
-          "idProduct": 5,
-          "price": 1.290399850578671
-        },
-        {
-          "idProduct": 15,
-          "price": 2.0330173428920415
-        },
-        {
-          "idProduct": 20,
-          "price": 4.2782560807583865
-        },
-        {
-          "idProduct": 12,
-          "price": 4.6648051693214105
-        },
-        {
-          "idProduct": 9,
-          "price": 2.5938887906787276
-        },
-        {
-          "idProduct": 1,
-          "price": 2.567917488404577
-        },
-        {
-          "idProduct": 12,
-          "price": 1.1581796569451235
-        },
-        {
-          "idProduct": 4,
-          "price": 2.253113338921941
-        },
-        {
-          "idProduct": 8,
-          "price": 4.117000008991673
-        },
-        {
-          "idProduct": 9,
-          "price": 4.168411897142458
-        },
-        {
-          "idProduct": 5,
-          "price": 1.9308124047525401
-        },
-        {
-          "idProduct": 1,
-          "price": 2.2690780344740347
-        },
-        {
-          "idProduct": 16,
-          "price": 3.161465641626945
-        },
-        {
-          "idProduct": 7,
-          "price": 3.804533707618133
-        },
-        {
-          "idProduct": 7,
-          "price": 2.330730640467978
-        },
-        {
-          "idProduct": 16,
-          "price": 4.394829158353353
-        },
-        {
-          "idProduct": 16,
-          "price": 4.580936823988494
-        },
-        {
-          "idProduct": 20,
-          "price": 0.7815824322294783
-        },
-        {
-          "idProduct": 17,
-          "price": 2.3516129656128806
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "name": "Aldi",
-      "cityId": 6,
-      "url": "https://www.auchan.fr",
-      "address": "12 rue des Lilas",
-      "average_cart_adult": 59.52145615708634,
-      "average_cart_kid": 94.65500605929495,
-      "items": [
-        {
-          "idProduct": 9,
-          "price": 3.91244437538652
-        },
-        {
-          "idProduct": 17,
-          "price": 4.388649396773887
-        },
-        {
-          "idProduct": 14,
-          "price": 1.1188528572847616
-        },
-        {
-          "idProduct": 3,
-          "price": 1.1192638182593388
-        },
-        {
-          "idProduct": 10,
-          "price": 3.4521124362640006
-        },
-        {
-          "idProduct": 7,
-          "price": 3.934220647947467
-        },
-        {
-          "idProduct": 6,
-          "price": 4.738479227968106
-        },
-        {
-          "idProduct": 20,
-          "price": 3.0431479465102225
-        },
-        {
-          "idProduct": 4,
-          "price": 1.5131853353899185
-        },
-        {
-          "idProduct": 14,
-          "price": 3.9966116652942683
-        },
-        {
-          "idProduct": 7,
-          "price": 4.541351832070776
-        },
-        {
-          "idProduct": 5,
-          "price": 3.6203431353428677
-        },
-        {
-          "idProduct": 9,
-          "price": 2.4555299170384104
-        },
-        {
-          "idProduct": 2,
-          "price": 3.274640553071059
-        },
-        {
-          "idProduct": 8,
-          "price": 1.8631522293159108
-        },
-        {
-          "idProduct": 4,
-          "price": 4.04959840270746
-        },
-        {
-          "idProduct": 13,
-          "price": 2.9752793065486234
-        },
-        {
-          "idProduct": 5,
-          "price": 3.329090353890251
-        },
-        {
-          "idProduct": 15,
-          "price": 1.4065015972312644
-        },
-        {
-          "idProduct": 5,
-          "price": 4.307070469861796
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "name": "Casino",
-      "cityId": 6,
-      "url": "https://www.intermarche.fr",
-      "address": "3 boulevard Haussmann",
-      "average_cart_adult": 136.49829976096734,
-      "average_cart_kid": 19.947585863995194,
-      "items": [
-        {
-          "idProduct": 4,
-          "price": 3.1480764025127055
-        },
-        {
-          "idProduct": 11,
-          "price": 3.6163276279202705
-        },
-        {
-          "idProduct": 2,
-          "price": 4.424649179336283
-        },
-        {
-          "idProduct": 4,
-          "price": 4.242600466291109
-        },
-        {
-          "idProduct": 12,
-          "price": 2.162878178488337
-        },
-        {
-          "idProduct": 1,
-          "price": 2.7715084810909483
-        },
-        {
-          "idProduct": 2,
-          "price": 2.3972610987470935
-        },
-        {
-          "idProduct": 20,
-          "price": 4.350867121770939
-        },
-        {
-          "idProduct": 10,
-          "price": 3.6839369937882873
-        },
-        {
-          "idProduct": 2,
-          "price": 1.387939775816107
-        },
-        {
-          "idProduct": 11,
-          "price": 2.1555883089866335
-        },
-        {
-          "idProduct": 2,
-          "price": 0.7490400869284335
-        },
-        {
-          "idProduct": 16,
-          "price": 3.53759173648752
-        },
-        {
-          "idProduct": 10,
-          "price": 1.6587741073728743
-        },
-        {
-          "idProduct": 18,
-          "price": 3.365370178328326
-        },
-        {
-          "idProduct": 13,
-          "price": 3.6052157126207582
-        },
-        {
-          "idProduct": 12,
-          "price": 4.460347622493075
-        },
-        {
-          "idProduct": 2,
-          "price": 2.81949358143933
-        },
-        {
-          "idProduct": 10,
-          "price": 3.8488747394382123
-        },
-        {
-          "idProduct": 17,
-          "price": 2.2361462246625194
-        },
-        {
-          "idProduct": 8,
-          "price": 4.7908897302244835
-        },
-        {
-          "idProduct": 5,
-          "price": 1.3126543138454823
-        },
-        {
-          "idProduct": 20,
-          "price": 3.5683120444924796
-        },
-        {
-          "idProduct": 4,
-          "price": 3.303408419292092
-        },
-        {
-          "idProduct": 8,
-          "price": 2.26354271941016
-        },
-        {
-          "idProduct": 1,
-          "price": 2.12970881869299
-        },
-        {
-          "idProduct": 3,
-          "price": 4.532107873536833
-        },
-        {
-          "idProduct": 17,
-          "price": 1.2710656691700968
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "name": "Leclerc Saint-Parres",
-      "cityId": 6,
-      "url": "https://www.carrefour.fr",
-      "address": "12 rue des Lilas",
-      "average_cart_adult": 20.84778946217062,
-      "average_cart_kid": 57.20945153160338,
-      "items": [
-        {
-          "idProduct": 11,
-          "price": 3.8411571609530233
-        },
-        {
-          "idProduct": 19,
-          "price": 2.759595296445151
-        },
-        {
-          "idProduct": 1,
-          "price": 2.3674939258752046
-        },
-        {
-          "idProduct": 18,
-          "price": 2.095608839299424
-        },
-        {
-          "idProduct": 5,
-          "price": 1.6620031109828306
-        },
-        {
-          "idProduct": 6,
-          "price": 3.7194748237478494
-        },
-        {
-          "idProduct": 18,
-          "price": 2.397883008107245
-        },
-        {
-          "idProduct": 13,
-          "price": 0.7059308482349649
-        },
-        {
-          "idProduct": 5,
-          "price": 1.8884250907890057
-        },
-        {
-          "idProduct": 2,
-          "price": 4.781485359563671
-        },
-        {
-          "idProduct": 5,
-          "price": 2.703348100991022
-        },
-        {
-          "idProduct": 15,
-          "price": 0.6393602670816662
-        },
-        {
-          "idProduct": 5,
-          "price": 2.2806018321838595
-        },
-        {
-          "idProduct": 16,
-          "price": 3.0364858940777717
-        },
-        {
-          "idProduct": 14,
-          "price": 4.485005293762974
-        },
-        {
-          "idProduct": 6,
-          "price": 2.998094736896962
-        },
-        {
-          "idProduct": 7,
-          "price": 3.2902678226537923
-        },
-        {
-          "idProduct": 2,
-          "price": 3.550512098218327
-        },
-        {
-          "idProduct": 5,
-          "price": 3.5520895605024982
-        },
-        {
-          "idProduct": 8,
-          "price": 4.668103969163768
-        },
-        {
-          "idProduct": 16,
-          "price": 4.433064095026104
-        },
-        {
-          "idProduct": 19,
-          "price": 4.458171490294887
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "name": "Carrefour",
-      "cityId": 1,
-      "url": "https://www.lidl.fr",
-      "address": "8 impasse des Fleurs",
-      "average_cart_adult": 135.51451609112837,
-      "average_cart_kid": 39.89094737231589,
-      "items": [
-        {
-          "idProduct": 3,
-          "price": 1.439271500887822
-        },
-        {
-          "idProduct": 13,
-          "price": 2.092850379525248
-        },
-        {
-          "idProduct": 20,
-          "price": 2.690465007796737
-        },
-        {
-          "idProduct": 11,
-          "price": 4.4240869977303925
-        },
-        {
-          "idProduct": 2,
-          "price": 3.4926781904682898
-        },
-        {
-          "idProduct": 19,
-          "price": 3.5304900453197723
-        },
-        {
-          "idProduct": 12,
-          "price": 1.8314414017949956
-        },
-        {
-          "idProduct": 4,
-          "price": 3.797350657120126
-        },
-        {
-          "idProduct": 11,
-          "price": 0.6710322569352959
-        },
-        {
-          "idProduct": 13,
-          "price": 3.505215918614069
-        },
-        {
-          "idProduct": 15,
-          "price": 4.134750408848641
-        },
-        {
-          "idProduct": 14,
-          "price": 3.741009638034627
-        },
-        {
-          "idProduct": 12,
-          "price": 1.2317363616101513
-        },
-        {
-          "idProduct": 17,
-          "price": 0.860703697191972
-        },
-        {
-          "idProduct": 20,
-          "price": 4.208548852712669
-        },
-        {
-          "idProduct": 1,
-          "price": 3.773530487186836
-        },
-        {
-          "idProduct": 12,
-          "price": 0.8065198019838845
-        },
-        {
-          "idProduct": 3,
-          "price": 2.6389667875433114
-        },
-        {
-          "idProduct": 16,
-          "price": 3.1084055002335464
-        },
-        {
-          "idProduct": 10,
-          "price": 2.9837555505199065
-        },
-        {
-          "idProduct": 20,
-          "price": 3.26013424754347
-        },
-        {
-          "idProduct": 5,
-          "price": 3.2533992698299796
-        },
-        {
-          "idProduct": 3,
-          "price": 1.2981796567197181
-        },
-        {
-          "idProduct": 5,
-          "price": 1.5347325637580125
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "name": "Intermarché",
-      "cityId": 1,
-      "url": "https://www.casino.fr",
-      "address": "12 rue des Lilas",
-      "average_cart_adult": 25.363087977610405,
-      "average_cart_kid": 20.68385897197399,
-      "items": [
-        {
-          "idProduct": 10,
-          "price": 2.305251886010841
-        },
-        {
-          "idProduct": 17,
-          "price": 1.414482681380478
-        },
-        {
-          "idProduct": 4,
-          "price": 2.746026959263345
-        },
-        {
-          "idProduct": 15,
-          "price": 2.6691475395329656
-        },
-        {
-          "idProduct": 16,
-          "price": 1.3806379787168188
-        },
-        {
-          "idProduct": 10,
-          "price": 0.941042449425672
-        },
-        {
-          "idProduct": 8,
-          "price": 2.423981497020235
-        },
-        {
-          "idProduct": 1,
-          "price": 1.421403367552534
-        },
-        {
-          "idProduct": 4,
-          "price": 0.9008516955750225
-        },
-        {
-          "idProduct": 2,
-          "price": 4.528788265585732
-        },
-        {
-          "idProduct": 13,
-          "price": 4.748321079371357
-        },
-        {
-          "idProduct": 2,
-          "price": 4.346764344890028
-        },
-        {
-          "idProduct": 8,
-          "price": 1.8481422983219618
-        },
-        {
-          "idProduct": 11,
-          "price": 4.703916764809824
-        },
-        {
-          "idProduct": 7,
-          "price": 1.6186717641997201
-        },
-        {
-          "idProduct": 2,
-          "price": 1.78492930956118
-        },
-        {
-          "idProduct": 18,
-          "price": 2.250191880961495
-        },
-        {
-          "idProduct": 4,
-          "price": 4.042290719016888
-        },
-        {
-          "idProduct": 6,
-          "price": 3.219133190153026
-        },
-        {
-          "idProduct": 16,
-          "price": 2.6868395730805226
-        },
-        {
-          "idProduct": 9,
-          "price": 4.30454023675814
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "name": "Auchan",
-      "cityId": 6,
-      "url": "https://www.aldi.fr",
-      "address": "12 rue des Lilas",
-      "average_cart_adult": 54.299267974269505,
-      "average_cart_kid": 70.56378853062142,
-      "items": [
-        {
-          "idProduct": 13,
-          "price": 3.6763465809575235
-        },
-        {
-          "idProduct": 19,
-          "price": 4.36048184793051
-        },
-        {
-          "idProduct": 15,
-          "price": 4.468282163262049
-        },
-        {
-          "idProduct": 6,
-          "price": 2.5626144142369
-        },
-        {
-          "idProduct": 2,
-          "price": 3.655065392510248
-        },
-        {
-          "idProduct": 17,
-          "price": 4.718697080731244
-        },
-        {
-          "idProduct": 7,
-          "price": 1.0696038440306357
-        },
-        {
-          "idProduct": 1,
-          "price": 2.480917094604559
-        },
-        {
-          "idProduct": 20,
-          "price": 2.632248075694581
-        },
-        {
-          "idProduct": 13,
-          "price": 1.076119357416958
-        },
-        {
-          "idProduct": 5,
-          "price": 2.712491694686216
-        },
-        {
-          "idProduct": 11,
-          "price": 4.248136848356816
-        },
-        {
-          "idProduct": 12,
-          "price": 1.1539214860609524
-        },
-        {
-          "idProduct": 19,
-          "price": 2.9909058600111784
-        },
-        {
-          "idProduct": 1,
-          "price": 2.0796565031132963
-        },
-        {
-          "idProduct": 6,
-          "price": 3.3711912111040023
-        },
-        {
-          "idProduct": 10,
-          "price": 1.1148100833897683
-        },
-        {
-          "idProduct": 16,
-          "price": 4.706840869915488
-        },
-        {
-          "idProduct": 5,
-          "price": 2.7606416371089777
-        },
-        {
-          "idProduct": 8,
-          "price": 1.5461185175080057
-        },
-        {
-          "idProduct": 12,
-          "price": 4.743851603351235
-        },
-        {
-          "idProduct": 1,
-          "price": 3.3059936227691917
-        },
-        {
-          "idProduct": 11,
-          "price": 3.0287005862323424
-        },
-        {
-          "idProduct": 14,
-          "price": 0.842336862954676
-        },
-        {
-          "idProduct": 20,
-          "price": 2.347508112952591
-        },
-        {
-          "idProduct": 20,
-          "price": 1.4898749768498623
-        }
-      ]
-    },
-    {
-      "id": 13,
-      "name": "Casino",
-      "cityId": 6,
-      "url": "https://www.aldi.fr",
-      "address": "12 rue des Lilas",
-      "average_cart_adult": 108.83329083778995,
-      "average_cart_kid": 36.963441313701736,
-      "items": [
-        {
-          "idProduct": 2,
-          "price": 3.957732516122843
-        },
-        {
-          "idProduct": 5,
-          "price": 2.824477641911611
-        },
-        {
-          "idProduct": 3,
-          "price": 2.594243951623427
-        },
-        {
-          "idProduct": 9,
-          "price": 4.663635721365205
-        },
-        {
-          "idProduct": 11,
-          "price": 2.767438221842001
-        },
-        {
-          "idProduct": 7,
-          "price": 4.5621884796411525
-        },
-        {
-          "idProduct": 2,
-          "price": 3.9268142638534025
-        },
-        {
-          "idProduct": 19,
-          "price": 1.1824496876167814
-        },
-        {
-          "idProduct": 18,
-          "price": 2.8258851704012526
-        },
-        {
-          "idProduct": 16,
-          "price": 4.07013431871122
-        },
-        {
-          "idProduct": 15,
-          "price": 2.754176934602741
-        },
-        {
-          "idProduct": 5,
-          "price": 2.567435711785336
-        },
-        {
-          "idProduct": 2,
-          "price": 3.754476634201901
-        },
-        {
-          "idProduct": 7,
-          "price": 4.1069196886713915
-        },
-        {
-          "idProduct": 17,
-          "price": 3.136320215175811
-        },
-        {
-          "idProduct": 11,
-          "price": 2.6638980528877516
-        },
-        {
-          "idProduct": 2,
-          "price": 0.8238700545046952
-        },
-        {
-          "idProduct": 6,
-          "price": 4.163454776536709
-        },
-        {
-          "idProduct": 17,
-          "price": 4.704694961532807
-        },
-        {
-          "idProduct": 8,
-          "price": 1.2608671127424649
-        },
-        {
-          "idProduct": 5,
-          "price": 2.739165342325414
-        },
-        {
-          "idProduct": 11,
-          "price": 3.69484403314313
-        },
-        {
-          "idProduct": 17,
-          "price": 3.9689773950671476
-        },
-        {
-          "idProduct": 17,
-          "price": 2.770192995291982
-        },
-        {
-          "idProduct": 5,
-          "price": 3.177437561798782
-        },
-        {
-          "idProduct": 3,
-          "price": 0.8128633123509109
-        },
-        {
-          "idProduct": 14,
-          "price": 3.5200869979937615
-        },
-        {
-          "idProduct": 19,
-          "price": 1.8785350250548933
-        },
-        {
-          "idProduct": 6,
-          "price": 3.725518937331125
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "name": "Intermarché",
-      "cityId": 6,
-      "url": "https://www.leclerc.fr",
-      "address": "20 place de la République",
-      "average_cart_adult": 26.572540932901514,
-      "average_cart_kid": 55.58157064471385,
-      "items": [
-        {
-          "idProduct": 11,
-          "price": 4.342676669096348
-        },
-        {
-          "idProduct": 8,
-          "price": 2.9932670518628983
-        },
-        {
-          "idProduct": 16,
-          "price": 1.9448691952471229
-        },
-        {
-          "idProduct": 19,
-          "price": 2.60170147152529
-        },
-        {
-          "idProduct": 4,
-          "price": 2.6199060079269323
-        },
-        {
-          "idProduct": 11,
-          "price": 1.5909994473131344
-        },
-        {
-          "idProduct": 4,
-          "price": 2.503514854884128
-        },
-        {
-          "idProduct": 15,
-          "price": 2.455846969283761
-        },
-        {
-          "idProduct": 7,
-          "price": 1.174113050763223
-        },
-        {
-          "idProduct": 4,
-          "price": 2.18975267295209
-        },
-        {
-          "idProduct": 11,
-          "price": 4.572267265884953
-        },
-        {
-          "idProduct": 15,
-          "price": 3.301000890998349
-        },
-        {
-          "idProduct": 15,
-          "price": 1.851914216999662
-        },
-        {
-          "idProduct": 1,
-          "price": 4.619792918182305
-        },
-        {
-          "idProduct": 20,
-          "price": 1.9964092838450964
-        },
-        {
-          "idProduct": 14,
-          "price": 2.010175877179858
-        },
-        {
-          "idProduct": 20,
-          "price": 1.4402716154127864
-        },
-        {
-          "idProduct": 3,
-          "price": 1.0646538049394836
-        },
-        {
-          "idProduct": 2,
-          "price": 3.3493339630069165
-        },
-        {
-          "idProduct": 2,
-          "price": 0.8307525003519528
-        },
-        {
-          "idProduct": 8,
-          "price": 3.324903801953864
-        },
-        {
-          "idProduct": 1,
-          "price": 3.217680132945717
-        },
-        {
-          "idProduct": 14,
-          "price": 2.0506418386898435
-        },
-        {
-          "idProduct": 8,
-          "price": 1.557194333561576
-        },
-        {
-          "idProduct": 7,
-          "price": 1.7745073471018595
-        },
-        {
-          "idProduct": 18,
-          "price": 1.2554864009206854
-        },
-        {
-          "idProduct": 3,
-          "price": 1.133838083395616
-        }
-      ]
-    },
-    {
-      "id": 15,
-      "name": "Lidl",
-      "cityId": 6,
-      "url": "https://www.casino.fr",
-      "address": "20 place de la République",
-      "average_cart_adult": 22.21942857005517,
-      "average_cart_kid": 11.83947068190473,
-      "items": [
-        {
-          "idProduct": 17,
-          "price": 2.089226241110463
-        },
-        {
-          "idProduct": 16,
-          "price": 4.254515434849906
-        },
-        {
-          "idProduct": 15,
-          "price": 1.7687467374641836
-        },
-        {
-          "idProduct": 3,
-          "price": 2.8020077137958905
-        },
-        {
-          "idProduct": 3,
-          "price": 3.6098701159932247
-        },
-        {
-          "idProduct": 4,
-          "price": 4.009289847699268
-        },
-        {
-          "idProduct": 4,
-          "price": 2.858134389927252
-        },
-        {
-          "idProduct": 14,
-          "price": 4.27785620289295
-        },
-        {
-          "idProduct": 6,
-          "price": 1.3332222671320981
-        },
-        {
-          "idProduct": 4,
-          "price": 3.016779139784836
-        },
-        {
-          "idProduct": 7,
-          "price": 1.4073064076610073
-        },
-        {
-          "idProduct": 12,
-          "price": 0.7674466341230805
-        },
-        {
-          "idProduct": 6,
-          "price": 2.29241534246133
-        },
-        {
-          "idProduct": 16,
-          "price": 1.7542167513960942
-        },
-        {
-          "idProduct": 10,
-          "price": 3.217044726349717
-        },
-        {
-          "idProduct": 4,
-          "price": 3.1719045391403293
-        },
-        {
-          "idProduct": 15,
-          "price": 4.248890758993687
-        },
-        {
-          "idProduct": 17,
-          "price": 3.7417248125434996
-        },
-        {
-          "idProduct": 7,
-          "price": 1.0836601936406747
-        },
-        {
-          "idProduct": 9,
-          "price": 1.0655011538572348
-        },
-        {
-          "idProduct": 6,
-          "price": 2.77244621588778
-        }
-      ]
-    },
-    {
-      "id": 16,
-      "name": "Carrefour",
-      "cityId": 1,
-      "url": "https://www.auchan.fr",
-      "address": "8 impasse des Fleurs",
-      "average_cart_adult": 28.36858742754311,
-      "average_cart_kid": 66.49231398841819,
-      "items": [
-        {
-          "idProduct": 10,
-          "price": 2.1491727489062056
-        },
-        {
-          "idProduct": 5,
-          "price": 1.1966811013464929
-        },
-        {
-          "idProduct": 19,
-          "price": 4.71745211052823
-        },
-        {
-          "idProduct": 10,
-          "price": 4.467235500825683
-        },
-        {
-          "idProduct": 18,
-          "price": 3.029541516567444
-        },
-        {
-          "idProduct": 20,
-          "price": 0.8622941989059054
-        },
-        {
-          "idProduct": 9,
-          "price": 2.5941653700659444
-        },
-        {
-          "idProduct": 2,
-          "price": 3.8806240452468472
-        },
-        {
-          "idProduct": 2,
-          "price": 1.187743150675578
-        },
-        {
-          "idProduct": 3,
-          "price": 0.6752439157929098
-        },
-        {
-          "idProduct": 5,
-          "price": 4.263578345831125
-        },
-        {
-          "idProduct": 10,
-          "price": 1.3615121259413119
-        },
-        {
-          "idProduct": 18,
-          "price": 4.083124113323983
-        },
-        {
-          "idProduct": 8,
-          "price": 1.6218394751247547
-        },
-        {
-          "idProduct": 6,
-          "price": 1.526147524259407
-        },
-        {
-          "idProduct": 13,
-          "price": 3.695469037618639
-        },
-        {
-          "idProduct": 14,
-          "price": 3.3618960580606263
-        },
-        {
-          "idProduct": 3,
-          "price": 3.652391420607275
-        },
-        {
-          "idProduct": 10,
-          "price": 2.3780401450944826
-        },
-        {
-          "idProduct": 19,
-          "price": 2.1364368556078195
-        },
-        {
-          "idProduct": 12,
-          "price": 4.015272436064413
-        },
-        {
-          "idProduct": 11,
-          "price": 4.001283059129933
-        },
-        {
-          "idProduct": 3,
-          "price": 4.630253020653413
-        }
-      ]
-    },
-    {
-      "id": 17,
-      "name": "Casino",
-      "cityId": 6,
-      "url": "https://www.lidl.fr",
-      "address": "12 rue des Lilas",
-      "average_cart_adult": 105.06126001289715,
-      "average_cart_kid": 49.47884444695465,
-      "items": [
-        {
-          "idProduct": 15,
-          "price": 2.5566109060301976
-        },
-        {
-          "idProduct": 11,
-          "price": 2.2453377913051633
-        },
-        {
-          "idProduct": 5,
-          "price": 1.9377061769494333
-        },
-        {
-          "idProduct": 2,
-          "price": 3.106402398519224
-        },
-        {
-          "idProduct": 5,
-          "price": 2.2576748351362586
-        },
-        {
-          "idProduct": 11,
-          "price": 1.5459005178789804
-        },
-        {
-          "idProduct": 7,
-          "price": 2.6956780791320263
-        },
-        {
-          "idProduct": 14,
-          "price": 4.322884186364365
-        },
-        {
-          "idProduct": 8,
-          "price": 1.343738507583316
-        },
-        {
-          "idProduct": 1,
-          "price": 0.6348939199699956
-        },
-        {
-          "idProduct": 15,
-          "price": 2.607508808473405
-        },
-        {
-          "idProduct": 2,
-          "price": 2.912447195460608
-        },
-        {
-          "idProduct": 12,
-          "price": 4.262879334037045
-        },
-        {
-          "idProduct": 20,
-          "price": 2.5791193526065443
-        },
-        {
-          "idProduct": 8,
-          "price": 3.3683361961431544
-        },
-        {
-          "idProduct": 17,
-          "price": 3.189470527178001
-        },
-        {
-          "idProduct": 17,
-          "price": 4.054714510650537
-        },
-        {
-          "idProduct": 6,
-          "price": 3.3521198726518815
-        },
-        {
-          "idProduct": 15,
-          "price": 2.4959330356686147
-        },
-        {
-          "idProduct": 3,
-          "price": 1.733635313416403
-        }
-      ]
-    },
-    {
-      "id": 18,
-      "name": "Carrefour",
-      "cityId": 1,
-      "url": "https://www.leclerc.fr",
-      "address": "12 rue des Lilas",
-      "average_cart_adult": 19.82619545253668,
-      "average_cart_kid": 48.995952557266826,
-      "items": [
-        {
-          "idProduct": 6,
-          "price": 4.598509564576047
-        },
-        {
-          "idProduct": 13,
-          "price": 1.0701671658769207
-        },
-        {
-          "idProduct": 15,
-          "price": 4.005913504599025
-        },
-        {
-          "idProduct": 2,
-          "price": 1.9072795195471912
-        },
-        {
-          "idProduct": 14,
-          "price": 2.747855113050851
-        },
-        {
-          "idProduct": 15,
-          "price": 3.7904779550332774
-        },
-        {
-          "idProduct": 1,
-          "price": 1.0681545339264453
-        },
-        {
-          "idProduct": 20,
-          "price": 4.3822433253286
-        },
-        {
-          "idProduct": 20,
-          "price": 3.092359637153147
-        },
-        {
-          "idProduct": 2,
-          "price": 3.930391540138231
-        },
-        {
-          "idProduct": 9,
-          "price": 2.3611842624817503
-        },
-        {
-          "idProduct": 16,
-          "price": 4.564959287277811
-        },
-        {
-          "idProduct": 9,
-          "price": 1.348720411883833
-        },
-        {
-          "idProduct": 8,
-          "price": 3.078284978123931
-        },
-        {
-          "idProduct": 16,
-          "price": 1.1742308537939645
-        },
-        {
-          "idProduct": 7,
-          "price": 2.9989538651451255
-        },
-        {
-          "idProduct": 16,
-          "price": 3.967178539884557
-        },
-        {
-          "idProduct": 16,
-          "price": 1.5285497986735215
-        },
-        {
-          "idProduct": 11,
-          "price": 2.348445421700426
-        },
-        {
-          "idProduct": 8,
-          "price": 0.7509644009429437
-        },
-        {
-          "idProduct": 2,
-          "price": 2.8120500551772167
-        },
-        {
-          "idProduct": 18,
-          "price": 4.072005191006132
-        },
-        {
-          "idProduct": 18,
-          "price": 4.50362737752937
-        },
-        {
-          "idProduct": 15,
-          "price": 1.5621914052353292
-        },
-        {
-          "idProduct": 9,
-          "price": 4.572581058933029
-        },
-        {
-          "idProduct": 12,
-          "price": 1.5291122290787214
-        },
-        {
-          "idProduct": 3,
-          "price": 2.181521690172765
-        },
-        {
-          "idProduct": 12,
-          "price": 2.1033286985993502
-        }
-      ]
-    },
-    {
-      "id": 19,
-      "name": "Carrefour",
-      "cityId": 1,
-      "url": "https://www.leclerc.fr",
-      "address": "8 impasse des Fleurs",
-      "average_cart_adult": 76.08703695754623,
-      "average_cart_kid": 91.5692122434903,
-      "items": [
-        {
-          "idProduct": 4,
-          "price": 4.755237950397713
-        },
-        {
-          "idProduct": 20,
-          "price": 2.7931715196991505
-        },
-        {
-          "idProduct": 7,
-          "price": 1.1179770802166042
-        },
-        {
-          "idProduct": 20,
-          "price": 3.992511155121205
-        },
-        {
-          "idProduct": 12,
-          "price": 1.1017879233917776
-        },
-        {
-          "idProduct": 19,
-          "price": 3.976095501568529
-        },
-        {
-          "idProduct": 13,
-          "price": 0.8279289674832768
-        },
-        {
-          "idProduct": 10,
-          "price": 1.9584234422469957
-        },
-        {
-          "idProduct": 10,
-          "price": 2.54658074726206
-        },
-        {
-          "idProduct": 9,
-          "price": 4.61084887435103
-        },
-        {
-          "idProduct": 11,
-          "price": 2.6655940574226147
-        },
-        {
-          "idProduct": 19,
-          "price": 1.095164053816844
-        },
-        {
-          "idProduct": 13,
-          "price": 0.9978008048890332
-        },
-        {
-          "idProduct": 7,
-          "price": 4.407625000921854
-        },
-        {
-          "idProduct": 8,
-          "price": 4.226944922384261
-        },
-        {
-          "idProduct": 2,
-          "price": 2.7442569637523677
-        },
-        {
-          "idProduct": 15,
-          "price": 4.672247812363081
-        },
-        {
-          "idProduct": 11,
-          "price": 1.6358980237598766
-        },
-        {
-          "idProduct": 14,
-          "price": 1.2022075966373018
-        },
-        {
-          "idProduct": 3,
-          "price": 3.1946264511005564
-        },
-        {
-          "idProduct": 5,
-          "price": 4.248206817373801
-        },
-        {
-          "idProduct": 7,
-          "price": 4.083131971252422
-        },
-        {
-          "idProduct": 8,
-          "price": 1.4670874913460055
-        },
-        {
-          "idProduct": 2,
-          "price": 2.7080409416765496
-        },
-        {
-          "idProduct": 19,
-          "price": 1.8401227305058583
-        },
-        {
-          "idProduct": 5,
-          "price": 4.336680345849421
-        }
-      ]
-    },
-    {
-      "id": 20,
-      "name": "Carrefour",
-      "cityId": 6,
-      "url": "https://www.lidl.fr",
-      "address": "8 impasse des Fleurs",
-      "average_cart_adult": 67.84251141975298,
-      "average_cart_kid": 74.13318716998242,
-      "items": [
-        {
-          "idProduct": 6,
-          "price": 1.8932754135680052
-        },
-        {
-          "idProduct": 11,
-          "price": 2.5207552398291373
-        },
-        {
-          "idProduct": 13,
-          "price": 0.5686661835457175
-        },
-        {
-          "idProduct": 20,
-          "price": 4.295511838515868
-        },
-        {
-          "idProduct": 16,
-          "price": 1.169750900022079
-        },
-        {
-          "idProduct": 13,
-          "price": 4.675086413018039
-        },
-        {
-          "idProduct": 17,
-          "price": 4.045515830496361
-        },
-        {
-          "idProduct": 6,
-          "price": 2.5752681991648494
-        },
-        {
-          "idProduct": 7,
-          "price": 1.508817891342129
-        },
-        {
-          "idProduct": 19,
-          "price": 2.412939765088029
-        },
-        {
-          "idProduct": 16,
-          "price": 2.3273032831542597
-        },
-        {
-          "idProduct": 2,
-          "price": 0.8959654773914163
-        },
-        {
-          "idProduct": 10,
-          "price": 4.133143273359994
-        },
-        {
-          "idProduct": 5,
-          "price": 1.8778581478270437
-        },
-        {
-          "idProduct": 6,
-          "price": 2.257129125049269
-        },
-        {
-          "idProduct": 17,
-          "price": 3.3902662078199786
-        },
-        {
-          "idProduct": 6,
-          "price": 1.3297115085799902
-        },
-        {
-          "idProduct": 3,
-          "price": 2.055902165168117
-        },
-        {
-          "idProduct": 15,
-          "price": 0.8372313954537559
-        },
-        {
-          "idProduct": 5,
-          "price": 2.9608380066272124
-        },
-        {
-          "idProduct": 2,
-          "price": 1.272437621115674
-        },
-        {
-          "idProduct": 6,
-          "price": 3.2264069661448467
-        },
-        {
-          "idProduct": 16,
-          "price": 3.515046127868195
-        },
-        {
-          "idProduct": 10,
-          "price": 3.4541329511652794
-        },
-        {
-          "idProduct": 20,
-          "price": 2.0409222493343573
-        },
-        {
-          "idProduct": 5,
-          "price": 1.812557727758846
-        },
-        {
-          "idProduct": 1,
-          "price": 2.9114130162206866
-        }
-      ]
-    },
-    {
-      "id": 21,
-      "name": "Lidl",
-      "cityId": 1,
-      "url": "https://www.auchan.fr",
-      "address": "20 place de la République",
-      "average_cart_adult": 88.02799662949909,
-      "average_cart_kid": 57.40848175785516,
-      "items": [
-        {
-          "idProduct": 18,
-          "price": 2.086523106487025
-        },
-        {
-          "idProduct": 7,
-          "price": 2.316712735277257
-        },
-        {
-          "idProduct": 18,
-          "price": 0.9368204564981155
-        },
-        {
-          "idProduct": 12,
-          "price": 3.6438387905204195
-        },
-        {
-          "idProduct": 7,
-          "price": 1.2668156840933398
-        },
-        {
-          "idProduct": 7,
-          "price": 0.719874562220563
-        },
-        {
-          "idProduct": 7,
-          "price": 1.8310890838936018
-        },
-        {
-          "idProduct": 9,
-          "price": 2.652313958511119
-        },
-        {
-          "idProduct": 12,
-          "price": 0.7443497379001847
-        },
-        {
-          "idProduct": 17,
-          "price": 2.89416785062577
-        },
-        {
-          "idProduct": 11,
-          "price": 1.570495640835059
-        },
-        {
-          "idProduct": 14,
-          "price": 4.681372410766499
-        },
-        {
-          "idProduct": 4,
-          "price": 1.0441204787832505
-        },
-        {
-          "idProduct": 8,
-          "price": 3.4233837954716106
-        },
-        {
-          "idProduct": 4,
-          "price": 1.5763934352307578
-        },
-        {
-          "idProduct": 5,
-          "price": 4.58825503572567
-        },
-        {
-          "idProduct": 7,
-          "price": 2.581484349289945
-        },
-        {
-          "idProduct": 3,
-          "price": 2.6284099605971125
-        },
-        {
-          "idProduct": 1,
-          "price": 1.8498058419859098
-        },
-        {
-          "idProduct": 9,
-          "price": 2.01010230367904
-        },
-        {
-          "idProduct": 2,
-          "price": 3.7431456016492257
-        },
-        {
-          "idProduct": 19,
-          "price": 4.407276091742003
-        },
-        {
-          "idProduct": 9,
-          "price": 3.9924051527846647
-        },
-        {
-          "idProduct": 4,
-          "price": 3.078798179515889
-        },
-        {
-          "idProduct": 17,
-          "price": 1.268568008866884
-        },
-        {
-          "idProduct": 10,
-          "price": 4.285111764951907
-        },
-        {
-          "idProduct": 1,
-          "price": 1.2528978941076208
-        },
-        {
-          "idProduct": 14,
-          "price": 2.2043169528681155
-        }
-      ]
-    },
-    {
-      "id": 22,
-      "name": "Casino",
-      "cityId": 1,
-      "url": "https://www.carrefour.fr",
-      "address": "5 avenue des Champs",
-      "average_cart_adult": 50.346979183970625,
-      "average_cart_kid": 13.25353971872883,
-      "items": [
-        {
-          "idProduct": 3,
-          "price": 2.9912986945814115
-        },
-        {
-          "idProduct": 10,
-          "price": 1.0993156240705917
-        },
-        {
-          "idProduct": 2,
-          "price": 3.84436084201651
-        },
-        {
-          "idProduct": 11,
-          "price": 2.721699019778911
-        },
-        {
-          "idProduct": 18,
-          "price": 3.530524272774083
-        },
-        {
-          "idProduct": 20,
-          "price": 2.417517332600081
-        },
-        {
-          "idProduct": 14,
-          "price": 4.1734324721425775
-        },
-        {
-          "idProduct": 17,
-          "price": 4.695707319150198
-        },
-        {
-          "idProduct": 1,
-          "price": 4.0137069961707
-        },
-        {
-          "idProduct": 15,
-          "price": 3.1413850432007795
-        },
-        {
-          "idProduct": 9,
-          "price": 2.4056010543632667
-        },
-        {
-          "idProduct": 3,
-          "price": 1.7713839815989982
-        },
-        {
-          "idProduct": 4,
-          "price": 3.9196301642596776
-        },
-        {
-          "idProduct": 1,
-          "price": 1.249888822916197
-        },
-        {
-          "idProduct": 11,
-          "price": 3.084083032026543
-        },
-        {
-          "idProduct": 9,
-          "price": 2.622642357979948
-        },
-        {
-          "idProduct": 18,
-          "price": 0.938350468231319
-        },
-        {
-          "idProduct": 15,
-          "price": 4.481404048566411
-        },
-        {
-          "idProduct": 2,
-          "price": 1.2490986731361988
-        },
-        {
-          "idProduct": 18,
-          "price": 3.754384049302832
-        },
-        {
-          "idProduct": 5,
-          "price": 4.589530753540063
-        },
-        {
-          "idProduct": 10,
-          "price": 1.3659442799863757
-        },
-        {
-          "idProduct": 20,
-          "price": 4.609903708882019
-        },
-        {
-          "idProduct": 19,
-          "price": 3.7622263631141495
-        },
-        {
-          "idProduct": 8,
-          "price": 2.216171426455154
-        }
-      ]
-    },
-    {
-      "id": 23,
-      "name": "Aldi",
-      "cityId": 1,
-      "url": "https://www.carrefour.fr",
-      "address": "3 boulevard Haussmann",
-      "average_cart_adult": 15.803482182057525,
-      "average_cart_kid": 98.85023168840749,
-      "items": [
-        {
-          "idProduct": 19,
-          "price": 3.9273474749231765
-        },
-        {
-          "idProduct": 2,
-          "price": 2.0907984530943917
-        },
-        {
-          "idProduct": 5,
-          "price": 3.677234414207919
-        },
-        {
-          "idProduct": 7,
-          "price": 4.480795045620979
-        },
-        {
-          "idProduct": 10,
-          "price": 1.5167114356677383
-        },
-        {
-          "idProduct": 20,
-          "price": 4.494328548588257
-        },
-        {
-          "idProduct": 4,
-          "price": 3.8323054689572738
-        },
-        {
-          "idProduct": 3,
-          "price": 4.605217958207214
-        },
-        {
-          "idProduct": 17,
-          "price": 4.569960276788181
-        },
-        {
-          "idProduct": 13,
-          "price": 4.067132009860658
-        },
-        {
-          "idProduct": 3,
-          "price": 2.2118659181482396
-        },
-        {
-          "idProduct": 17,
-          "price": 4.624895127116483
-        },
-        {
-          "idProduct": 17,
-          "price": 3.37240050072248
-        },
-        {
-          "idProduct": 12,
-          "price": 1.9877248234004863
-        },
-        {
-          "idProduct": 15,
-          "price": 3.213543620441838
-        },
-        {
-          "idProduct": 14,
-          "price": 2.6966017654136776
-        },
-        {
-          "idProduct": 4,
-          "price": 1.1963517913118524
-        },
-        {
-          "idProduct": 18,
-          "price": 3.1689562694065545
-        },
-        {
-          "idProduct": 8,
-          "price": 3.825427087452992
-        },
-        {
-          "idProduct": 9,
-          "price": 2.841253198633524
-        },
-        {
-          "idProduct": 7,
-          "price": 0.9762029320373247
-        },
-        {
-          "idProduct": 20,
-          "price": 4.177068727870569
-        },
-        {
-          "idProduct": 15,
-          "price": 4.08081896862816
-        },
-        {
-          "idProduct": 18,
-          "price": 1.1719583018402484
-        },
-        {
-          "idProduct": 8,
-          "price": 3.049323415677356
-        },
-        {
-          "idProduct": 4,
-          "price": 1.5797153901532188
-        },
-        {
-          "idProduct": 13,
-          "price": 1.5942622224292327
-        }
-      ]
-    },
-    {
-      "id": 24,
-      "name": "Aldi",
-      "cityId": 6,
-      "url": "https://www.auchan.fr",
-      "address": "12 rue des Lilas",
-      "average_cart_adult": 69.63494295457541,
-      "average_cart_kid": 26.348078746607285,
-      "items": [
-        {
-          "idProduct": 3,
-          "price": 1.8859797707994694
-        },
-        {
-          "idProduct": 19,
-          "price": 2.197185058394362
-        },
-        {
-          "idProduct": 8,
-          "price": 3.9922249285117806
-        },
-        {
-          "idProduct": 17,
-          "price": 2.1225528793146626
-        },
-        {
-          "idProduct": 10,
-          "price": 3.0045270412346365
-        },
-        {
-          "idProduct": 6,
-          "price": 4.098877512223704
-        },
-        {
-          "idProduct": 8,
-          "price": 0.8239493302747338
-        },
-        {
-          "idProduct": 2,
-          "price": 4.7513031787473485
-        },
-        {
-          "idProduct": 13,
-          "price": 1.2074895003588326
-        },
-        {
-          "idProduct": 15,
-          "price": 0.9281490337690012
-        },
-        {
-          "idProduct": 10,
-          "price": 4.6400408182920545
-        },
-        {
-          "idProduct": 15,
-          "price": 3.391941649273684
-        },
-        {
-          "idProduct": 2,
-          "price": 3.079199856570667
-        },
-        {
-          "idProduct": 15,
-          "price": 3.157838336933173
-        },
-        {
-          "idProduct": 20,
-          "price": 3.5596132920999617
-        },
-        {
-          "idProduct": 12,
-          "price": 2.1210677621809175
-        },
-        {
-          "idProduct": 19,
-          "price": 4.668053288384752
-        },
-        {
-          "idProduct": 9,
-          "price": 2.8954278804422486
-        },
-        {
-          "idProduct": 7,
-          "price": 1.0323116891527557
-        },
-        {
-          "idProduct": 12,
-          "price": 1.6659551987196408
-        },
-        {
-          "idProduct": 4,
-          "price": 1.4723658339940227
-        },
-        {
-          "idProduct": 10,
-          "price": 4.270534457173241
-        },
-        {
-          "idProduct": 12,
-          "price": 4.690313399003072
-        },
-        {
-          "idProduct": 20,
-          "price": 4.7334666262697045
-        },
-        {
-          "idProduct": 10,
-          "price": 4.46408081949856
-        },
-        {
-          "idProduct": 12,
-          "price": 4.672577454917371
-        },
-        {
-          "idProduct": 5,
-          "price": 1.9818020145910118
-        },
-        {
-          "idProduct": 6,
-          "price": 2.167974951080559
-        }
-      ]
-    }
-  ],
-  "City": [
-    {
-      "id": 0,
-      "name": "Paris",
-      "postal_code": "10000"
-    },
-    {
-      "id": 1,
-      "name": "Bordeaux",
-      "postal_code": "75000"
-    },
-    {
-      "id": 2,
-      "name": "Bordeaux",
-      "postal_code": "67000"
-    },
-    {
-      "id": 3,
-      "name": "Bordeaux",
-      "postal_code": "75000"
-    },
-    {
-      "id": 4,
-      "name": "Strasbourg",
-      "postal_code": "10000"
-    },
-    {
-      "id": 5,
-      "name": "Lyon",
-      "postal_code": "69000"
-    }
-  ],
-  "Product": [
-    {
-      "id": 0,
-      "name": "Poulet"
-    },
-    {
-      "id": 1,
-      "name": "Chocolat"
-    },
-    {
-      "id": 2,
-      "name": "Chocolat"
-    },
-    {
-      "id": 3,
-      "name": "Pates"
-    },
-    {
-      "id": 4,
-      "name": "Banane"
-    },
-    {
-      "id": 5,
-      "name": "Chocolat"
-    },
-    {
-      "id": 6,
-      "name": "Cafe"
-    },
-    {
-      "id": 7,
-      "name": "Concombre"
-    },
-    {
-      "id": 8,
-      "name": "Jus orange"
-    },
-    {
-      "id": 9,
-      "name": "Oignons"
-    },
-    {
-      "id": 10,
-      "name": "Fromage"
-    },
-    {
-      "id": 11,
-      "name": "Carottes"
-    },
-    {
-      "id": 12,
-      "name": "Fromage"
-    },
-    {
-      "id": 13,
-      "name": "Fromage"
-    },
-    {
-      "id": 14,
-      "name": "Jus orange"
-    },
-    {
-      "id": 15,
-      "name": "Yaourt"
-    },
-    {
-      "id": 16,
-      "name": "Oignons"
-    },
-    {
-      "id": 17,
-      "name": "Carottes"
-    },
-    {
-      "id": 18,
-      "name": "Concombre"
-    },
-    {
-      "id": 19,
-      "name": "Concombre"
-    }
-  ]
+	"Shop": [
+		{
+			"id": 0,
+			"name": "Casino",
+			"cityId": 3,
+			"url": "https://www.lidl.fr",
+			"address": "12 rue des Lilas",
+			"average_cart_adult": 105.22417677236427,
+			"average_cart_kid": 22.17158721621668,
+			"items": [
+				{ "idProduct": 0, "price": 2.026328675877253 },
+				{ "idProduct": 1, "price": 2.80240119772314 },
+				{ "idProduct": 2, "price": 4.280997694219205 },
+				{ "idProduct": 3, "price": 2.8524794462455025 },
+				{ "idProduct": 4, "price": 2.088708203315095 },
+				{ "idProduct": 5, "price": 2.7768520158324215 },
+				{ "idProduct": 6, "price": 2.974111207941956 },
+				{ "idProduct": 7, "price": 3.1332764106776017 },
+				{ "idProduct": 8, "price": 1.5887107730980499 },
+				{ "idProduct": 9, "price": 0.6432599782586655 },
+				{ "idProduct": 10, "price": 1.5722520606946109 },
+				{ "idProduct": 11, "price": 3.3886633689756716 },
+				{ "idProduct": 12, "price": 3.6919173839841877 },
+				{ "idProduct": 13, "price": 4.411273585502081 },
+				{ "idProduct": 14, "price": 3.1479338890794013 },
+				{ "idProduct": 15, "price": 0.9726103035953514 },
+				{ "idProduct": 16, "price": 0.9871103784898018 },
+				{ "idProduct": 17, "price": 4.479958851986541 },
+				{ "idProduct": 18, "price": 1.9108463981822998 },
+				{ "idProduct": 19, "price": 1.4656993654332435 },
+				{ "idProduct": 20, "price": 4.376029493422801 },
+				{ "idProduct": 21, "price": 3.0541031853818907 },
+				{ "idProduct": 22, "price": 3.8054713553311075 },
+				{ "idProduct": 23, "price": 2.082197562794841 },
+				{ "idProduct": 24, "price": 1.1869515990797543 },
+				{ "idProduct": 25, "price": 2.8859059449526923 },
+				{ "idProduct": 26, "price": 0.9166756716309625 }
+			]
+		},
+		{
+			"id": 1,
+			"name": "Leclerc Saint-Parres",
+			"cityId": 6,
+			"url": "https://www.carrefour.fr",
+			"address": "12 rue des Lilas",
+			"average_cart_adult": 98.89137408151791,
+			"average_cart_kid": 64.4739806771451,
+			"items": [
+				{ "idProduct": 0, "price": 0.7104228638822184 },
+				{ "idProduct": 1, "price": 1.377417931810935 },
+				{ "idProduct": 2, "price": 3.4822560461390024 },
+				{ "idProduct": 3, "price": 2.0042890805739035 },
+				{ "idProduct": 4, "price": 2.2995304499872065 },
+				{ "idProduct": 5, "price": 4.538275921668756 },
+				{ "idProduct": 6, "price": 0.7157387090650829 },
+				{ "idProduct": 7, "price": 3.1079445025301338 },
+				{ "idProduct": 8, "price": 1.4882771519586457 },
+				{ "idProduct": 9, "price": 0.9222474576024513 },
+				{ "idProduct": 10, "price": 3.809575502707747 },
+				{ "idProduct": 11, "price": 3.778125828895262 },
+				{ "idProduct": 12, "price": 2.460623550327647 },
+				{ "idProduct": 13, "price": 4.534833571865801 },
+				{ "idProduct": 14, "price": 4.718583970671902 },
+				{ "idProduct": 15, "price": 2.075180542233359 },
+				{ "idProduct": 16, "price": 3.7034700761017563 },
+				{ "idProduct": 17, "price": 4.4072280001107895 },
+				{ "idProduct": 18, "price": 4.393077729543368 },
+				{ "idProduct": 19, "price": 3.0682768315031206 },
+				{ "idProduct": 20, "price": 1.9708358024830666 },
+				{ "idProduct": 21, "price": 0.8482525442669245 },
+				{ "idProduct": 22, "price": 3.8224951977918984 },
+				{ "idProduct": 23, "price": 3.3852227361798786 },
+				{ "idProduct": 24, "price": 2.3946299591852513 }
+			]
+		},
+		{
+			"id": 2,
+			"name": "Leclerc Saint-Parres",
+			"cityId": 3,
+			"url": "https://www.aldi.fr",
+			"address": "12 rue des Lilas",
+			"average_cart_adult": 29.372132396439138,
+			"average_cart_kid": 66.49343428472295,
+			"items": [
+				{ "idProduct": 0, "price": 1.574412842729903 },
+				{ "idProduct": 1, "price": 2.1800698110223182 },
+				{ "idProduct": 2, "price": 4.594914446914592 },
+				{ "idProduct": 3, "price": 4.431535387398496 },
+				{ "idProduct": 4, "price": 3.4157521951863528 },
+				{ "idProduct": 5, "price": 1.7651884803594242 },
+				{ "idProduct": 6, "price": 1.171865507085514 },
+				{ "idProduct": 7, "price": 1.708060324788158 },
+				{ "idProduct": 8, "price": 2.2186301385153406 },
+				{ "idProduct": 9, "price": 1.9361617314022705 },
+				{ "idProduct": 10, "price": 1.9276288124176446 },
+				{ "idProduct": 11, "price": 3.6904249181763378 },
+				{ "idProduct": 12, "price": 4.54698938881919 },
+				{ "idProduct": 13, "price": 1.7117612582445056 },
+				{ "idProduct": 14, "price": 0.703795782759692 },
+				{ "idProduct": 15, "price": 1.2238598039887956 },
+				{ "idProduct": 16, "price": 1.4515666298275591 },
+				{ "idProduct": 17, "price": 0.5890991577773383 },
+				{ "idProduct": 18, "price": 1.6609754524104068 },
+				{ "idProduct": 19, "price": 3.653454550586039 },
+				{ "idProduct": 20, "price": 3.046628272543498 },
+				{ "idProduct": 21, "price": 2.4246058286320356 },
+				{ "idProduct": 22, "price": 2.619586298931817 },
+				{ "idProduct": 23, "price": 1.7332473217509599 },
+				{ "idProduct": 24, "price": 4.243177402946834 },
+				{ "idProduct": 25, "price": 0.6310374277290866 },
+				{ "idProduct": 26, "price": 1.0888180646858578 },
+				{ "idProduct": 27, "price": 4.071713820157403 }
+			]
+		},
+		{
+			"id": 3,
+			"name": "Aldi",
+			"cityId": 4,
+			"url": "https://www.intermarche.fr",
+			"address": "3 boulevard Haussmann",
+			"average_cart_adult": 109.08676662058959,
+			"average_cart_kid": 81.30016734452515,
+			"items": [
+				{ "idProduct": 0, "price": 1.2250584687188826 },
+				{ "idProduct": 1, "price": 3.122386290612585 },
+				{ "idProduct": 2, "price": 4.288308056900077 },
+				{ "idProduct": 3, "price": 3.2021810144797325 },
+				{ "idProduct": 4, "price": 1.1301427364847338 },
+				{ "idProduct": 5, "price": 2.6162743854758563 },
+				{ "idProduct": 6, "price": 4.3889358979866815 },
+				{ "idProduct": 7, "price": 2.9273951657227766 },
+				{ "idProduct": 8, "price": 3.3845662983508857 },
+				{ "idProduct": 9, "price": 3.169124051030167 },
+				{ "idProduct": 10, "price": 3.7532233665185197 },
+				{ "idProduct": 11, "price": 3.9457605783381275 },
+				{ "idProduct": 12, "price": 3.9926387712883322 },
+				{ "idProduct": 13, "price": 2.9821571741009567 },
+				{ "idProduct": 14, "price": 1.9036641556095812 },
+				{ "idProduct": 15, "price": 3.0424604452871087 },
+				{ "idProduct": 16, "price": 4.629474770762644 },
+				{ "idProduct": 17, "price": 2.680172274525056 },
+				{ "idProduct": 18, "price": 2.4136013509582424 },
+				{ "idProduct": 19, "price": 3.8516550532057856 },
+				{ "idProduct": 20, "price": 2.7861259624417762 },
+				{ "idProduct": 21, "price": 3.6567963367527243 },
+				{ "idProduct": 22, "price": 4.048013338012384 }
+			]
+		},
+		{
+			"id": 4,
+			"name": "Lidl",
+			"cityId": 4,
+			"url": "https://www.aldi.fr",
+			"address": "12 rue des Lilas",
+			"average_cart_adult": 72.818318818092,
+			"average_cart_kid": 21.984937232616645,
+			"items": [
+				{ "idProduct": 0, "price": 3.9817513570443603 },
+				{ "idProduct": 1, "price": 3.320783674852973 },
+				{ "idProduct": 2, "price": 4.016718068220156 },
+				{ "idProduct": 3, "price": 2.7711686984475437 },
+				{ "idProduct": 4, "price": 4.321154652080451 },
+				{ "idProduct": 5, "price": 2.307795748164344 },
+				{ "idProduct": 6, "price": 3.40256067038378 },
+				{ "idProduct": 7, "price": 4.574879772796113 },
+				{ "idProduct": 8, "price": 3.2711348566849745 },
+				{ "idProduct": 9, "price": 4.490405175110624 },
+				{ "idProduct": 10, "price": 4.3812993844857875 },
+				{ "idProduct": 11, "price": 1.019711654185162 },
+				{ "idProduct": 12, "price": 3.637925092748713 },
+				{ "idProduct": 13, "price": 1.6865036693538096 },
+				{ "idProduct": 14, "price": 1.6380205122653795 },
+				{ "idProduct": 15, "price": 2.1355716341721864 },
+				{ "idProduct": 16, "price": 4.782665055826838 },
+				{ "idProduct": 17, "price": 4.314825348108076 },
+				{ "idProduct": 18, "price": 0.5827398730181687 },
+				{ "idProduct": 19, "price": 4.728442802322855 },
+				{ "idProduct": 20, "price": 3.022911876525967 },
+				{ "idProduct": 21, "price": 1.4198264050648532 }
+			]
+		},
+		{
+			"id": 5,
+			"name": "Auchan",
+			"cityId": 1,
+			"url": "https://www.intermarche.fr",
+			"address": "8 impasse des Fleurs",
+			"average_cart_adult": 49.27678672935538,
+			"average_cart_kid": 81.49318389657233,
+			"items": [
+				{ "idProduct": 0, "price": 3.981717753171152 },
+				{ "idProduct": 1, "price": 1.5796777215753182 },
+				{ "idProduct": 2, "price": 0.7390689131083267 },
+				{ "idProduct": 3, "price": 2.332332797169244 },
+				{ "idProduct": 4, "price": 3.366638882383656 },
+				{ "idProduct": 5, "price": 1.2085427924242533 },
+				{ "idProduct": 6, "price": 3.6809906596485 },
+				{ "idProduct": 7, "price": 1.299168804691004 },
+				{ "idProduct": 8, "price": 4.689292144432666 },
+				{ "idProduct": 9, "price": 0.9314704527983402 },
+				{ "idProduct": 10, "price": 3.0348074378298238 },
+				{ "idProduct": 11, "price": 4.287458364355647 },
+				{ "idProduct": 12, "price": 3.2883731510976917 },
+				{ "idProduct": 13, "price": 3.215998006676177 },
+				{ "idProduct": 14, "price": 3.0042822838590757 },
+				{ "idProduct": 15, "price": 4.162769939401752 },
+				{ "idProduct": 16, "price": 0.6398005023221363 },
+				{ "idProduct": 17, "price": 2.713415821534359 },
+				{ "idProduct": 18, "price": 2.479450681588336 },
+				{ "idProduct": 19, "price": 4.582106565680515 },
+				{ "idProduct": 20, "price": 2.6819858250855164 },
+				{ "idProduct": 21, "price": 1.4447672485948542 }
+			]
+		},
+		{
+			"id": 6,
+			"name": "Casino",
+			"cityId": 3,
+			"url": "https://www.aldi.fr",
+			"address": "20 place de la République",
+			"average_cart_adult": 128.41483537280567,
+			"average_cart_kid": 30.49343425268966,
+			"items": [
+				{ "idProduct": 0, "price": 1.803412350002152 },
+				{ "idProduct": 1, "price": 2.316553073088511 },
+				{ "idProduct": 2, "price": 1.9019833346819643 },
+				{ "idProduct": 3, "price": 4.413278061455173 },
+				{ "idProduct": 4, "price": 2.2003161262954904 },
+				{ "idProduct": 5, "price": 2.348423493503713 },
+				{ "idProduct": 6, "price": 1.661907802316985 },
+				{ "idProduct": 7, "price": 4.719664048104766 },
+				{ "idProduct": 8, "price": 3.546812616261736 },
+				{ "idProduct": 9, "price": 4.426236866882351 },
+				{ "idProduct": 10, "price": 3.175908905780277 },
+				{ "idProduct": 11, "price": 3.3792967782380794 },
+				{ "idProduct": 12, "price": 2.835493211523474 },
+				{ "idProduct": 13, "price": 4.630941416296462 },
+				{ "idProduct": 14, "price": 3.32305022690241 },
+				{ "idProduct": 15, "price": 1.5365008110580507 },
+				{ "idProduct": 16, "price": 3.271167318278488 },
+				{ "idProduct": 17, "price": 3.207605580562509 },
+				{ "idProduct": 18, "price": 0.7389573571538259 },
+				{ "idProduct": 19, "price": 0.819252763727208 },
+				{ "idProduct": 20, "price": 1.183015560341986 },
+				{ "idProduct": 21, "price": 0.758366905866986 },
+				{ "idProduct": 22, "price": 2.6733918425440004 },
+				{ "idProduct": 23, "price": 4.02978249663121 },
+				{ "idProduct": 24, "price": 1.0222144034799814 },
+				{ "idProduct": 25, "price": 4.411149273376159 }
+			]
+		},
+		{
+			"id": 7,
+			"name": "Lidl",
+			"cityId": 3,
+			"url": "https://www.casino.fr",
+			"address": "8 impasse des Fleurs",
+			"average_cart_adult": 73.33660194871734,
+			"average_cart_kid": 13.110060708459535,
+			"items": [
+				{ "idProduct": 0, "price": 4.13718325095595 },
+				{ "idProduct": 1, "price": 4.2660350968552745 },
+				{ "idProduct": 2, "price": 2.8556229556519677 },
+				{ "idProduct": 3, "price": 3.5955779951399407 },
+				{ "idProduct": 4, "price": 3.3361422798278184 },
+				{ "idProduct": 5, "price": 1.6109457556681568 },
+				{ "idProduct": 6, "price": 4.094518820484327 },
+				{ "idProduct": 7, "price": 0.8920833009528024 },
+				{ "idProduct": 8, "price": 1.751821050982452 },
+				{ "idProduct": 9, "price": 4.1421604456707595 },
+				{ "idProduct": 10, "price": 0.8234081445394689 },
+				{ "idProduct": 11, "price": 4.741811282252532 },
+				{ "idProduct": 12, "price": 0.64069013298814 },
+				{ "idProduct": 13, "price": 3.345523722834999 },
+				{ "idProduct": 14, "price": 1.276820760836375 },
+				{ "idProduct": 15, "price": 3.427853211209566 },
+				{ "idProduct": 16, "price": 1.6713267362502267 },
+				{ "idProduct": 17, "price": 3.503196132763666 },
+				{ "idProduct": 18, "price": 1.912403335115028 },
+				{ "idProduct": 19, "price": 3.3170391782602637 },
+				{ "idProduct": 20, "price": 3.412726994970951 },
+				{ "idProduct": 21, "price": 4.134595847997863 },
+				{ "idProduct": 22, "price": 3.7780581350713947 },
+				{ "idProduct": 23, "price": 3.3282718892275236 },
+				{ "idProduct": 24, "price": 0.9445390375175383 },
+				{ "idProduct": 25, "price": 0.9893170515095832 },
+				{ "idProduct": 26, "price": 2.4933583973654585 },
+				{ "idProduct": 27, "price": 3.301560485365364 },
+				{ "idProduct": 28, "price": 0.6439948041043787 },
+				{ "idProduct": 29, "price": 3.4212998111333635 }
+			]
+		},
+		{
+			"id": 8,
+			"name": "Auchan",
+			"cityId": 6,
+			"url": "https://www.casino.fr",
+			"address": "12 rue des Lilas",
+			"average_cart_adult": 31.229951661112214,
+			"average_cart_kid": 27.274064791330172,
+			"items": [
+				{ "idProduct": 0, "price": 1.4111153269357495 },
+				{ "idProduct": 1, "price": 2.459296665471424 },
+				{ "idProduct": 2, "price": 2.0513997758726994 },
+				{ "idProduct": 3, "price": 1.5786588813871931 },
+				{ "idProduct": 4, "price": 4.405718369892021 },
+				{ "idProduct": 5, "price": 4.277908861932548 },
+				{ "idProduct": 6, "price": 0.5763933397381015 },
+				{ "idProduct": 7, "price": 3.2158531184363293 },
+				{ "idProduct": 8, "price": 0.8178572255825398 },
+				{ "idProduct": 9, "price": 4.460361609410556 },
+				{ "idProduct": 10, "price": 3.655661595913746 },
+				{ "idProduct": 11, "price": 2.6342676551101656 },
+				{ "idProduct": 12, "price": 3.206531498521576 },
+				{ "idProduct": 13, "price": 3.0576194182828997 },
+				{ "idProduct": 14, "price": 0.5642621521524224 },
+				{ "idProduct": 15, "price": 1.9859409732454 },
+				{ "idProduct": 16, "price": 1.9547717455966116 },
+				{ "idProduct": 17, "price": 0.5776401212815094 },
+				{ "idProduct": 18, "price": 2.5533202103180415 },
+				{ "idProduct": 19, "price": 3.8522601306681876 },
+				{ "idProduct": 20, "price": 0.8193227165200339 },
+				{ "idProduct": 21, "price": 2.264016551132407 },
+				{ "idProduct": 22, "price": 2.6691139642523725 },
+				{ "idProduct": 23, "price": 2.9234209325666995 },
+				{ "idProduct": 24, "price": 0.6048759043421492 },
+				{ "idProduct": 25, "price": 3.1613885031150533 }
+			]
+		},
+		{
+			"id": 9,
+			"name": "Casino",
+			"cityId": 4,
+			"url": "https://www.leclerc.fr",
+			"address": "12 rue des Lilas",
+			"average_cart_adult": 86.43632332119925,
+			"average_cart_kid": 40.33446218382251,
+			"items": [
+				{ "idProduct": 0, "price": 3.6310047402384438 },
+				{ "idProduct": 1, "price": 4.706055088060873 },
+				{ "idProduct": 2, "price": 2.761522385542464 },
+				{ "idProduct": 3, "price": 3.310990019810199 },
+				{ "idProduct": 4, "price": 4.45655733676949 },
+				{ "idProduct": 5, "price": 1.5303093418238074 },
+				{ "idProduct": 6, "price": 4.440229616489612 },
+				{ "idProduct": 7, "price": 4.440993249856266 },
+				{ "idProduct": 8, "price": 2.3708076076105993 },
+				{ "idProduct": 9, "price": 1.0674797732134707 },
+				{ "idProduct": 10, "price": 4.304198762122709 },
+				{ "idProduct": 11, "price": 0.5915063689758444 },
+				{ "idProduct": 12, "price": 2.7048455212514746 },
+				{ "idProduct": 13, "price": 2.2767950614453776 },
+				{ "idProduct": 14, "price": 4.221011300784077 },
+				{ "idProduct": 15, "price": 0.703967943332725 },
+				{ "idProduct": 16, "price": 1.8715650429594506 },
+				{ "idProduct": 17, "price": 2.0086702099403064 },
+				{ "idProduct": 18, "price": 4.504093889066127 },
+				{ "idProduct": 19, "price": 2.381799422995582 },
+				{ "idProduct": 20, "price": 4.463992961285746 },
+				{ "idProduct": 21, "price": 3.676543989783684 },
+				{ "idProduct": 22, "price": 4.766324355366092 },
+				{ "idProduct": 23, "price": 3.1111585714313943 },
+				{ "idProduct": 24, "price": 1.4101073333292504 }
+			]
+		},
+		{
+			"id": 10,
+			"name": "Carrefour",
+			"cityId": 5,
+			"url": "https://www.lidl.fr",
+			"address": "8 impasse des Fleurs",
+			"average_cart_adult": 121.6712151748439,
+			"average_cart_kid": 65.76962531975889,
+			"items": [
+				{ "idProduct": 0, "price": 3.1756944138684933 },
+				{ "idProduct": 1, "price": 1.7654432397881044 },
+				{ "idProduct": 2, "price": 1.5592528496766946 },
+				{ "idProduct": 3, "price": 2.9093839219478514 },
+				{ "idProduct": 4, "price": 2.106672331985508 },
+				{ "idProduct": 5, "price": 0.6679179246293447 },
+				{ "idProduct": 6, "price": 1.5980804167365872 },
+				{ "idProduct": 7, "price": 4.359290635209157 },
+				{ "idProduct": 8, "price": 4.107675082762244 },
+				{ "idProduct": 9, "price": 1.032123945062641 },
+				{ "idProduct": 10, "price": 3.5661728961017634 },
+				{ "idProduct": 11, "price": 4.530385870628523 },
+				{ "idProduct": 12, "price": 4.79284923361849 },
+				{ "idProduct": 13, "price": 4.765223047503834 },
+				{ "idProduct": 14, "price": 4.271696998021281 },
+				{ "idProduct": 15, "price": 4.495389410341281 },
+				{ "idProduct": 16, "price": 3.710032291751456 },
+				{ "idProduct": 17, "price": 4.7509282173768135 },
+				{ "idProduct": 18, "price": 4.329509515411201 },
+				{ "idProduct": 19, "price": 1.7944464093632169 },
+				{ "idProduct": 20, "price": 0.5877481484391279 },
+				{ "idProduct": 21, "price": 2.2050189901839294 },
+				{ "idProduct": 22, "price": 3.203205556272967 },
+				{ "idProduct": 23, "price": 2.725437556184694 },
+				{ "idProduct": 24, "price": 1.1582323303789261 },
+				{ "idProduct": 25, "price": 0.5620739365486894 },
+				{ "idProduct": 26, "price": 3.3356030160078376 }
+			]
+		},
+		{
+			"id": 11,
+			"name": "Auchan",
+			"cityId": 1,
+			"url": "https://www.casino.fr",
+			"address": "3 boulevard Haussmann",
+			"average_cart_adult": 86.90537092930498,
+			"average_cart_kid": 34.814848666672376,
+			"items": [
+				{ "idProduct": 0, "price": 0.5582043690254967 },
+				{ "idProduct": 1, "price": 3.8289718193136117 },
+				{ "idProduct": 2, "price": 4.108686478567758 },
+				{ "idProduct": 3, "price": 0.6673361890413039 },
+				{ "idProduct": 4, "price": 3.3494134931637936 },
+				{ "idProduct": 5, "price": 0.6355968666315385 },
+				{ "idProduct": 6, "price": 2.2709214893355516 },
+				{ "idProduct": 7, "price": 2.590086835885601 },
+				{ "idProduct": 8, "price": 4.441298305013362 },
+				{ "idProduct": 9, "price": 3.942238536612585 },
+				{ "idProduct": 10, "price": 1.4966174220280293 },
+				{ "idProduct": 11, "price": 3.7948541485401526 },
+				{ "idProduct": 12, "price": 1.9146043077543242 },
+				{ "idProduct": 13, "price": 1.0636108846940877 },
+				{ "idProduct": 14, "price": 2.823529375389297 },
+				{ "idProduct": 15, "price": 3.7908494727492457 },
+				{ "idProduct": 16, "price": 0.7901816725761679 },
+				{ "idProduct": 17, "price": 1.0194605385762194 },
+				{ "idProduct": 18, "price": 4.396748386315738 },
+				{ "idProduct": 19, "price": 2.1003759462739824 },
+				{ "idProduct": 20, "price": 3.7435100411382773 },
+				{ "idProduct": 21, "price": 2.5628161739126716 },
+				{ "idProduct": 22, "price": 3.239175517715716 },
+				{ "idProduct": 23, "price": 1.6910092311139922 },
+				{ "idProduct": 24, "price": 3.2376075469703904 }
+			]
+		},
+		{
+			"id": 12,
+			"name": "Auchan",
+			"cityId": 1,
+			"url": "https://www.lidl.fr",
+			"address": "5 avenue des Champs",
+			"average_cart_adult": 89.80399245488127,
+			"average_cart_kid": 54.74185755935742,
+			"items": [
+				{ "idProduct": 0, "price": 1.7019793453469643 },
+				{ "idProduct": 1, "price": 0.6667513777373304 },
+				{ "idProduct": 2, "price": 2.551709773248639 },
+				{ "idProduct": 3, "price": 0.9976602143371742 },
+				{ "idProduct": 4, "price": 3.6770378958617114 },
+				{ "idProduct": 5, "price": 1.7937553454853687 },
+				{ "idProduct": 6, "price": 4.548057450300995 },
+				{ "idProduct": 7, "price": 1.6792411274853307 },
+				{ "idProduct": 8, "price": 0.8013063717000383 },
+				{ "idProduct": 9, "price": 2.055011323980854 },
+				{ "idProduct": 10, "price": 4.6629270367661215 },
+				{ "idProduct": 11, "price": 3.6747248823543996 },
+				{ "idProduct": 12, "price": 2.0438431313007968 },
+				{ "idProduct": 13, "price": 0.8499777834053165 },
+				{ "idProduct": 14, "price": 1.7262218097543396 },
+				{ "idProduct": 15, "price": 4.564936943279771 },
+				{ "idProduct": 16, "price": 3.447057594518766 },
+				{ "idProduct": 17, "price": 1.7307650416888893 },
+				{ "idProduct": 18, "price": 3.2979561390310055 },
+				{ "idProduct": 19, "price": 4.649972879368959 }
+			]
+		},
+		{
+			"id": 13,
+			"name": "Carrefour",
+			"cityId": 2,
+			"url": "https://www.casino.fr",
+			"address": "20 place de la République",
+			"average_cart_adult": 25.25838465965874,
+			"average_cart_kid": 45.25598124870127,
+			"items": [
+				{ "idProduct": 0, "price": 1.2705608680237903 },
+				{ "idProduct": 1, "price": 4.363222218476116 },
+				{ "idProduct": 2, "price": 3.6470320382394226 },
+				{ "idProduct": 3, "price": 0.8492820535413477 },
+				{ "idProduct": 4, "price": 4.349098295054394 },
+				{ "idProduct": 5, "price": 2.215904305890888 },
+				{ "idProduct": 6, "price": 2.1547474111616003 },
+				{ "idProduct": 7, "price": 3.690858265585418 },
+				{ "idProduct": 8, "price": 4.505092143689457 },
+				{ "idProduct": 9, "price": 3.898285144262559 },
+				{ "idProduct": 10, "price": 0.7476236418425841 },
+				{ "idProduct": 11, "price": 4.523178454210609 },
+				{ "idProduct": 12, "price": 3.162971188031656 },
+				{ "idProduct": 13, "price": 3.2995920899897024 },
+				{ "idProduct": 14, "price": 1.5213479404716983 },
+				{ "idProduct": 15, "price": 2.554728502186008 },
+				{ "idProduct": 16, "price": 0.9903417909927599 },
+				{ "idProduct": 17, "price": 2.8920905838093995 },
+				{ "idProduct": 18, "price": 1.8684643217481376 },
+				{ "idProduct": 19, "price": 3.109791651510224 },
+				{ "idProduct": 20, "price": 1.2504884599202835 }
+			]
+		},
+		{
+			"id": 14,
+			"name": "Auchan",
+			"cityId": 6,
+			"url": "https://www.auchan.fr",
+			"address": "5 avenue des Champs",
+			"average_cart_adult": 80.32779267419825,
+			"average_cart_kid": 20.076920557532745,
+			"items": [
+				{ "idProduct": 0, "price": 3.4733307651866534 },
+				{ "idProduct": 1, "price": 4.2573536116374315 },
+				{ "idProduct": 2, "price": 4.604260348751402 },
+				{ "idProduct": 3, "price": 3.99521097451725 },
+				{ "idProduct": 4, "price": 1.451960288891371 },
+				{ "idProduct": 5, "price": 0.5809968041166211 },
+				{ "idProduct": 6, "price": 4.4512564730920445 },
+				{ "idProduct": 7, "price": 0.8216941418592261 },
+				{ "idProduct": 8, "price": 0.6272996749310713 },
+				{ "idProduct": 9, "price": 4.244558725097493 },
+				{ "idProduct": 10, "price": 0.9813403395438988 },
+				{ "idProduct": 11, "price": 2.788813800292547 },
+				{ "idProduct": 12, "price": 2.797813030389274 },
+				{ "idProduct": 13, "price": 1.1912093649017166 },
+				{ "idProduct": 14, "price": 3.840347417105688 },
+				{ "idProduct": 15, "price": 1.9409856870541848 },
+				{ "idProduct": 16, "price": 4.196216282765231 },
+				{ "idProduct": 17, "price": 0.8159682418524112 },
+				{ "idProduct": 18, "price": 4.44608007873252 },
+				{ "idProduct": 19, "price": 4.644565614713663 },
+				{ "idProduct": 20, "price": 2.4151987583994736 }
+			]
+		},
+		{
+			"id": 15,
+			"name": "Aldi",
+			"cityId": 3,
+			"url": "https://www.lidl.fr",
+			"address": "8 impasse des Fleurs",
+			"average_cart_adult": 107.3653260409409,
+			"average_cart_kid": 71.03600436023277,
+			"items": [
+				{ "idProduct": 0, "price": 3.7484019962872566 },
+				{ "idProduct": 1, "price": 2.395033265153457 },
+				{ "idProduct": 2, "price": 4.049145093937158 },
+				{ "idProduct": 3, "price": 0.8531472396999131 },
+				{ "idProduct": 4, "price": 1.6872557367043353 },
+				{ "idProduct": 5, "price": 3.5602347504286573 },
+				{ "idProduct": 6, "price": 0.6788807441853095 },
+				{ "idProduct": 7, "price": 3.5665198533634843 },
+				{ "idProduct": 8, "price": 2.553425134701615 },
+				{ "idProduct": 9, "price": 2.979220519417339 },
+				{ "idProduct": 10, "price": 2.421226920506882 },
+				{ "idProduct": 11, "price": 1.401213655221299 },
+				{ "idProduct": 12, "price": 2.699540611989314 },
+				{ "idProduct": 13, "price": 1.173680452610947 },
+				{ "idProduct": 14, "price": 4.1253236479687665 },
+				{ "idProduct": 15, "price": 1.464209499526898 },
+				{ "idProduct": 16, "price": 0.6874001547747693 },
+				{ "idProduct": 17, "price": 4.183380736936609 },
+				{ "idProduct": 18, "price": 3.6939097272095998 },
+				{ "idProduct": 19, "price": 3.203617839046057 },
+				{ "idProduct": 20, "price": 1.5452440988240288 },
+				{ "idProduct": 21, "price": 4.41811544295634 },
+				{ "idProduct": 22, "price": 3.3498172448369754 },
+				{ "idProduct": 23, "price": 1.964450681753989 },
+				{ "idProduct": 24, "price": 1.6839670415345664 }
+			]
+		},
+		{
+			"id": 16,
+			"name": "Auchan",
+			"cityId": 3,
+			"url": "https://www.lidl.fr",
+			"address": "20 place de la République",
+			"average_cart_adult": 40.29941467649117,
+			"average_cart_kid": 36.55667177189122,
+			"items": [
+				{ "idProduct": 0, "price": 1.3889208999097553 },
+				{ "idProduct": 1, "price": 3.805150671823431 },
+				{ "idProduct": 2, "price": 2.3555707436975952 },
+				{ "idProduct": 3, "price": 2.9717468099519815 },
+				{ "idProduct": 4, "price": 4.798609487462296 },
+				{ "idProduct": 5, "price": 4.777048717199117 },
+				{ "idProduct": 6, "price": 4.240331826711165 },
+				{ "idProduct": 7, "price": 4.427838632883482 },
+				{ "idProduct": 8, "price": 1.5515547815648918 },
+				{ "idProduct": 9, "price": 4.587177698902052 },
+				{ "idProduct": 10, "price": 1.5806013112967994 },
+				{ "idProduct": 11, "price": 1.4343217873419776 },
+				{ "idProduct": 12, "price": 1.9260801470702045 },
+				{ "idProduct": 13, "price": 1.6835844645298015 },
+				{ "idProduct": 14, "price": 3.1310335428988028 },
+				{ "idProduct": 15, "price": 2.9890682284572456 },
+				{ "idProduct": 16, "price": 2.3053353243799486 },
+				{ "idProduct": 17, "price": 4.023549414322753 },
+				{ "idProduct": 18, "price": 2.9745924744243517 },
+				{ "idProduct": 19, "price": 0.9638622852076553 },
+				{ "idProduct": 20, "price": 1.3341819776225816 },
+				{ "idProduct": 21, "price": 2.8841722377383405 },
+				{ "idProduct": 22, "price": 1.4060053254014717 },
+				{ "idProduct": 23, "price": 0.7278843369628913 },
+				{ "idProduct": 24, "price": 3.3773550371651107 },
+				{ "idProduct": 25, "price": 4.223733973625748 }
+			]
+		},
+		{
+			"id": 17,
+			"name": "Lidl",
+			"cityId": 4,
+			"url": "https://www.lidl.fr",
+			"address": "5 avenue des Champs",
+			"average_cart_adult": 121.09247756111954,
+			"average_cart_kid": 20.00976083500483,
+			"items": [
+				{ "idProduct": 0, "price": 2.1258954881195753 },
+				{ "idProduct": 1, "price": 2.1857388368865855 },
+				{ "idProduct": 2, "price": 3.8418907598937126 },
+				{ "idProduct": 3, "price": 4.163725686008609 },
+				{ "idProduct": 4, "price": 1.8908677213077587 },
+				{ "idProduct": 5, "price": 4.16164100823286 },
+				{ "idProduct": 6, "price": 2.6318940419953964 },
+				{ "idProduct": 7, "price": 3.1810714145157846 },
+				{ "idProduct": 8, "price": 1.9621752389929743 },
+				{ "idProduct": 9, "price": 1.8581759326729779 },
+				{ "idProduct": 10, "price": 0.6088875692199167 },
+				{ "idProduct": 11, "price": 1.2580405750070633 },
+				{ "idProduct": 12, "price": 3.71472624970997 },
+				{ "idProduct": 13, "price": 2.2001710757267117 },
+				{ "idProduct": 14, "price": 4.735534925724175 },
+				{ "idProduct": 15, "price": 2.6115430460872417 },
+				{ "idProduct": 16, "price": 2.331149601030605 },
+				{ "idProduct": 17, "price": 3.0800193699034972 },
+				{ "idProduct": 18, "price": 4.4502229020787 },
+				{ "idProduct": 19, "price": 3.4458394035838937 },
+				{ "idProduct": 20, "price": 3.555950232252326 },
+				{ "idProduct": 21, "price": 1.8584769879227188 },
+				{ "idProduct": 22, "price": 0.8826202468678556 }
+			]
+		},
+		{
+			"id": 18,
+			"name": "Casino",
+			"cityId": 6,
+			"url": "https://www.casino.fr",
+			"address": "5 avenue des Champs",
+			"average_cart_adult": 136.99062322815192,
+			"average_cart_kid": 28.045230964692603,
+			"items": [
+				{ "idProduct": 0, "price": 0.591638554742417 },
+				{ "idProduct": 1, "price": 4.388490799350797 },
+				{ "idProduct": 2, "price": 4.516751754455387 },
+				{ "idProduct": 3, "price": 0.8467028006613186 },
+				{ "idProduct": 4, "price": 3.8138861932738655 },
+				{ "idProduct": 5, "price": 1.4973201630628894 },
+				{ "idProduct": 6, "price": 3.5812358364952948 },
+				{ "idProduct": 7, "price": 3.748263131313748 },
+				{ "idProduct": 8, "price": 4.425949741633786 },
+				{ "idProduct": 9, "price": 2.423166671384315 },
+				{ "idProduct": 10, "price": 4.498823814646104 },
+				{ "idProduct": 11, "price": 2.8563966045985554 },
+				{ "idProduct": 12, "price": 2.160961165069834 },
+				{ "idProduct": 13, "price": 3.8194627824134537 },
+				{ "idProduct": 14, "price": 2.7804814426820634 },
+				{ "idProduct": 15, "price": 3.023243802783102 },
+				{ "idProduct": 16, "price": 4.309838607627513 },
+				{ "idProduct": 17, "price": 4.566549477821496 },
+				{ "idProduct": 18, "price": 1.8006199705560832 },
+				{ "idProduct": 19, "price": 3.385469716019503 },
+				{ "idProduct": 20, "price": 2.0909182597204037 },
+				{ "idProduct": 21, "price": 0.8364210942131131 },
+				{ "idProduct": 22, "price": 2.7966957230663194 }
+			]
+		},
+		{
+			"id": 19,
+			"name": "Lidl",
+			"cityId": 2,
+			"url": "https://www.aldi.fr",
+			"address": "5 avenue des Champs",
+			"average_cart_adult": 31.050645268740567,
+			"average_cart_kid": 18.268756283501467,
+			"items": [
+				{ "idProduct": 0, "price": 0.6152530363306716 },
+				{ "idProduct": 1, "price": 1.130802330312902 },
+				{ "idProduct": 2, "price": 3.625619506837838 },
+				{ "idProduct": 3, "price": 1.251505118218108 },
+				{ "idProduct": 4, "price": 1.7522047856322207 },
+				{ "idProduct": 5, "price": 2.600295254118386 },
+				{ "idProduct": 6, "price": 3.289056372004157 },
+				{ "idProduct": 7, "price": 2.8984417696893354 },
+				{ "idProduct": 8, "price": 2.295689515846865 },
+				{ "idProduct": 9, "price": 2.0407256541398695 },
+				{ "idProduct": 10, "price": 0.6149041915996811 },
+				{ "idProduct": 11, "price": 1.7682216867422393 },
+				{ "idProduct": 12, "price": 4.707268754825834 },
+				{ "idProduct": 13, "price": 2.0405520188231723 },
+				{ "idProduct": 14, "price": 3.0338121492257173 },
+				{ "idProduct": 15, "price": 1.8389698615595484 },
+				{ "idProduct": 16, "price": 4.352792782706213 },
+				{ "idProduct": 17, "price": 2.8420476182452967 },
+				{ "idProduct": 18, "price": 1.2427638778201393 },
+				{ "idProduct": 19, "price": 4.79312468236355 },
+				{ "idProduct": 20, "price": 4.510097085851358 },
+				{ "idProduct": 21, "price": 1.4742700064164689 },
+				{ "idProduct": 22, "price": 2.716029130219656 },
+				{ "idProduct": 23, "price": 0.5712313980755593 },
+				{ "idProduct": 24, "price": 4.50095047940016 },
+				{ "idProduct": 25, "price": 0.5902260879481065 },
+				{ "idProduct": 26, "price": 0.9697006342655181 },
+				{ "idProduct": 27, "price": 1.254401946134927 },
+				{ "idProduct": 28, "price": 0.8434973698876218 },
+				{ "idProduct": 29, "price": 4.4588436634091915 }
+			]
+		},
+		{
+			"id": 20,
+			"name": "Carrefour",
+			"cityId": 4,
+			"url": "https://www.carrefour.fr",
+			"address": "20 place de la République",
+			"average_cart_adult": 10.979447791379416,
+			"average_cart_kid": 85.21111287165574,
+			"items": [
+				{ "idProduct": 0, "price": 2.3185919566847657 },
+				{ "idProduct": 1, "price": 2.544233655245466 },
+				{ "idProduct": 2, "price": 2.370246691783981 },
+				{ "idProduct": 3, "price": 2.842237318364581 },
+				{ "idProduct": 4, "price": 2.327167605383182 },
+				{ "idProduct": 5, "price": 3.596963690261769 },
+				{ "idProduct": 6, "price": 2.49648309150014 },
+				{ "idProduct": 7, "price": 2.2496944034937654 },
+				{ "idProduct": 8, "price": 0.5750977616558299 },
+				{ "idProduct": 9, "price": 4.6959363412401505 },
+				{ "idProduct": 10, "price": 3.4747757131645063 },
+				{ "idProduct": 11, "price": 1.4829077220779787 },
+				{ "idProduct": 12, "price": 4.352598840020864 },
+				{ "idProduct": 13, "price": 2.5967561963908397 },
+				{ "idProduct": 14, "price": 0.6072167275868853 },
+				{ "idProduct": 15, "price": 1.8904018724447615 },
+				{ "idProduct": 16, "price": 4.132558521699121 },
+				{ "idProduct": 17, "price": 4.110279830016094 },
+				{ "idProduct": 18, "price": 2.673398163518333 },
+				{ "idProduct": 19, "price": 3.7489139528720345 },
+				{ "idProduct": 20, "price": 2.5640593592780494 },
+				{ "idProduct": 21, "price": 0.59179277953296 },
+				{ "idProduct": 22, "price": 1.8932617753809506 },
+				{ "idProduct": 23, "price": 4.356547468126332 },
+				{ "idProduct": 24, "price": 1.107981935937329 },
+				{ "idProduct": 25, "price": 1.7366450515232315 },
+				{ "idProduct": 26, "price": 2.914799512883472 },
+				{ "idProduct": 27, "price": 4.543440563212526 },
+				{ "idProduct": 28, "price": 2.5676594921729583 }
+			]
+		},
+		{
+			"id": 21,
+			"name": "Leclerc Saint-Parres",
+			"cityId": 6,
+			"url": "https://www.casino.fr",
+			"address": "5 avenue des Champs",
+			"average_cart_adult": 140.55576595548357,
+			"average_cart_kid": 24.244518722341525,
+			"items": [
+				{ "idProduct": 0, "price": 2.7221509295862063 },
+				{ "idProduct": 1, "price": 4.555612266730267 },
+				{ "idProduct": 2, "price": 3.473172730887252 },
+				{ "idProduct": 3, "price": 2.863103868569021 },
+				{ "idProduct": 4, "price": 2.5846141939950504 },
+				{ "idProduct": 5, "price": 0.578802982959315 },
+				{ "idProduct": 6, "price": 1.8931768575358758 },
+				{ "idProduct": 7, "price": 2.760492523037727 },
+				{ "idProduct": 8, "price": 3.394966608401525 },
+				{ "idProduct": 9, "price": 1.2406143031194476 },
+				{ "idProduct": 10, "price": 4.005685548302861 },
+				{ "idProduct": 11, "price": 4.3104474316212675 },
+				{ "idProduct": 12, "price": 0.7025743472361289 },
+				{ "idProduct": 13, "price": 3.8628104773988303 },
+				{ "idProduct": 14, "price": 2.1271421199262512 },
+				{ "idProduct": 15, "price": 3.7996057950201036 },
+				{ "idProduct": 16, "price": 3.320550183179842 },
+				{ "idProduct": 17, "price": 1.5261490089409264 },
+				{ "idProduct": 18, "price": 3.837043618590437 },
+				{ "idProduct": 19, "price": 1.8412486234956753 },
+				{ "idProduct": 20, "price": 3.0620443444362326 },
+				{ "idProduct": 21, "price": 3.2959737803088993 },
+				{ "idProduct": 22, "price": 4.7885644436836206 },
+				{ "idProduct": 23, "price": 4.796467943859069 },
+				{ "idProduct": 24, "price": 2.3721530133319453 }
+			]
+		},
+		{
+			"id": 22,
+			"name": "Auchan",
+			"cityId": 3,
+			"url": "https://www.auchan.fr",
+			"address": "5 avenue des Champs",
+			"average_cart_adult": 127.23296607871013,
+			"average_cart_kid": 12.376347704428122,
+			"items": [
+				{ "idProduct": 0, "price": 3.5274710565646767 },
+				{ "idProduct": 1, "price": 3.3265280106664257 },
+				{ "idProduct": 2, "price": 2.632458927691796 },
+				{ "idProduct": 3, "price": 2.874579643273841 },
+				{ "idProduct": 4, "price": 2.9553726565412717 },
+				{ "idProduct": 5, "price": 1.5339169366498742 },
+				{ "idProduct": 6, "price": 3.9434071611216392 },
+				{ "idProduct": 7, "price": 2.1477178044358487 },
+				{ "idProduct": 8, "price": 1.6357859456551636 },
+				{ "idProduct": 9, "price": 1.830088124907321 },
+				{ "idProduct": 10, "price": 1.8031922679374843 },
+				{ "idProduct": 11, "price": 1.1428014827921729 },
+				{ "idProduct": 12, "price": 4.361470962519605 },
+				{ "idProduct": 13, "price": 3.862253732573677 },
+				{ "idProduct": 14, "price": 0.6387313698405644 },
+				{ "idProduct": 15, "price": 2.3539863653839466 },
+				{ "idProduct": 16, "price": 3.2535451815901535 },
+				{ "idProduct": 17, "price": 1.4004419084040032 },
+				{ "idProduct": 18, "price": 2.8498705930944226 },
+				{ "idProduct": 19, "price": 1.4985266546672613 },
+				{ "idProduct": 20, "price": 0.8956514384483127 },
+				{ "idProduct": 21, "price": 3.255509188711761 },
+				{ "idProduct": 22, "price": 3.945112157054729 }
+			]
+		}
+	],
+	"City": [
+		{ "id": 1, "name": "Troyes", "postal_code": "10000" },
+		{ "id": 2, "name": "Lyon", "postal_code": "69000" },
+		{ "id": 3, "name": "Paris", "postal_code": "75000" },
+		{ "id": 4, "name": "Marseille", "postal_code": "13000" },
+		{ "id": 5, "name": "Bordeaux", "postal_code": "33000" },
+		{ "id": 6, "name": "Nantes", "postal_code": "44000" }
+	],
+	"Product": [
+		{ "id": 0, "name": "Vinaigre balsamique" },
+		{ "id": 1, "name": "Ail rose" },
+		{ "id": 2, "name": "Bananes bio" },
+		{ "id": 3, "name": "Yaourt nature x12" },
+		{ "id": 4, "name": "Poulet fermier entier" },
+		{ "id": 5, "name": "Café arabica moulu" },
+		{ "id": 6, "name": "Poivre noir moulu" },
+		{ "id": 7, "name": "Vinaigre balsamique" },
+		{ "id": 8, "name": "Café arabica moulu" },
+		{ "id": 9, "name": "Riz basmati 1kg" },
+		{ "id": 10, "name": "Yaourt nature x12" },
+		{ "id": 11, "name": "Beurre demi-sel" },
+		{ "id": 12, "name": "Concombre long" },
+		{ "id": 13, "name": "Œufs plein air x6" },
+		{ "id": 14, "name": "Biscuits petit-déjeuner" },
+		{ "id": 15, "name": "Jambon blanc 4 tranches" },
+		{ "id": 16, "name": "Pain complet" },
+		{ "id": 17, "name": "Salade iceberg" },
+		{ "id": 18, "name": "Carottes bio 1kg" },
+		{ "id": 19, "name": "Lait entier 1L" }
+	]
 }
