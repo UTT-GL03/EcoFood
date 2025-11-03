@@ -75,7 +75,7 @@ Nous avons réalisé une analyse des sites concurrents, et voici les résultats 
 | [UFC Que Choisir](https://www.quechoisir.org/)              | 22              | F 🟪   | [...](./benchmark/UFC_QueChoisir/ecoindex-environmental-statement.md)    |
 | [Qui-est-le-moins-cher](https://www.quiestlemoinscher.com/) | 79              | B 🟩   | [...](./benchmark/QuiEstLeMoinsCher/ecoindex-environmental-statement.md) |
 
-Tab.1 : Mesure de l'EcoIndex moyen de divers services de comparateur de prix.
+**Tab.1** : Mesure de l'EcoIndex moyen de divers services de comparateur de prix.
 
 Les rapports EcoIndex mettent en évidence plusieurs points problématiques : pages très volumineuses et nombreux appels réseau, DOM très lourd, images et médias pas ou peu optimisés, présence de gros bundles JavaScript et scripts tiers non essentiels, et absence de stratégies de cache efficaces. Ces facteurs augmentent la consommation d'énergie, la consommation d'eau virtuelle et les émissions de GES lors du chargement des pages.
 
@@ -146,7 +146,7 @@ Les ressources Web possédant une représentation sur notre application seront d
 
 ![image](./docs/mockup.png)
 
-Fig.1: Maquette de l'interface du prototype : a. type de page pour la comparateur ( par produit ou par panier), b. type de page des résultats.
+**Fig.1**: Maquette de l'interface du prototype : a. type de page pour la comparateur ( par produit ou par panier), b. type de page des résultats.
 
 Pour des raisons d'infrastructure' , nous utilisons des données générées (avec dummy-json). Bien que fictives, ces données correspondent à la structure des services concurrents : les informations des produits et des enseignes sont présentes ([voir modèle de données](./frontend/sample_data.hbs)).
 
@@ -166,7 +166,7 @@ Nous avons développé la page d'accueil (cf. Fig. 2) pour qu'elle affiche les d
 
 ![image](./docs/home_screenshot.png)
 
-Fig.2: Prototype de la page d'accueil.
+**Fig.2**: Prototype de la page d'accueil.
 
 Nous avons privilégié l'utilisation du CSS natif afin d'optimiser les performances et de limiter la consommation énergétique de l'application, en cohérence avec nos objectifs d'éco-conception.
 
@@ -180,7 +180,7 @@ Par ailleurs, nous avons volontairement exclu l'intégration d'une carte interac
 | Mode "développement" |A 🟦|84/100|19.80|1.32|22|1929.177|27|
 |Mode "pré-production"	 |A 🟦|95/100|16.40|1.09|3|86.506|26|
 
-Tab.4: Évaluation de l'impact du prototype de la page d'accueil.
+**Tab.4**: Évaluation de l'impact du prototype de la page d'accueil.
 
 ### Page des résultats
 
@@ -190,7 +190,7 @@ De même que précédemment, nous avons tenté d'implémenter cette page (cf. Fi
 
 ![image](./docs/resultats_screenshot.png)
 
-Fig.3: Prototype de la page de résultats.
+**Fig.3**: Prototype de la page de résultats.
 
 Avec l'ajout de ce modèle de page et la mise en place de la navigation entre les deux modèles, il devient possible d'exécuter le scénario prioritaire complet et de mesurer son impact.
 
@@ -201,7 +201,7 @@ Avec l'ajout de ce modèle de page et la mise en place de la navigation entre le
 |3. Revenir à la page d'accueil|A 🟦|96/100|16.10|1.08|3|1.076|26|
 |4. Choisir une autre ville et un autre produit|A 🟦|96/100|16.20|1.08|3|1.076|29|
 
-Tab.5: Évaluation de l'impact du scénario "Comparer un article entre différents magasins" dans le prototype n°1.
+**Tab.5**: Évaluation de l'impact du scénario "Comparer un article entre différents magasins" dans le prototype n°1.
 
 Bien que ces estimations soient volontairement optimistes en raison du chargement statique des données, elles restent pertinentes pour une comparaison avec les services concurrents évoqués plus haut.
 
@@ -211,3 +211,15 @@ Si nous parvenons à maintenir les émissions en dessous de 1,1 g de CO₂ par p
 Dans cette nouvelle version du prototype (v1.0.1), le fonctionnement reste inchangé, mais les données statiques sont désormais récupérées par le frontend via une requête réseau juste après l'affichage initial de la page. Cette approche, plus proche d'un usage réel, entraîne simplement une requête supplémentaire par page affichée.
 
 En ce qui concerne l'impact environnemental du scénario, les résultats restent strictement identiques à ceux du tableau précédent (cf. Tab.2), à l'exception du nombre de requêtes qui augmente de 1.
+
+
+## Mesures de la consultation proprement dite
+
+À partir de cette version, sauf modification majeure, l'EcoIndex devrait rester stable. Nous passerons donc à l'utilisation de GreenFrame, un outil qui mesure l'impact réel de la consultation, en se concentrant uniquement sur la consommation effective de ressources (CPU, mémoire, réseau, disque) lors de l'utilisation, sans inclure le cycle de vie du terminal. Cette approche, plus précise, s'appuie sur des statistiques d'utilisation physique pour fournir une évaluation fiable de l'empreinte environnementale de chaque consultation (cf. Tab.3).
+
+
+||Impact de la consultation del'accueil	|Impact de la consultation des résultats|
+|---|---|---|
+|**UFC - Que choisir**|||
+|**Leclerc - Qui est le moins cher ?**|||
+|**EcoFood**|||
