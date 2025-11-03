@@ -210,7 +210,7 @@ Si nous parvenons à maintenir les émissions en dessous de 1,1 g de CO₂ par p
 ### Étape de prototypage : Données statiques chargées de manière dynamique
 Dans cette nouvelle version du prototype (v1.0.1), le fonctionnement reste inchangé, mais les données statiques sont désormais récupérées par le frontend via une requête réseau juste après l'affichage initial de la page. Cette approche, plus proche d'un usage réel, entraîne simplement une requête supplémentaire par page affichée.
 
-En ce qui concerne l'impact environnemental du scénario, les résultats restent strictement identiques à ceux du tableau précédent (cf. Tab.2), à l'exception du nombre de requêtes qui augmente de 1.
+En ce qui concerne l'impact environnemental du scénario, les résultats restent strictement identiques à ceux du tableau précédent (cf. Tab.2), à l'exception du nombre de requêtes qui augmente de 1, ainsi que la taille de la page qui diminue d'environ 10%.
 
 
 ## Mesures de la consultation proprement dite
