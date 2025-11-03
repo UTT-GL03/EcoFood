@@ -1,9 +1,8 @@
 import "./resultslist.css";
+import { useState, useEffect } from "react";
 import { useParams, useSearchParams } from "react-router-dom";
-import { Product } from "../sample_data.json";
-import { City } from "../sample_data.json";
 
-const ResultsList = ({ resultsArray, type }) => {
+const ResultsList = ({ type }) => {
 	function AverageResult({ item, index }) {
 		return (
 			<div key={index} className="result-item">
@@ -29,15 +28,27 @@ const ResultsList = ({ resultsArray, type }) => {
 
 	const { cityId, productId } = useParams();
 	const [searchParams] = useSearchParams();
+	const [data, setData] = useState({});
 	const NB_A = Number(searchParams.get("nombre_adultes")) || 0;
 	const NB_E = Number(searchParams.get("nombre_enfants")) || 0;
 
-	//Filter by cityId
-	let filteredResults = resultsArray.filter((item) => {
-		return item.cityId.toString() === cityId;
-	});
+	// Fetch datas from JSON file
+	useEffect(() => {
+		const fetchData = async () => {
+			const response = await fetch("../../sample_data.json");
+			const data = await response.json();
+			setData(data);
+		};
+		fetchData();
+	}, []);
 
-	console.log("Filtered Results:", filteredResults);
+	let filteredResults = [];
+	if (data.City || data.Product || data.Shop) {
+		//Filter by cityId
+		filteredResults = data.Shop.filter((item) => {
+			return item.cityId.toString() === cityId;
+		});
+	}
 
 	// Filter by type
 	switch (type) {
@@ -59,11 +70,11 @@ const ResultsList = ({ resultsArray, type }) => {
 			break;
 	}
 
-	return (
+	return data.City && data.Product && data.Shop ? (
 		<div className="results-list">
 			<h2>Résultats ({type})</h2>
-			<h3>Ville : {City.find((city) => city.id === filteredResults[0]?.cityId)?.name}</h3>
-			{type === "product" && <h3>Produit : {Product.find((prod) => prod.id === Number(productId))?.name}</h3>}
+			<h3>Ville : {data.City.find((city) => city.id === filteredResults[0]?.cityId)?.name}</h3>
+			{type === "product" && <h3>Produit : {data.Product.find((prod) => prod.id === Number(productId))?.name}</h3>}
 			<div className="results-container">
 				{type === "paniermoyen"
 					? filteredResults.map((item, index) => <AverageResult item={item} index={index} />)
@@ -72,6 +83,8 @@ const ResultsList = ({ resultsArray, type }) => {
 					: null}
 			</div>
 		</div>
+	) : (
+		<div>Loading...</div>
 	);
 };
 
