@@ -144,8 +144,70 @@ Les ressources Web possédant une représentation sur notre application seront d
 - le comparateur de prix par type de produit autour d'une ville identifiée (avec une HTTP-URI ayant pour chemin /{ville}/{idProduit})
 - comparateur d'un panier moyen selon le nombre de personnes, autour d'une ville (avec une HTTP-URI ayant pour chemin /{ville}/panier_moyen?nombre_adultes={nbr_A}&nombre_enfants={nbr_e})
 
-![image](./frontend/mockup.png)
+![image](./docs/mockup.png)
 
 Fig.1: Maquette de l'interface du prototype : a. type de page pour la comparateur ( par produit ou par panier), b. type de page des résultats.
 
 Pour des raisons d'infrastructure' , nous utilisons des données générées (avec dummy-json). Bien que fictives, ces données correspondent à la structure des services concurrents : les informations des produits et des enseignes sont présentes ([voir modèle de données](./frontend/sample_data.hbs)).
+
+## Implémentation du scénario prioritaire
+
+### Etape de prototypage : Données chargées de manière statique
+Pour cette première version du prototype (v1.0.0) :
+
+- l'échantillon de données est encore chargé dans le code de manière statique,
+- les fonctionnalités implémentées ne sont que celles nécessaires pour suivre le scénario prioritaire ("Comparer un article entre différents magasins").
+
+Ce scénario nécessite de pouvoir naviguer entre deux types de page : la page d'accueil et la page où les résultats sont affichés.
+
+### Page d'accueil
+
+Nous avons développé la page d'accueil (cf. Fig. 2) pour qu'elle affiche les différentes options de sélections.
+
+![image](./docs/home_screenshot.png)
+
+Fig.2: Prototype de la page d'accueil.
+
+Nous avons privilégié l'utilisation du CSS natif afin d'optimiser les performances et de limiter la consommation énergétique de l'application, en cohérence avec nos objectifs d'éco-conception.
+
+Par ailleurs, nous avons volontairement exclu l'intégration d'une carte interactive pour le choix du lieu. L'utilisation d'une liste déroulante offre une expérience plus rapide et consomme significativement moins de ressources lors du chargement, ce qui contribue à réduire l'empreinte environnementale. Cette décision s'appuie sur l'exemple de quiestlemoinscher.fr, qui privilégie la simplicité et l'efficacité tout en respectant les principes d'éco-conception.
+
+À ce stade du prototype, il est possible d'obtenir une première estimation de l'impact environnemental du frontend. Même si le chargement dynamique des données n'est pas encore en place, l'affichage des données permet déjà une évaluation pertinente. Les résultats (cf. Tab.1) sont encourageants en mode "développement" et encore meilleurs en mode "pré-production", grâce notamment à l'utilisation d'outils de développement Web qui assurent la minification et la concaténation du code et des feuilles de style.
+
+
+|Page|Grade|Ecoindex|Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la page (Ko)|Taille du DOM|
+|---|---|---|---|---|---|---|---|
+| Mode "développement" |A 🟦|84/100|19.80|1.32|22|1929.177|27|
+|Mode "pré-production"	 |A 🟦|95/100|16.40|1.09|3|86.506|26|
+
+Tab.4: Évaluation de l'impact du prototype de la page d'accueil.
+
+### Page des résultats
+
+Les pages des articles ont pour HTTP-URI /results/{id_ville}/{id_produit}. 
+
+De même que précédemment, nous avons tenté d'implémenter cette page (cf. Fig. 3) conformément à ce que prévoyait la maquette. Notons que nous n'avons pas inclu la deuxième liste de résultats pour les producteurs locaux qui fera l'objet d'une prochaine amélioration.
+
+![image](./docs/resultats_screenshot.png)
+
+Fig.3: Prototype de la page de résultats.
+
+Avec l'ajout de ce modèle de page et la mise en place de la navigation entre les deux modèles, il devient possible d'exécuter le scénario prioritaire complet et de mesurer son impact.
+
+|Page|Grade|Ecoindex|Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la page (Ko)|Taille du DOM|
+|---|---|---|---|---|---|---|---|
+|1. Choisir la ville et le produit|A 🟦|95/100|16.40|1.09|3|86.506|26|
+|2. Consulter les résultats|A 🟦|96/100|16.20|1.08|3|1.076|29|
+|3. Revenir à la page d'accueil|A 🟦|96/100|16.10|1.08|3|1.076|26|
+|4. Choisir une autre ville et un autre produit|A 🟦|96/100|16.20|1.08|3|1.076|29|
+
+Tab.5: Évaluation de l'impact du scénario "Comparer un article entre différents magasins" dans le prototype n°1.
+
+Bien que ces estimations soient volontairement optimistes en raison du chargement statique des données, elles restent pertinentes pour une comparaison avec les services concurrents évoqués plus haut.
+
+Si nous parvenons à maintenir les émissions en dessous de 1,1 g de CO₂ par page pour notre produit minimum viable, nous serons en mesure d'offrir une solution environ 15 % moins impactante que les alternatives existantes, tout en prenant en compte l'ensemble du cycle de vie du terminal utilisé.
+
+### Étape de prototypage : Données statiques chargées de manière dynamique
+Dans cette nouvelle version du prototype (v1.0.1), le fonctionnement reste inchangé, mais les données statiques sont désormais récupérées par le frontend via une requête réseau juste après l'affichage initial de la page. Cette approche, plus proche d'un usage réel, entraîne simplement une requête supplémentaire par page affichée.
+
+En ce qui concerne l'impact environnemental du scénario, les résultats restent strictement identiques à ceux du tableau précédent (cf. Tab.2), à l'exception du nombre de requêtes qui augmente de 1.
