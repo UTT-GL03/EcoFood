@@ -2,8 +2,21 @@ import "./App.css";
 import ResultsList from "./ResultsList";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SearchContainer from "./components/SearchContainer";
+import { useState, useEffect } from "react";
 
 function App() {
+	const [jsonData, setJsonData] = useState(null);
+
+	// Fetch JSON data once at app load
+	useEffect(() => {
+		fetch("/sample_data.json")
+			.then((x) => x.json())
+			.then((data) => {
+				setJsonData(data);
+			})
+			.catch((err) => console.error("Error loading sample_data.json:", err));
+	}, []);
+
 	return (
 		<>
 			<BrowserRouter>
@@ -13,9 +26,9 @@ function App() {
 					</a>
 				</div>
 				<Routes>
-					<Route path="/" element={<SearchContainer />}></Route>
-					<Route path="/results/:cityId/paniermoyen" element={<ResultsList type={"paniermoyen"} />} />
-					<Route path="/results/:cityId/:productId" element={<ResultsList type={"product"} />} />
+					<Route path="/" element={<SearchContainer data={jsonData} />}></Route>
+					<Route path="/results/:cityId/paniermoyen" element={<ResultsList type={"paniermoyen"} data={jsonData} />} />
+					<Route path="/results/:cityId/:productId" element={<ResultsList type={"product"} data={jsonData} />} />
 				</Routes>
 			</BrowserRouter>
 		</>

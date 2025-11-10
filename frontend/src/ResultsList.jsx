@@ -2,7 +2,7 @@ import "./resultslist.css";
 import { useState, useEffect } from "react";
 import { useParams, useSearchParams } from "react-router-dom";
 
-const ResultsList = ({ type }) => {
+const ResultsList = ({ type, data }) => {
 	function AverageResult({ item, index }) {
 		return (
 			<div key={index} className="result-item">
@@ -28,19 +28,8 @@ const ResultsList = ({ type }) => {
 
 	const { cityId, productId } = useParams();
 	const [searchParams] = useSearchParams();
-	const [data, setData] = useState({});
 	const NB_A = Number(searchParams.get("nombre_adultes")) || 0;
 	const NB_E = Number(searchParams.get("nombre_enfants")) || 0;
-
-	// Fetch datas from JSON file
-	useEffect(() => {
-		const fetchData = async () => {
-			const response = await fetch("/sample_data.json");
-			const data = await response.json();
-			setData(data);
-		};
-		fetchData();
-	}, []);
 
 	let filteredResults = [];
 	if (data.City || data.Product || data.Shop) {

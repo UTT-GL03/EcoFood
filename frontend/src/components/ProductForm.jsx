@@ -2,18 +2,16 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import SearchableSelect from "./SearchableSelect";
 
-function ProductForm({ city }) {
+function ProductForm({ city , data }) {
 	const [productList, setProductList] = useState([]);
 	const [selectedProductId, setSelectedProductId] = useState("");
 
-	// Fetch product list data from JSON file
+	// Set product list from props
 	useEffect(() => {
-		fetch("/sample_data.json")
-			.then((x) => x.json())
-			.then((data) => {
-				setProductList(data.Product);
-			});
-	}, []);
+		if (data && data.Product) {
+			setProductList(data.Product);
+		}
+	}, [data]);
 
 	const productOptions = productList.map((p) => ({ label: p.name, value: p.id }));
 

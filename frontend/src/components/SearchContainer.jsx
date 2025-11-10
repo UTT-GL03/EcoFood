@@ -4,18 +4,16 @@ import CartForm from "./CartForm";
 import "./searchcontainer.css";
 import SearchableSelect from "./SearchableSelect";
 
-export default function SearchContainer() {
+export default function SearchContainer({ data }) {
 	const [citiesList, setCitiesList] = useState([]);
 	const [selectedCity, setSelectedCity] = useState("");
 
-	// Fetch city data from JSON file
+	// Get city data from props
 	useEffect(() => {
-		fetch("/sample_data.json")
-			.then((x) => x.json())
-			.then((data) => {
-				setCitiesList(data.City);
-			});
-	}, []);
+		if (data && data.City) {
+			setCitiesList(data.City);
+		}
+	}, [data]);
 
 	// Transform datas to options for SearchableSelect
 	// (1) Sort by postal code
@@ -30,8 +28,8 @@ export default function SearchContainer() {
 			</div>
 			<h1>Etape 2 : Choisir le type de recherche</h1>
 			<div className="search-forms">
-				<ProductForm city={selectedCity} />
-				<CartForm city={selectedCity} />
+				<ProductForm city={selectedCity} data={data} />
+				<CartForm city={selectedCity} data={data} />
 			</div>
 		</div>
 	);
