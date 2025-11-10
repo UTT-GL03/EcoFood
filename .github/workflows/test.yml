@@ -41,7 +41,7 @@ jobs:
           args: http://localhost/ 200 30000 500
       - name: Run GreenIT Analysis CLI
         run: |
-          greenit analyse --format html --ci scenarios/read_daily_articles.yml
+          greenit analyse --format html --ci scenarios/trouver_produit_moins_cher.yml
       - name: Save results
         uses: actions/upload-artifact@v4
         with:
