@@ -19,7 +19,7 @@ function ProductForm({ city , data }) {
 		<div className="search-form">
 			<h1>Recherche de produit</h1>
 			<SearchableSelect options={productOptions} onChange={setSelectedProductId} placeholder="Rechercher un produit..." isDisabled={city !== null ? false : true} />
-			<Link to={`/results/${city}/${selectedProductId}`}>
+			<Link id="search-link" to={`/results/${city}/${selectedProductId}`}>
 				<button disabled={city !== null && selectedProductId !== "" ? false : true}>Rechercher le produit le moins cher</button>
 			</Link>
 		</div>
