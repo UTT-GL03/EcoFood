@@ -7,28 +7,28 @@
   actions:
     - name: Saisir le nom d'une ville
       type: text
-      element: input[placeholder="Rechercher la ville..."]
+      element: input.inputSearch[placeholder="Rechercher la ville..."]
       content: "Paris"
       timeoutBefore: 500
 
     - name: Sélectionner la première ville de la liste
       type: click
-      element: ul[class="dropdown-search-results"] > li:nth-child(1)
+      element: ul.dropdown-search-results > li:nth-child(1)
       waitForTimeout: 1000
 
     - name: Ouvrir la liste des produits
       type: click
-      element: input[placeholder="Rechercher un produit..."]
+      element: input.inputSearch[placeholder="Rechercher un produit..."]
       waitForTimeout: 1000
 
     - name: Cliquer sur un produit
       type: click
-      element: ul[class="dropdown-search-results"] > li:nth-child(1)
+      element: ul.dropdown-search-results > li:nth-child(1)
       waitForTimeout: 1000
 
     - name: Clicker sur le bouton "Rechercher le produit le moins cher"
       type: click
-      element: a[id="search-link"]
+      element: a#search-link
       pageChange: true
 
     - name: Consulter les prix des magasins
@@ -37,32 +37,32 @@
 
     - name: Revenir à la page d'accueil
       type: click
-      element: div[class="header"]
+      element: .header a.title
       pageChange: true
       waitForNavigation: networkidle2
 
     - name: Saisir le nom d'une autre ville
       type: text
-      element: input[placeholder="Rechercher la ville..."]
+      element: input.inputSearch[placeholder="Rechercher la ville..."]
       content: "Lyon"
       timeoutBefore: 500
 
     - name: Sélectionner la première ville de la liste
       type: click
-      element: ul[class="dropdown-search-results"] > li:nth-child(1)
+      element: ul.dropdown-search-results > li:nth-child(1)
       waitForTimeout: 1000
 
     - name: Ouvrir la liste des produits
       type: click
-      element: input[placeholder="Rechercher un produit..."]
+      element: input.inputSearch[placeholder="Rechercher un produit..."]
       waitForTimeout: 1000
 
     - name: Cliquer sur un produit
       type: click
-      element: ul[class="dropdown-search-results"] > li:nth-child(2)
+      element: ul.dropdown-search-results > li:nth-child(2)
       pageChange: true
 
     - name: Clicker sur le bouton "Rechercher le produit le moins cher"
       type: click
-      element: a[id="search-link"]
+      element: a#search-link
       pageChange: true
