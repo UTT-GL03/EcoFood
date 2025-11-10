@@ -213,13 +213,37 @@ Dans cette nouvelle version du prototype (v1.0.1), le fonctionnement reste incha
 En ce qui concerne l'impact environnemental du scénario, les résultats restent strictement identiques à ceux du tableau précédent (cf. Tab.2), à l'exception du nombre de requêtes qui augmente de 1, ainsi que la taille de la page qui diminue d'environ 10%.
 
 
-## Mesures de la consultation proprement dite
+## Mesures de la consommation énergétique lors du passage à l'échelle
 
-À partir de cette version, sauf modification majeure, l'EcoIndex devrait rester stable. Nous passerons donc à l'utilisation de GreenFrame, un outil qui mesure l'impact réel de la consultation, en se concentrant uniquement sur la consommation effective de ressources (CPU, mémoire, réseau, disque) lors de l'utilisation, sans inclure le cycle de vie du terminal. Cette approche, plus précise, s'appuie sur des statistiques d'utilisation physique pour fournir une évaluation fiable de l'empreinte environnementale de chaque consultation (cf. Tab.3).
+Maintenant que notre prototype est réaliste en termes de nombre de requêtes, nous pouvons évaluer les effets du "passage à l'échelle" en augmentant significativement les données.
 
+Pour le secteur de la grande distribution, l'augmentation du volume de données provient principalement de l'expansion du nombre de magasins, du nombre d'articles proposés et de la couverture géographique. Le nombre de villes change rarement dans cette logique de scaling.
 
-||Impact de la consultation del'accueil	|Impact de la consultation des résultats|
-|---|---|---|
-|**UFC - Que choisir**|||
-|**Leclerc - Qui est le moins cher ?**|||
-|**EcoFood**|||
+Nous avons multiplié le volume de données par **environ 25x** en effectuant les modifications suivantes :
+
+### Augmentation des données
+
+| Dimension | Avant | Après | Multiplication |
+|-----------|-------|-------|---|
+| **Magasins** | 80-100 | 400-500 | ×5 |
+| **Enseignes** | 4 | 12 | ×3 |
+| **Produits par magasin** | 20-30 | 300-400 | ×15 |
+| **Villes** | 6 | 70 | ×12 |
+| **Produits uniques** | 20 | 500 | ×25 |
+
+### Détails des changements
+
+**Magasins et enseignes** :
+- Ajout de 12 enseignes (Carrefour, Leclerc, Monoprix, Super U, Franprix, Biocoop, Grand Frais, Aldi, Lidl, Intermarché, Casino, Géant Casino)
+- Multiplication des points de vente avec ~10 adresses variées par enseigne
+- Gamme de prix étendue : 0.55€ à 15.99€ (au lieu de 0.55€ à 4.8€)
+
+**Couverture géographique** :
+- 70 villes françaises représentant la couverture nationale
+- Codes postaux cohérents et réalistes
+- Inclusion de grandes et moyennes villes
+
+**Produits** :
+- 500 produits uniques répartis en catégories variées (épicerie, frais, surgelés, boissons, hygiène, bébé, maison, électronique)
+- Noms détaillés et réalistes
+- 100-200 produits disponibles par magasin 
