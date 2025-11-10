@@ -10,7 +10,7 @@ export default function SearchContainer() {
 
 	// Fetch city data from JSON file
 	useEffect(() => {
-		fetch("../../sample_data.json")
+		fetch("/sample_data.json")
 			.then((x) => x.json())
 			.then((data) => {
 				setCitiesList(data.City);

@@ -35,7 +35,7 @@ const ResultsList = ({ type }) => {
 	// Fetch datas from JSON file
 	useEffect(() => {
 		const fetchData = async () => {
-			const response = await fetch("../../sample_data.json");
+			const response = await fetch("/sample_data.json");
 			const data = await response.json();
 			setData(data);
 		};
