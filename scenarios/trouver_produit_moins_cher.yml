@@ -1,0 +1,68 @@
+# Scénario EcoFood : Comparer les prix d'un produit entre différents magasins
+# To be used with GreenIT-Analysis-cli: greenit analyse scenarios/trouver_produit_moins_cher.yml output/results.xlsx
+
+- name: Scénario principal - Trouver le prix le moins cher pour un produit
+  url: http://localhost:80/
+  waitForNavigation: load
+  actions:
+    - name: Saisir le nom d'une ville
+      type: text
+      element: input[placeholder="Rechercher la ville..."]
+      content: "Paris"
+      timeoutBefore: 500
+
+    - name: Sélectionner la première ville de la liste
+      type: click
+      element: ul[class="dropdown-search-results"] > li:nth-child(1)
+      waitForTimeout: 1000
+
+    - name: Ouvrir la liste des produits
+      type: click
+      element: input[placeholder="Rechercher un produit..."]
+      waitForTimeout: 1000
+
+    - name: Cliquer sur un produit
+      type: click
+      element: ul[class="dropdown-search-results"] > li:nth-child(1)
+      waitForTimeout: 1000
+
+    - name: Clicker sur le bouton "Rechercher le produit le moins cher"
+      type: click
+      element: a[id="search-link"]
+      pageChange: true
+
+    - name: Consulter les prix des magasins
+      type: scroll
+      waitForTimeout: 2000
+
+    - name: Revenir à la page d'accueil
+      type: click
+      element: div[class="header"]
+      pageChange: true
+      waitForNavigation: networkidle2
+
+    - name: Saisir le nom d'une autre ville
+      type: text
+      element: input[placeholder="Rechercher la ville..."]
+      content: "Lyon"
+      timeoutBefore: 500
+
+    - name: Sélectionner la première ville de la liste
+      type: click
+      element: ul[class="dropdown-search-results"] > li:nth-child(1)
+      waitForTimeout: 1000
+
+    - name: Ouvrir la liste des produits
+      type: click
+      element: input[placeholder="Rechercher un produit..."]
+      waitForTimeout: 1000
+
+    - name: Cliquer sur un produit
+      type: click
+      element: ul[class="dropdown-search-results"] > li:nth-child(2)
+      pageChange: true
+
+    - name: Clicker sur le bouton "Rechercher le produit le moins cher"
+      type: click
+      element: a[id="search-link"]
+      pageChange: true
