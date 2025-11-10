@@ -247,3 +247,18 @@ Nous avons multiplié le volume de données par **environ 25x** en effectuant le
 - 500 produits uniques répartis en catégories variées (épicerie, frais, surgelés, boissons, hygiène, bébé, maison, électronique)
 - Noms détaillés et réalistes
 - 100-200 produits disponibles par magasin 
+
+### Évolution de l'EcoIndex lors du passage à l'échelle
+
+Produites désormais de manière automatique lors de l'intégration continue, les mesures nécessaires à la production de l'EcoIndex, avant et après la simulation du passage à l'échelle, démontrent l'impact significatif de l'augmentation du volume de données.
+
+|   | EcoIndex| GES (gCO2e) | Taille du DOM | Requêtes | Taille de la page (ko)
+|---|--------:|------------:|--------------:|---------:|---------------------:
+| 1.Choisir une ville| <del>89 A 🟦</del><br/>75 B 🟩 | <del>1,22</del><br/>1,5 | 35 | 5 | <del>277</del><br/>11 142
+| 2. Choisir un produit 			   | <del>87 A 🟦</del><br/>55 C 🟨 | <del>1,26</del><br/>1,9 | <del>56</del><br>536| 5 | <del>277</del><br/>11 142
+| 3. Regarder les produits	| <del>93 A 🟦</del><br/>94 A 🟦 | <del>1,14</del><br/> 1,12 | <del>46</del><br/>18 | 0 | 0
+| 4. Revenir à la page d'accueil 		| <del>89 A 🟦</del><br/>75 B 🟩 |  <del>1,22</del><br/>1,5 | 35 | 4 | <del>275</del><br/>11 140
+
+__Tab.6__: Effet du passage à l'échelle sur l'impact du scénario "Trouver le prix le moins cher pour un produit" dans le prototype v1.0.1.
+
+Le passage à l'échelle provoque une dégradation progressive de l'impact environnemental. La page de sélection de ville voit son EcoIndex passer de 89 A 🟦 à 75 B 🟩 (poids : 277 Ko → 11 142 Ko). La page de sélection de produit se dégrade davantage (87 A 🟦 → 55 C 🟨) avec une explosion du DOM (56 → 536 éléments) et augmentation du GES (1,26 → 1,9 gCO2e). La page de consultation des résultats s'améliore légèrement (93 A 🟦 → 94 A 🟦) car elle ne charge que les données du produit sélectionné. Une optimisation future (pagination, lazy loading) sera nécessaire pour maintenir un impact acceptable au-delà de 500 produits.
