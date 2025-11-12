@@ -3,12 +3,13 @@
 
 - name: Scénario principal - Trouver le prix le moins cher pour un produit
   url: http://localhost/
-  waitForNavigation: load
+  waitForSelector: input.inputSearch
   actions:
     - name: Saisir le nom d'une ville
       type: text
       element: input.inputSearch[placeholder="Rechercher la ville..."]
       content: "Paris"
+      waitForSelector: ul.dropdown-search-results > li:nth-child(1)
       timeoutBefore: 500
 
     - name: Sélectionner la première ville de la liste
@@ -19,6 +20,7 @@
     - name: Ouvrir la liste des produits
       type: click
       element: input.inputSearch[placeholder="Rechercher un produit..."]
+      waitForSelector: ul.dropdown-search-results > li:nth-child(1)
       waitForTimeout: 1000
 
     - name: Cliquer sur un produit
@@ -39,12 +41,13 @@
       type: click
       element: .header a.title
       pageChange: true
-      waitForNavigation: networkidle2
+      waitForSelector: input.inputSearch
 
     - name: Saisir le nom d'une autre ville
       type: text
       element: input.inputSearch[placeholder="Rechercher la ville..."]
       content: "Lyon"
+      waitForSelector: ul.dropdown-search-results > li:nth-child(1)
       timeoutBefore: 500
 
     - name: Sélectionner la première ville de la liste
@@ -55,12 +58,13 @@
     - name: Ouvrir la liste des produits
       type: click
       element: input.inputSearch[placeholder="Rechercher un produit..."]
+      waitForSelector: ul.dropdown-search-results > li:nth-child(2)
       waitForTimeout: 1000
 
     - name: Cliquer sur un produit
       type: click
       element: ul.dropdown-search-results > li:nth-child(2)
-      pageChange: true
+      waitForTimeout: 1000
 
     - name: Clicker sur le bouton "Rechercher le produit le moins cher"
       type: click

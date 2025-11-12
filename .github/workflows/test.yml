@@ -39,8 +39,6 @@ jobs:
         uses: docker://benel/wait-for-response:1
         with:
           args: http://localhost/ 200 30000 500
-      - name: Additional wait for React mounting
-        run: sleep 5
       - name: Run GreenIT Analysis CLI
         run: |
           greenit analyse --format html --ci scenarios/trouver_produit_moins_cher.yml
