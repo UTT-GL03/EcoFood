@@ -1,7 +1,7 @@
 # Scénario EcoFood : Comparer les prix d'un produit entre différents magasins
 # To be used with GreenIT-Analysis-cli: greenit analyse scenarios/trouver_produit_moins_cher.yml output/results.xlsx
 
-- name: Scénario principal - Trouver le prix le moins cher pour un produit
+- name: "Scenario principal Trouver le prix le moins cher pour un produit"
   url: http://localhost/
   waitForSelector: input.inputSearch
   actions:
