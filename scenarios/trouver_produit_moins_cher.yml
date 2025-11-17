@@ -1,18 +1,18 @@
 # Scénario EcoFood : Comparer les prix d'un produit entre différents magasins
 # To be used with GreenIT-Analysis-cli: greenit analyse scenarios/trouver_produit_moins_cher.yml output/results.xlsx
 
-- name: "Scenario principal Trouver le prix le moins cher pour un produit"
+- name: Scenario principal Trouver le prix le moins cher pour un produit
   url: http://localhost/
   waitForSelector: input.inputSearch
   actions:
-    - name: Saisir le nom d'une ville
+    - name: Saisir le nom une ville
       type: text
       element: input.inputSearch[placeholder="Rechercher la ville..."]
       content: "Paris"
       waitForSelector: ul.dropdown-search-results > li:nth-child(1)
       timeoutBefore: 500
 
-    - name: Sélectionner la première ville de la liste
+    - name: Selectionner la première ville de la liste
       type: click
       element: ul.dropdown-search-results > li:nth-child(1)
       waitForTimeout: 1000
@@ -28,7 +28,7 @@
       element: ul.dropdown-search-results > li:nth-child(1)
       waitForTimeout: 1000
 
-    - name: Clicker sur le bouton "Rechercher le produit le moins cher"
+    - name: Clicker sur le bouton Rechercher le produit le moins cher
       type: click
       element: a#search-link
       pageChange: true
@@ -50,7 +50,7 @@
       waitForSelector: ul.dropdown-search-results > li:nth-child(1)
       timeoutBefore: 500
 
-    - name: Sélectionner la première ville de la liste
+    - name: Selectionner la première ville de la liste
       type: click
       element: ul.dropdown-search-results > li:nth-child(1)
       waitForTimeout: 1000
@@ -66,7 +66,7 @@
       element: ul.dropdown-search-results > li:nth-child(2)
       waitForTimeout: 1000
 
-    - name: Clicker sur le bouton "Rechercher le produit le moins cher"
+    - name: Clicker sur le bouton Rechercher le produit le moins cher
       type: click
       element: a#search-link
       pageChange: true
