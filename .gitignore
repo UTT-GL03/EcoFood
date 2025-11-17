@@ -1,1 +1,4 @@
 frontend/public/sample_data.json
+*.xlsx
+*.html
+greenframe-cli-post-app
