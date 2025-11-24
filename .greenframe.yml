@@ -7,3 +7,4 @@ scenarios:
     path: ./scenarios/consult_result.js
 containers:
   - ecofood-static_hosting-1
+  - ecofood-backend-1
