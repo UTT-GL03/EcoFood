@@ -1,6 +1,6 @@
-{ "Shop": [
+{ "docs": [
 {{#repeat min=400 max=500}}
-	{ "id":
+	{ "_id": "shop_{{step 1}}", "type": "shop", "id":
 	{{step 1}}, "name": "{{random "Leclerc" "Carrefour" "Intermarché" "Lidl" "Aldi" "Auchan" "Casino" "Super U" "Monoprix" "Franprix" "Biocoop" "Grand Frais"}}", "cityId":
 	{{int 1 70}}, "url": "{{random
 		"https://www.leclerc.fr"
@@ -36,30 +36,41 @@
 		}{{#unless @last}},{{/unless}}
 	{{/repeat}}
 	] }{{#unless @last}},{{/unless}}
-{{/repeat}}
-], "City": [ { "id": 1, "name": "Troyes", "postal_code": "10000" }, { "id": 2, "name": "Lyon", "postal_code": "69000" }, { "id": 3, "name": "Paris", "postal_code": "75000" }, { "id": 4, "name":
-"Marseille", "postal_code": "13000" }, { "id": 5, "name": "Bordeaux", "postal_code": "33000" }, { "id": 6, "name": "Nantes", "postal_code": "44000" }, { "id": 7, "name": "Strasbourg", "postal_code":
-"67000" }, { "id": 8, "name": "Lille", "postal_code": "59000" }, { "id": 9, "name": "Toulouse", "postal_code": "31000" }, { "id": 10, "name": "Nice", "postal_code": "06000" }, { "id": 11, "name":
-"Rennes", "postal_code": "35000" }, { "id": 12, "name": "Reims", "postal_code": "51100" }, { "id": 13, "name": "Le Havre", "postal_code": "76600" }, { "id": 14, "name": "Saint-Étienne", "postal_code":
-"42000" }, { "id": 15, "name": "Toulon", "postal_code": "83000" }, { "id": 16, "name": "Grenoble", "postal_code": "38000" }, { "id": 17, "name": "Dijon", "postal_code": "21000" }, { "id": 18, "name":
-"Angers", "postal_code": "49000" }, { "id": 19, "name": "Nîmes", "postal_code": "30000" }, { "id": 20, "name": "Villeurbanne", "postal_code": "69100" }, { "id": 21, "name": "Le Mans", "postal_code":
-"72000" }, { "id": 22, "name": "Aix-en-Provence", "postal_code": "13100" }, { "id": 23, "name": "Clermont-Ferrand", "postal_code": "63000" }, { "id": 24, "name": "Brest", "postal_code": "29200" }, {
-"id": 25, "name": "Tours", "postal_code": "37000" }, { "id": 26, "name": "Amiens", "postal_code": "80000" }, { "id": 27, "name": "Limoges", "postal_code": "87000" }, { "id": 28, "name": "Annecy",
-"postal_code": "74000" }, { "id": 29, "name": "Perpignan", "postal_code": "66000" }, { "id": 30, "name": "Boulogne-Billancourt", "postal_code": "92100" }, { "id": 31, "name": "Metz", "postal_code":
-"57000" }, { "id": 32, "name": "Besançon", "postal_code": "25000" }, { "id": 33, "name": "Orléans", "postal_code": "45000" }, { "id": 34, "name": "Mulhouse", "postal_code": "68100" }, { "id": 35,
-"name": "Rouen", "postal_code": "76000" }, { "id": 36, "name": "Caen", "postal_code": "14000" }, { "id": 37, "name": "Nancy", "postal_code": "54000" }, { "id": 38, "name": "Argenteuil", "postal_code":
-"95100" }, { "id": 39, "name": "Montreuil", "postal_code": "93100" }, { "id": 40, "name": "Saint-Denis", "postal_code": "93200" }, { "id": 41, "name": "Roubaix", "postal_code": "59100" }, { "id": 42,
-"name": "Tourcoing", "postal_code": "59200" }, { "id": 43, "name": "Nanterre", "postal_code": "92000" }, { "id": 44, "name": "Avignon", "postal_code": "84000" }, { "id": 45, "name": "Créteil",
-"postal_code": "94000" }, { "id": 46, "name": "Poitiers", "postal_code": "86000" }, { "id": 47, "name": "Versailles", "postal_code": "78000" }, { "id": 48, "name": "Courbevoie", "postal_code": "92400"
-}, { "id": 49, "name": "Vitry-sur-Seine", "postal_code": "94400" }, { "id": 50, "name": "Pau", "postal_code": "64000" }, { "id": 51, "name": "La Rochelle", "postal_code": "17000" }, { "id": 52,
-"name": "Aubervilliers", "postal_code": "93300" }, { "id": 53, "name": "Champigny-sur-Marne", "postal_code": "94500" }, { "id": 54, "name": "Antibes", "postal_code": "06600" }, { "id": 55, "name":
-"Beziers", "postal_code": "34500" }, { "id": 56, "name": "Saint-Maur-des-Fossés", "postal_code": "94100" }, { "id": 57, "name": "Cannes", "postal_code": "06400" }, { "id": 58, "name": "Calais",
-"postal_code": "62100" }, { "id": 59, "name": "Dunkerque", "postal_code": "59140" }, { "id": 60, "name": "Colmar", "postal_code": "68000" }, { "id": 61, "name": "Bourges", "postal_code": "18000" }, {
-"id": 62, "name": "Quimper", "postal_code": "29000" }, { "id": 63, "name": "Vannes", "postal_code": "56000" }, { "id": 64, "name": "Valence", "postal_code": "26000" }, { "id": 65, "name": "Ajaccio",
-"postal_code": "20000" }, { "id": 66, "name": "Bayonne", "postal_code": "64100" }, { "id": 67, "name": "Chambéry", "postal_code": "73000" }, { "id": 68, "name": "La Roche-sur-Yon", "postal_code":
-"85000" }, { "id": 69, "name": "Cholet", "postal_code": "49300" }, { "id": 70, "name": "Lorient", "postal_code": "56100" } ], "Product": [
+{{/repeat}}, { "_id": "city_1", "type": "city", "id": 1, "name": "Troyes", "postal_code": "10000" }, { "_id": "city_2", "type": "city", "id": 2, "name": "Lyon", "postal_code": "69000" }, { "_id":
+"city_3", "type": "city", "id": 3, "name": "Paris", "postal_code": "75000" }, { "_id": "city_4", "type": "city", "id": 4, "name": "Marseille", "postal_code": "13000" }, { "_id": "city_5", "type":
+"city", "id": 5, "name": "Bordeaux", "postal_code": "33000" }, { "_id": "city_6", "type": "city", "id": 6, "name": "Nantes", "postal_code": "44000" }, { "_id": "city_7", "type": "city", "id": 7,
+"name": "Strasbourg", "postal_code": "67000" }, { "_id": "city_8", "type": "city", "id": 8, "name": "Lille", "postal_code": "59000" }, { "_id": "city_9", "type": "city", "id": 9, "name": "Toulouse",
+"postal_code": "31000" }, { "_id": "city_10", "type": "city", "id": 10, "name": "Nice", "postal_code": "06000" }, { "_id": "city_11", "type": "city", "id": 11, "name": "Rennes", "postal_code": "35000"
+}, { "_id": "city_12", "type": "city", "id": 12, "name": "Reims", "postal_code": "51100" }, { "_id": "city_13", "type": "city", "id": 13, "name": "Le Havre", "postal_code": "76600" }, { "_id":
+"city_14", "type": "city", "id": 14, "name": "Saint-Étienne", "postal_code": "42000" }, { "_id": "city_15", "type": "city", "id": 15, "name": "Toulon", "postal_code": "83000" }, { "_id": "city_16",
+"type": "city", "id": 16, "name": "Grenoble", "postal_code": "38000" }, { "_id": "city_17", "type": "city", "id": 17, "name": "Dijon", "postal_code": "21000" }, { "_id": "city_18", "type": "city",
+"id": 18, "name": "Angers", "postal_code": "49000" }, { "_id": "city_19", "type": "city", "id": 19, "name": "Nîmes", "postal_code": "30000" }, { "_id": "city_20", "type": "city", "id": 20, "name":
+"Villeurbanne", "postal_code": "69100" }, { "_id": "city_21", "type": "city", "id": 21, "name": "Le Mans", "postal_code": "72000" }, { "_id": "city_22", "type": "city", "id": 22, "name":
+"Aix-en-Provence", "postal_code": "13100" }, { "_id": "city_23", "type": "city", "id": 23, "name": "Clermont-Ferrand", "postal_code": "63000" }, { "_id": "city_24", "type": "city", "id": 24, "name":
+"Brest", "postal_code": "29200" }, { "_id": "city_25", "type": "city", "id": 25, "name": "Tours", "postal_code": "37000" }, { "_id": "city_26", "type": "city", "id": 26, "name": "Amiens",
+"postal_code": "80000" }, { "_id": "city_27", "type": "city", "id": 27, "name": "Limoges", "postal_code": "87000" }, { "_id": "city_28", "type": "city", "id": 28, "name": "Annecy", "postal_code":
+"74000" }, { "_id": "city_29", "type": "city", "id": 29, "name": "Perpignan", "postal_code": "66000" }, { "_id": "city_30", "type": "city", "id": 30, "name": "Boulogne-Billancourt", "postal_code":
+"92100" }, { "_id": "city_31", "type": "city", "id": 31, "name": "Metz", "postal_code": "57000" }, { "_id": "city_32", "type": "city", "id": 32, "name": "Besançon", "postal_code": "25000" }, { "_id":
+"city_33", "type": "city", "id": 33, "name": "Orléans", "postal_code": "45000" }, { "_id": "city_34", "type": "city", "id": 34, "name": "Mulhouse", "postal_code": "68100" }, { "_id": "city_35",
+"type": "city", "id": 35, "name": "Rouen", "postal_code": "76000" }, { "_id": "city_36", "type": "city", "id": 36, "name": "Caen", "postal_code": "14000" }, { "_id": "city_37", "type": "city", "id":
+37, "name": "Nancy", "postal_code": "54000" }, { "_id": "city_38", "type": "city", "id": 38, "name": "Argenteuil", "postal_code": "95100" }, { "_id": "city_39", "type": "city", "id": 39, "name":
+"Montreuil", "postal_code": "93100" }, { "_id": "city_40", "type": "city", "id": 40, "name": "Saint-Denis", "postal_code": "93200" }, { "_id": "city_41", "type": "city", "id": 41, "name": "Roubaix",
+"postal_code": "59100" }, { "_id": "city_42", "type": "city", "id": 42, "name": "Tourcoing", "postal_code": "59200" }, { "_id": "city_43", "type": "city", "id": 43, "name": "Nanterre", "postal_code":
+"92000" }, { "_id": "city_44", "type": "city", "id": 44, "name": "Avignon", "postal_code": "84000" }, { "_id": "city_45", "type": "city", "id": 45, "name": "Créteil", "postal_code": "94000" }, {
+"_id": "city_46", "type": "city", "id": 46, "name": "Poitiers", "postal_code": "86000" }, { "_id": "city_47", "type": "city", "id": 47, "name": "Versailles", "postal_code": "78000" }, { "_id":
+"city_48", "type": "city", "id": 48, "name": "Courbevoie", "postal_code": "92400" }, { "_id": "city_49", "type": "city", "id": 49, "name": "Vitry-sur-Seine", "postal_code": "94400" }, { "_id":
+"city_50", "type": "city", "id": 50, "name": "Pau", "postal_code": "64000" }, { "_id": "city_51", "type": "city", "id": 51, "name": "La Rochelle", "postal_code": "17000" }, { "_id": "city_52", "type":
+"city", "id": 52, "name": "Aubervilliers", "postal_code": "93300" }, { "_id": "city_53", "type": "city", "id": 53, "name": "Champigny-sur-Marne", "postal_code": "94500" }, { "_id": "city_54", "type":
+"city", "id": 54, "name": "Antibes", "postal_code": "06600" }, { "_id": "city_55", "type": "city", "id": 55, "name": "Beziers", "postal_code": "34500" }, { "_id": "city_56", "type": "city", "id": 56,
+"name": "Saint-Maur-des-Fossés", "postal_code": "94100" }, { "_id": "city_57", "type": "city", "id": 57, "name": "Cannes", "postal_code": "06400" }, { "_id": "city_58", "type": "city", "id": 58,
+"name": "Calais", "postal_code": "62100" }, { "_id": "city_59", "type": "city", "id": 59, "name": "Dunkerque", "postal_code": "59140" }, { "_id": "city_60", "type": "city", "id": 60, "name": "Colmar",
+"postal_code": "68000" }, { "_id": "city_61", "type": "city", "id": 61, "name": "Bourges", "postal_code": "18000" }, { "_id": "city_62", "type": "city", "id": 62, "name": "Quimper", "postal_code":
+"29000" }, { "_id": "city_63", "type": "city", "id": 63, "name": "Vannes", "postal_code": "56000" }, { "_id": "city_64", "type": "city", "id": 64, "name": "Valence", "postal_code": "26000" }, { "_id":
+"city_65", "type": "city", "id": 65, "name": "Ajaccio", "postal_code": "20000" }, { "_id": "city_66", "type": "city", "id": 66, "name": "Bayonne", "postal_code": "64100" }, { "_id": "city_67", "type":
+"city", "id": 67, "name": "Chambéry", "postal_code": "73000" }, { "_id": "city_68", "type": "city", "id": 68, "name": "La Roche-sur-Yon", "postal_code": "85000" }, { "_id": "city_69", "type": "city",
+"id": 69, "name": "Cholet", "postal_code": "49300" }, { "_id": "city_70", "type": "city", "id": 70, "name": "Lorient", "postal_code": "56100" },
 {{#repeat 500}}
-	{ "id":
+	{ "_id": "product_{{step 1}}", "type": "product", "id":
 	{{step 1}}, "name": "{{random
 		"Bananes bio"
 		"Lait entier 1L"

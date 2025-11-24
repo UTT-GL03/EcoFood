@@ -9,9 +9,15 @@ function App() {
 
 	// Fetch JSON data once at app load
 	useEffect(() => {
-		fetch("/sample_data.json")
+		fetch("http://localhost:5984/ecofood-db/_all_docs?include_docs=true")
 			.then((x) => x.json())
-			.then((data) => {
+			.then((response) => {
+				// Transform CouchDB structure to original format
+				const data = {
+					Shop: response.rows.filter((row) => row.doc.type === "shop").map((row) => row.doc),
+					City: response.rows.filter((row) => row.doc.type === "city").map((row) => row.doc),
+					Product: response.rows.filter((row) => row.doc.type === "product").map((row) => row.doc),
+				};
 				setJsonData(data);
 			})
 			.catch((err) => console.error("Error loading sample_data.json:", err));
