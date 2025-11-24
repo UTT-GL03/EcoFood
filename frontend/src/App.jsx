@@ -9,15 +9,30 @@ function App() {
 
 	// Fetch JSON data once at app load
 	useEffect(() => {
-		fetch("http://localhost:5984/ecofood-db/_all_docs?include_docs=true")
+		fetch("http://localhost:5984/ecofood-db/_find", {
+			method: "POST",
+			headers: { "Content-type": "application/json" },
+			body: JSON.stringify({
+				selector: {
+					_id: {
+						$gt: null,
+					},
+					type: {
+						$in: ["product", "city", "shop"],
+					},
+				},
+				fields: ["name", "postal_code", "_id", "type"],
+				limit: 9999,
+			}),
+		})
 			.then((x) => x.json())
 			.then((response) => {
-				// Transform CouchDB structure to original format
-				const data = {
-					Shop: response.rows.filter((row) => row.doc.type === "shop").map((row) => row.doc),
-					City: response.rows.filter((row) => row.doc.type === "city").map((row) => row.doc),
-					Product: response.rows.filter((row) => row.doc.type === "product").map((row) => row.doc),
-				};
+				const data = { City: [], Product: [], Shop: [] };
+				response.docs.forEach((doc) => {
+					if (doc.type === "city") data.City.push({ id: doc._id, name: doc.name, postal_code: doc.postal_code });
+					else if (doc.type === "product") data.Product.push({ id: doc._id, name: doc.name });
+					else if (doc.type === "shop") data.Shop.push(doc);
+				});
 				setJsonData(data);
 			})
 			.catch((err) => console.error("Error loading sample_data.json:", err));
