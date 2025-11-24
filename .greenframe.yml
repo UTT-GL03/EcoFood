@@ -1,0 +1,9 @@
+baseURL: http://localhost
+projectName: EcoFood
+scenarios:
+  - name: Chercher un produit ou un panier moyen selon la ville de l'utilisateur
+    path: ./scenarios/consult_index.js
+  - name: Voir les résultats de la recherche
+    path: ./scenarios/consult_result.js
+containers:
+  - ecofood-static_hosting-1

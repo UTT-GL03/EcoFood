@@ -141,6 +141,7 @@ Les **dons** et la **mise en avant de producteurs locaux** viendront en complém
 Au vu des différents services comparés, des exigences environnementales exprimées plus haut et des scénarios retenus, nous avons défini pour notre prototype une maquette de l'interface et un échantillon de données réalistes.
 
 Les ressources Web possédant une représentation sur notre application seront de deux types :
+
 - le comparateur de prix par type de produit autour d'une ville identifiée (avec une HTTP-URI ayant pour chemin /{ville}/{idProduit})
 - comparateur d'un panier moyen selon le nombre de personnes, autour d'une ville (avec une HTTP-URI ayant pour chemin /{ville}/panier_moyen?nombre_adultes={nbr_A}&nombre_enfants={nbr_e})
 
@@ -153,6 +154,7 @@ Pour des raisons d'infrastructure' , nous utilisons des données générées (av
 ## Implémentation du scénario prioritaire
 
 ### Etape de prototypage : Données chargées de manière statique
+
 Pour cette première version du prototype (v1.0.0) :
 
 - l'échantillon de données est encore chargé dans le code de manière statique,
@@ -174,17 +176,16 @@ Par ailleurs, nous avons volontairement exclu l'intégration d'une carte interac
 
 À ce stade du prototype, il est possible d'obtenir une première estimation de l'impact environnemental du frontend. Même si le chargement dynamique des données n'est pas encore en place, l'affichage des données permet déjà une évaluation pertinente. Les résultats (cf. Tab.1) sont encourageants en mode "développement" et encore meilleurs en mode "pré-production", grâce notamment à l'utilisation d'outils de développement Web qui assurent la minification et la concaténation du code et des feuilles de style.
 
-
-|Page|Grade|Ecoindex|Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la page (Ko)|Taille du DOM|
-|---|---|---|---|---|---|---|---|
-| Mode "développement" |A 🟦|84/100|19.80|1.32|22|1929.177|27|
-|Mode "pré-production"	 |A 🟦|95/100|16.40|1.09|3|86.506|26|
+| Page                  | Grade | Ecoindex | Eau (cl) | GES (gCO2e) | Nb de requêtes | Taille de la page (Ko) | Taille du DOM |
+| --------------------- | ----- | -------- | -------- | ----------- | -------------- | ---------------------- | ------------- |
+| Mode "développement"  | A 🟦  | 84/100   | 19.80    | 1.32        | 22             | 1929.177               | 27            |
+| Mode "pré-production" | A 🟦  | 95/100   | 16.40    | 1.09        | 3              | 86.506                 | 26            |
 
 **Tab.4**: Évaluation de l'impact du prototype de la page d'accueil.
 
 ### Page des résultats
 
-Les pages des articles ont pour HTTP-URI /results/{id_ville}/{id_produit}. 
+Les pages des articles ont pour HTTP-URI /results/{id_ville}/{id_produit}.
 
 De même que précédemment, nous avons tenté d'implémenter cette page (cf. Fig. 3) conformément à ce que prévoyait la maquette. Notons que nous n'avons pas inclu la deuxième liste de résultats pour les producteurs locaux qui fera l'objet d'une prochaine amélioration.
 
@@ -194,12 +195,12 @@ De même que précédemment, nous avons tenté d'implémenter cette page (cf. Fi
 
 Avec l'ajout de ce modèle de page et la mise en place de la navigation entre les deux modèles, il devient possible d'exécuter le scénario prioritaire complet et de mesurer son impact.
 
-|Page|Grade|Ecoindex|Eau (cl)|GES (gCO2e)|Nb de requêtes|Taille de la page (Ko)|Taille du DOM|
-|---|---|---|---|---|---|---|---|
-|1. Choisir la ville et le produit|A 🟦|95/100|16.40|1.09|3|86.506|26|
-|2. Consulter les résultats|A 🟦|96/100|16.20|1.08|3|1.076|29|
-|3. Revenir à la page d'accueil|A 🟦|96/100|16.10|1.08|3|1.076|26|
-|4. Choisir une autre ville et un autre produit|A 🟦|96/100|16.20|1.08|3|1.076|29|
+| Page                                           | Grade | Ecoindex | Eau (cl) | GES (gCO2e) | Nb de requêtes | Taille de la page (Ko) | Taille du DOM |
+| ---------------------------------------------- | ----- | -------- | -------- | ----------- | -------------- | ---------------------- | ------------- |
+| 1. Choisir la ville et le produit              | A 🟦  | 95/100   | 16.40    | 1.09        | 3              | 86.506                 | 26            |
+| 2. Consulter les résultats                     | A 🟦  | 96/100   | 16.20    | 1.08        | 3              | 1.076                  | 29            |
+| 3. Revenir à la page d'accueil                 | A 🟦  | 96/100   | 16.10    | 1.08        | 3              | 1.076                  | 26            |
+| 4. Choisir une autre ville et un autre produit | A 🟦  | 96/100   | 16.20    | 1.08        | 3              | 1.076                  | 29            |
 
 **Tab.5**: Évaluation de l'impact du scénario "Comparer un article entre différents magasins" dans le prototype n°1.
 
@@ -208,10 +209,10 @@ Bien que ces estimations soient volontairement optimistes en raison du chargemen
 Si nous parvenons à maintenir les émissions en dessous de 1,1 g de CO₂ par page pour notre produit minimum viable, nous serons en mesure d'offrir une solution environ 15 % moins impactante que les alternatives existantes, tout en prenant en compte l'ensemble du cycle de vie du terminal utilisé.
 
 ### Étape de prototypage : Données statiques chargées de manière dynamique
+
 Dans cette nouvelle version du prototype (v1.0.1), le fonctionnement reste inchangé, mais les données statiques sont désormais récupérées par le frontend via une requête réseau juste après l'affichage initial de la page. Cette approche, plus proche d'un usage réel, entraîne simplement une requête supplémentaire par page affichée.
 
 En ce qui concerne l'impact environnemental du scénario, les résultats restent strictement identiques à ceux du tableau précédent (cf. Tab.2), à l'exception du nombre de requêtes qui augmente de 1, ainsi que la taille de la page qui diminue d'environ 10%.
-
 
 ## Mesures de la consommation énergétique lors du passage à l'échelle
 
@@ -223,42 +224,73 @@ Nous avons multiplié le volume de données par **environ 25x** en effectuant le
 
 ### Augmentation des données
 
-| Dimension | Avant | Après | Multiplication |
-|-----------|-------|-------|---|
-| **Magasins** | 80-100 | 400-500 | ×5 |
-| **Enseignes** | 4 | 12 | ×3 |
-| **Produits par magasin** | 20-30 | 300-400 | ×15 |
-| **Villes** | 6 | 70 | ×12 |
-| **Produits uniques** | 20 | 500 | ×25 |
+| Dimension                | Avant  | Après   | Multiplication |
+| ------------------------ | ------ | ------- | -------------- |
+| **Magasins**             | 80-100 | 400-500 | ×5             |
+| **Enseignes**            | 4      | 12      | ×3             |
+| **Produits par magasin** | 20-30  | 300-400 | ×15            |
+| **Villes**               | 6      | 70      | ×12            |
+| **Produits uniques**     | 20     | 500     | ×25            |
 
 ### Détails des changements
 
 **Magasins et enseignes** :
+
 - Ajout de 12 enseignes (Carrefour, Leclerc, Monoprix, Super U, Franprix, Biocoop, Grand Frais, Aldi, Lidl, Intermarché, Casino, Géant Casino)
 - Multiplication des points de vente avec ~10 adresses variées par enseigne
 - Gamme de prix étendue : 0.55€ à 15.99€ (au lieu de 0.55€ à 4.8€)
 
 **Couverture géographique** :
+
 - 70 villes françaises représentant la couverture nationale
 - Codes postaux cohérents et réalistes
 - Inclusion de grandes et moyennes villes
 
 **Produits** :
+
 - 500 produits uniques répartis en catégories variées (épicerie, frais, surgelés, boissons, hygiène, bébé, maison, électronique)
 - Noms détaillés et réalistes
-- 100-200 produits disponibles par magasin 
+- 100-200 produits disponibles par magasin
 
 ### Évolution de l'EcoIndex lors du passage à l'échelle
 
 Produites désormais de manière automatique lors de l'intégration continue, les mesures nécessaires à la production de l'EcoIndex, avant et après la simulation du passage à l'échelle, démontrent l'impact significatif de l'augmentation du volume de données.
 
-|   | EcoIndex| GES (gCO2e) | Taille du DOM | Requêtes | Taille de la page (ko)
-|---|--------:|------------:|--------------:|---------:|---------------------:
-| 1.Choisir une ville| <del>89 A 🟦</del><br/>75 B 🟩 | <del>1,22</del><br/>1,5 | 35 | 5 | <del>277</del><br/>11 142
-| 2. Choisir un produit 			   | <del>87 A 🟦</del><br/>55 C 🟨 | <del>1,26</del><br/>1,9 | <del>56</del><br>536| 5 | <del>277</del><br/>11 142
-| 3. Regarder les produits	| <del>93 A 🟦</del><br/>94 A 🟦 | <del>1,14</del><br/> 1,12 | <del>46</del><br/>18 | 0 | 0
-| 4. Revenir à la page d'accueil 		| <del>89 A 🟦</del><br/>75 B 🟩 |  <del>1,22</del><br/>1,5 | 35 | 4 | <del>275</del><br/>11 140
+|                                |                       EcoIndex |               GES (gCO2e) |        Taille du DOM | Requêtes |    Taille de la page (ko) |
+| ------------------------------ | -----------------------------: | ------------------------: | -------------------: | -------: | ------------------------: |
+| 1.Choisir une ville            | <del>89 A 🟦</del><br/>75 B 🟩 |   <del>1,22</del><br/>1,5 |                   35 |        5 | <del>277</del><br/>11 142 |
+| 2. Choisir un produit          | <del>87 A 🟦</del><br/>55 C 🟨 |   <del>1,26</del><br/>1,9 | <del>56</del><br>536 |        5 | <del>277</del><br/>11 142 |
+| 3. Regarder les produits       | <del>93 A 🟦</del><br/>94 A 🟦 | <del>1,14</del><br/> 1,12 | <del>46</del><br/>18 |        0 |                         0 |
+| 4. Revenir à la page d'accueil | <del>89 A 🟦</del><br/>75 B 🟩 |   <del>1,22</del><br/>1,5 |                   35 |        4 | <del>275</del><br/>11 140 |
 
-__Tab.6__: Effet du passage à l'échelle sur l'impact du scénario "Trouver le prix le moins cher pour un produit" dans le prototype v1.0.1.
+**Tab.6**: Effet du passage à l'échelle sur l'impact du scénario "Trouver le prix le moins cher pour un produit" dans le prototype v1.0.1.
 
 Le passage à l'échelle provoque une dégradation progressive de l'impact environnemental. La page de sélection de ville voit son EcoIndex passer de 89 A 🟦 à 75 B 🟩 (poids : 277 Ko → 11 142 Ko). La page de sélection de produit se dégrade davantage (87 A 🟦 → 55 C 🟨) avec une explosion du DOM (56 → 536 éléments) et augmentation du GES (1,26 → 1,9 gCO2e). La page de consultation des résultats s'améliore légèrement (93 A 🟦 → 94 A 🟦) car elle ne charge que les données du produit sélectionné. Une optimisation future (pagination, lazy loading) sera nécessaire pour maintenir un impact acceptable au-delà de 500 produits.
+
+### Mesure de la consommation énergétique liée à la consultation
+
+Pour mesurer la consommation de notre service numérique, nous avons choisi d'utiliser le logiciel **GreenFrame**.
+Ce logiciel est capatable d'estimer la consommation énergétique des différents composants d'une architecture :
+
+- CPU (à partir du temps de calcul)
+- Mémoire vive RAM (à partir de la taille des données mise en mémoire)
+- Stockage (à partir de la taille des données lues et écrites)
+- Réseau (à partir de la taille des données envoyées et reçues)
+- Ecran (à partir du temps d'exécution fixé par nos scénarios)
+
+Nous définissons deux scénarios :
+
+- Scénario (a) : Recherche d'un utilisateur
+- Scénario (b) : Consultation des résultats de la recherche
+
+| (a)         | CPU (Wh) | RAM (Wh) | Stockage (Wh) | Réseau (Wh)        | Ecran (Wh)         | Total (Wh) |
+| ----------- | -------- | -------- | ------------- | ------------------ | ------------------ | ---------- |
+| Navigateur  | 0.0030   | 0.000016 | 0.0           | <mark>0.066</mark> | <mark>0.069</mark> | 0.14       |
+| Serveur Web | 0.000061 | 0.000020 | 0.0           | <mark>0.063</mark> | 0.0                | 0.063      |
+
+| (b)         | CPU (Wh) | RAM (Wh) | Stockage (Wh) | Réseau (Wh)        | Ecran (Wh)         | Total (Wh) |
+| ----------- | -------- | -------- | ------------- | ------------------ | ------------------ | ---------- |
+| Navigateur  | 0.00031  | 0.00013  | 0.0           | 0.0014             | <mark>0.067</mark> | 0.069      |
+| Serveur Web | 0.000074 | 0.000021 | 0.0           | <mark>0.063</mark> | 0.0                | 0.064      |
+
+**Tab.7**: Estimation de la consommation énergétique de la recherche d'un utilisateur (premier tableau) et de la consultation des résultats (second tableau).
