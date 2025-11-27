@@ -278,10 +278,6 @@ Ce logiciel est capatable d'estimer la consommation énergétique des différent
 - Réseau (à partir de la taille des données envoyées et reçues)
 - Ecran (à partir du temps d'exécution fixé par nos scénarios)
 
-Nous définissons deux scénarios :
-
-- Scénario (a) : Recherche d'un utilisateur
-- Scénario (b) : Consultation des résultats de la recherche
 
 | (a)         | CPU (Wh) | RAM (Wh) | Stockage (Wh) | Réseau (Wh)        | Ecran (Wh)         | Total (Wh) |
 | ----------- | -------- | -------- | ------------- | ------------------ | ------------------ | ---------- |
@@ -294,3 +290,85 @@ Nous définissons deux scénarios :
 | Serveur Web | 0.000074 | 0.000021 | 0.0           | <mark>0.063</mark> | 0.0                | 0.064      |
 
 **Tab.7**: Estimation de la consommation énergétique de la recherche d'un utilisateur (premier tableau) et de la consultation des résultats (second tableau).
+
+Par rapport à ce que pouvait laisser penser l'EcoIndex, les résultats (cf. Tab.7) indiquent que la consommation due à la consultation de l'index est équivalente à celle des résultats. Autrement dit, l'affichage en lui même de ces données en grand nombre est négligeable par rapport à la transmission de ces données sur le réseau.
+
+On peut ainsi voir que les consommations les plus importantes viennent de ces deux éléments :
+
+- le réseau du client,
+- le réseau du serveur.
+
+
+### Effet de l'introduction d'une base de données
+
+Afin de réduire l'impact énérgétique du réseau, nous stockons désormais les données de l'application (`v2.0.0`) dans une base de données (*CouchDB*).
+Cette évolution nous permet de récupérer sur l'index et dans la page de résultat seulement les données nécessaires à l'affichage.
+
+| Service | cpu (Wh) | mem (Wh) | disk (Wh) | network (Wh) | screen (Wh) | total (Wh) |
+| --- | --- | --- | --- | --- | --- | --- |
+| Navigateur | 0.00083 | 0.000045 | 0.0 | 0.0013 | 0.067 | 0.070 |
+| Serveur Web | 0.0000031 | 0.0000028 | 0.0 | 0.0013 | 0.0 | 0.0013 |
+| Base de données | 0.00071 | 0.000071 | 0.0 | 0.0000089 | 0.0 | 0.00079 |
+
+__Tab.8__: Mesure de la consommation énergétique des services Docker lors de l'exécution.
+
+Cette amélioration (cf. Tab.8) est assez spectaculaire avec notamment (pour les valeurs significatives) :
+
+- une réduction de 98% de la quantité de données chargées par le client (réseau client : 0.066 → 0.0013 Wh),
+- une réduction de 72% de la charge du CPU sur le client (CPU client : 0.0030 → 0.00083 Wh),
+- une réduction de 98% du réseau du serveur Web (réseau serveur : 0.063 → 0.0013 Wh),
+- une utilisation des ressources par la base de données négligeable excepté une consommation mesurable en CPU (0.00071 Wh) et réseau (0.0000089 Wh).
+
+#### Scénario 1 : Chercher un produit ou un panier moyen selon la ville de l'utilisateur
+
+| Service | cpu (Wh) | mem (Wh) | disk (Wh) | network (Wh) | screen (Wh) | total (Wh) |
+| --- | --- | --- | --- | --- | --- | --- |
+| greenframe-runner | 0.00088 | 0.000045 | 0.0 | 0.0013 | 0.067 | 0.070 |
+| ecofood-static_hosting-1 | 0.0000036 | 0.0000028 | 0.0 | 0.0013 | 0.0 | 0.0013 |
+| ecofood-backend-1 | 0.00084 | 0.000072 | 0.0 | 0.0000075 | 0.0 | 0.00092 |
+
+__Tab.8a__: Estimation de la consommation énergétique lors de la recherche d'un produit ou d'un panier moyen.
+
+L'empreinte écologique estimée est de **31.772 mg eq. CO₂ ± 0.7% (71.883 mWh)**.
+
+#### Scénario 2 : Voir les résultats de la recherche
+
+| Service | cpu (Wh) | mem (Wh) | disk (Wh) | network (Wh) | screen (Wh) | total (Wh) |
+| --- | --- | --- | --- | --- | --- | --- |
+| greenframe-runner | 0.00070 | 0.000042 | 0.0 | 0.0013 | 0.068 | 0.070 |
+| ecofood-static_hosting-1 | 0.0000029 | 0.0000028 | 0.0 | 0.0013 | 0.0 | 0.0013 |
+| ecofood-backend-1 | 0.00077 | 0.000071 | 0.0 | 1.3e-7 | 0.0 | 0.00084 |
+
+__Tab.8b__: Estimation de la consommation énergétique lors de la consultation des résultats de la recherche.
+
+Pour la consultation des résultats de la recherche, cette forte diminution de l'utilisation des ressources se traduit par une consommation énergétique estimée (cf. Tab.8b) quasiment minimale puisqu'à peine supérieure à celle de l'écran (0.068 Wh contre 0.070 Wh pour greenframe-runner).
+
+Concernant la recherche d'un produit (cf. Tab.8a), par contre, l'ajout de la base de données a eu pour seul effet notable de maintenir une consommation équilibrée entre les différents services. La consommation du réseau reste stable (0.0013 Wh pour le client et le serveur Web), et la base de données consomme très peu (0.0000075 Wh). Pour réduire davantage cette consommation, nous pourrions explorer des stratégies de mise en cache côté client ou de pagination progressive des résultats.
+
+
+### Stratégie de limitation de la taille des éléments récupérés
+
+Afin de réduire la taille de nos appels réseau, nous avons implémenté une stratégie d'optimisation des requêtes. Lors de la récupération des données sur la page d'accueil, nous chargeons uniquement les champs nécessaires pour l'affichage (les noms des villes et produits), ce qui réduit significativement la taille de nos requêtes. De plus, au lieu de transmettre toutes les informations au composant, chaque composant effectue son propre appel aux données pour récupérer uniquement ce dont il a besoin. Cette approche augmente légèrement le nombre de requêtes, mais les rend beaucoup plus légères, résultant en une consommation énergétique globalement inférieure. 
+
+#### Scénario 1 : Chercher un produit ou un panier moyen selon la ville de l'utilisateur (optimisé)
+
+| Service | cpu (Wh) | mem (Wh) | disk (Wh) | network (Wh) | screen (Wh) | total (Wh) |
+| --- | --- | --- | --- | --- | --- | --- |
+| greenframe-runner | 0.00083 | 0.000045 | 0.0 | 0.0013 | 0.067 | 0.070 |
+| ecofood-static_hosting-1 | 0.0000031 | 0.0000028 | 0.0 | 0.0013 | 0.0 | 0.0013 |
+| ecofood-backend-1 | 0.00071 | 0.000071 | 0.0 | 0.0000089 | 0.0 | 0.00079 |
+
+__Tab.9a__: Estimation de la consommation énergétique après optimisations - recherche d'un produit ou d'un panier moyen.
+
+
+#### Scénario 2 : Voir les résultats de la recherche (optimisé)
+
+| Service | cpu (Wh) | mem (Wh) | disk (Wh) | network (Wh) | screen (Wh) | total (Wh) |
+| --- | --- | --- | --- | --- | --- | --- |
+| greenframe-runner | 0.00081 | 0.000044 | 0.0 | 0.0014 | 0.067 | 0.070 |
+| ecofood-static_hosting-1 | 0.0000031 | 0.0000028 | 0.0 | 0.0013 | 0.0 | 0.0013 |
+| ecofood-backend-1 | 0.00075 | 0.000070 | 0.0 | 0.000025 | 0.0 | 0.00085 |
+
+__Tab.9b__: Estimation de la consommation énergétique après optimisations - consultation des résultats.
+
+Le peu de variation observé entre les deux étapes est dû à la taille relativement petite du jeu de données utilisé pour les tests, comparée à un jeu de données réelles. Ces optimisations de requêtes révèlent toute leur efficacité avec des bases de données plus volumineuses, où les gains de performance énergétique deviendraient plus significatifs.
