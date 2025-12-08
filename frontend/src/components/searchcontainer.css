@@ -18,6 +18,12 @@
 	box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1), 0 4px 12px rgba(16, 185, 129, 0.15);
 }
 
+.inputSearch:disabled {
+	background-color: #9e9e9eff;
+	color: #f0f1f2ff;
+	cursor: not-allowed;
+}
+
 .inputSearch::placeholder {
 	color: var(--text-secondary);
 }
