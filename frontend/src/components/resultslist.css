@@ -7,6 +7,7 @@ p {
 	width: 100%;
 	border-radius: 4px;
 	padding-bottom: 2rem;
+	margin: 0 auto;
 }
 
 .results-container {
@@ -16,12 +17,18 @@ p {
 	gap: 1rem;
 }
 
+.results-content {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+}
+
 .result-item {
 	display: flex;
 	width: 400px;
 	flex-direction: column;
 	align-items: center;
-	background-color: #B7CE66;
+	background-color: #b7ce66;
 	padding: 10px;
 	border-bottom: 1px solid #eee;
 	border-radius: 1rem;
@@ -35,7 +42,7 @@ p {
 
 .load-more-btn {
 	padding: 10px 20px;
-	background-color: #B7CE66;
+	background-color: #b7ce66;
 	color: #333;
 	border: 2px solid #333;
 	border-radius: 0.5rem;

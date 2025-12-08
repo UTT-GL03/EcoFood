@@ -32,6 +32,22 @@ const getProduct = async (productId) => {
 	return data.docs[0];
 };
 
+const getLocalProducers = async (cityId) => {
+	const response = await fetch("http://localhost:5984/ecofood-db/_find", {
+		method: "POST",
+		headers: { "Content-type": "application/json" },
+		body: JSON.stringify({
+			selector: {
+				type: "local_producer",
+				city_id: parseInt(cityId.split("_")[1]),
+			},
+			limit: 100,
+		}),
+	});
+	const data = await response.json();
+	return data.docs;
+};
+
 const ResultsList = ({ type }) => {
 	const ITEMS_PER_PAGE = 4;
 
@@ -66,6 +82,7 @@ const ResultsList = ({ type }) => {
 
 	const [shops, setShops] = useState([]);
 	const [product, setProduct] = useState(null);
+	const [localProducers, setLocalProducers] = useState([]);
 	const [loading, setLoading] = useState(true);
 	const [displayedCount, setDisplayedCount] = useState(ITEMS_PER_PAGE);
 
@@ -73,9 +90,10 @@ const ResultsList = ({ type }) => {
 		const fetchData = async () => {
 			setLoading(true);
 			try {
-				const [shopsData, productData] = await Promise.all([getShops(cityId), productId ? getProduct(productId) : Promise.resolve(null)]);
+				const [shopsData, productData, localProducersData] = await Promise.all([getShops(cityId), productId ? getProduct(productId) : Promise.resolve(null), getLocalProducers(cityId)]);
 				setShops(shopsData);
 				setProduct(productData);
+				setLocalProducers(localProducersData);
 			} catch (error) {
 				console.error("Error fetching data:", error);
 			} finally {
@@ -86,6 +104,7 @@ const ResultsList = ({ type }) => {
 	}, []);
 
 	let filteredResults = shops || [];
+	console.log(filteredResults);
 
 	// Filter by type
 	switch (type) {
@@ -118,23 +137,39 @@ const ResultsList = ({ type }) => {
 
 	return (
 		<div className="results-list">
-			<h2>Résultats ({type})</h2>
-			<h3>Ville : {shops.find((city) => city.id === filteredResults[0]?.cityId)?.name}</h3>
-			{type === "product" && product && <h3>Produit : {product.name}</h3>}
-			<div className="results-container">
-				{type === "paniermoyen"
-					? displayedResults.map((item, index) => <AverageResult item={item} key={index} index={index} />)
-					: type === "product"
-					? displayedResults.map((item, index) => <ProductResult item={item} key={item.idProduct} index={index} />)
-					: null}
-			</div>
-			{hasMore && (
-				<div className="pagination-controls">
-					<button onClick={() => setDisplayedCount(displayedCount + ITEMS_PER_PAGE)} className="load-more-btn">
-						Afficher plus ({filteredResults.length - displayedCount} restants)
-					</button>
+			<h2>Résultats ({type === "product" ? "par produit" : "par panier moyen"})</h2>
+			<div className="results-content">
+				<div className="results-container">
+					{type === "product" && product && <h3>Produit : {product.name}</h3>}
+					{type === "paniermoyen"
+						? displayedResults.map((item, index) => <AverageResult item={item} key={index} index={index} />)
+						: type === "product"
+						? displayedResults.map((item, index) => <ProductResult item={item} key={item.idProduct} index={index} />)
+						: null}
+					{hasMore && (
+						<div className="pagination-controls">
+							<button onClick={() => setDisplayedCount(displayedCount + ITEMS_PER_PAGE)} className="load-more-btn">
+								Afficher plus ({filteredResults.length - displayedCount} restants)
+							</button>
+						</div>
+					)}
 				</div>
-			)}
+				<div className="local_products">
+					<h2>Produits locaux disponibles :</h2>
+					{localProducers.length === 0 ? (
+						<p>Aucun producteur local disponible dans cette ville.</p>
+					) : (
+						<ul>
+							{localProducers.map((producer) => (
+								<li key={producer._id}>
+									<h3>{producer.name}</h3>
+									<p>{producer.product}</p>
+								</li>
+							))}
+						</ul>
+					)}
+				</div>
+			</div>
 		</div>
 	);
 };
