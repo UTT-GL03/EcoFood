@@ -138,14 +138,16 @@ const ResultsList = ({ type }) => {
 	return (
 		<div className="results-list">
 			<h2>Résultats ({type === "product" ? "par produit" : "par panier moyen"})</h2>
+			{type === "product" && product && <h3>Produit : {product.name}</h3>}
 			<div className="results-content">
-				<div className="results-container">
-					{type === "product" && product && <h3>Produit : {product.name}</h3>}
-					{type === "paniermoyen"
-						? displayedResults.map((item, index) => <AverageResult item={item} key={index} index={index} />)
-						: type === "product"
-						? displayedResults.map((item, index) => <ProductResult item={item} key={item.idProduct} index={index} />)
-						: null}
+				<div>
+					<div className="results-container">
+						{type === "paniermoyen"
+							? displayedResults.map((item, index) => <AverageResult item={item} key={index} index={index} />)
+							: type === "product"
+							? displayedResults.map((item, index) => <ProductResult item={item} key={item.idProduct} index={index} />)
+							: null}
+					</div>
 					{hasMore && (
 						<div className="pagination-controls">
 							<button onClick={() => setDisplayedCount(displayedCount + ITEMS_PER_PAGE)} className="load-more-btn">
