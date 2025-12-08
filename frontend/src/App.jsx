@@ -1,5 +1,5 @@
 import "./App.css";
-import ResultsList from "./ResultsList";
+import ResultsList from "./components/ResultsList";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SearchContainer from "./components/SearchContainer";
 import { useState, useEffect } from "react";
