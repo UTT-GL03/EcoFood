@@ -33,6 +33,8 @@ const getProduct = async (productId) => {
 };
 
 const ResultsList = ({ type }) => {
+	const ITEMS_PER_PAGE = 4;
+
 	function AverageResult({ item, index }) {
 		return (
 			<div key={index} className="result-item">
@@ -65,6 +67,7 @@ const ResultsList = ({ type }) => {
 	const [shops, setShops] = useState([]);
 	const [product, setProduct] = useState(null);
 	const [loading, setLoading] = useState(true);
+	const [displayedCount, setDisplayedCount] = useState(ITEMS_PER_PAGE);
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -110,6 +113,9 @@ const ResultsList = ({ type }) => {
 		return <div>Loading...</div>;
 	}
 
+	const displayedResults = filteredResults.slice(0, displayedCount);
+	const hasMore = filteredResults.length > displayedCount;
+
 	return (
 		<div className="results-list">
 			<h2>Résultats ({type})</h2>
@@ -117,11 +123,18 @@ const ResultsList = ({ type }) => {
 			{type === "product" && product && <h3>Produit : {product.name}</h3>}
 			<div className="results-container">
 				{type === "paniermoyen"
-					? filteredResults.map((item, index) => <AverageResult item={item} key={index} index={index} />)
+					? displayedResults.map((item, index) => <AverageResult item={item} key={index} index={index} />)
 					: type === "product"
-					? filteredResults.map((item, index) => <ProductResult item={item} key={item.idProduct} index={index} />)
+					? displayedResults.map((item, index) => <ProductResult item={item} key={item.idProduct} index={index} />)
 					: null}
 			</div>
+			{hasMore && (
+				<div className="pagination-controls">
+					<button onClick={() => setDisplayedCount(displayedCount + ITEMS_PER_PAGE)} className="load-more-btn">
+						Afficher plus ({filteredResults.length - displayedCount} restants)
+					</button>
+				</div>
+			)}
 		</div>
 	);
 };
