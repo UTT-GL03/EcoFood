@@ -485,5 +485,41 @@
 		"Grille de refroidissement"
 		"Papier cuisson réutilisable"
 	}}" }{{#unless @last}},{{/unless}}
+{{/repeat}},
+{{#repeat min=50 max=100}}
+	{ "_id": "local_producer_{{step 1}}", "type": "local_producer", "id":
+	{{step 1}}, "name": "{{random
+		"Ferme du Soleil"
+		"La Bergerie des Collines"
+		"Maraîchers de la Vallée"
+		"Les Jardins Bio"
+		"Rucher du Village"
+		"Champignonnière des Bois"
+		"Élevage des Prés Verts"
+		"Potager de Marie"
+		"Producteur Local Bio"
+		"Ferme des Quatre Saisons"
+		"Les Volailles Fermières"
+		"Verger du Pays"
+		"Fromagerie Artisanale"
+		"Miellerie du Terroir"
+	}}", "city_id":
+	{{int 1 70}}, "product": "{{random
+		"Œufs bio"
+		"Champignons frais"
+		"Légumes de saison"
+		"Miel artisanal"
+		"Fromage de chèvre"
+		"Volaille fermière"
+		"Fruits du verger"
+		"Pain au levain"
+		"Confitures maison"
+		"Yaourts fermiers"
+		"Viande de bœuf"
+		"Cidre fermier"
+		"Beurre artisanal"
+		"Légumes bio"
+		"Poulet fermier"
+	}}" }{{#unless @last}},{{/unless}}
 {{/repeat}}
 ] }
