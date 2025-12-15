@@ -397,19 +397,19 @@ Dans la démarche de mettre en avant les producteurs locaux nous avons décidé 
 
 | Service  | cpu (Wh)    | mem (Wh)    | disk (Wh) | network (Wh) | screen (Wh) | total (Wh) |
 | --- | --- | --- | --- | --- | --- | --- |
-| Navigateur | 0.0014      | 0.000050    | 0.0       | 0.0014 | 0.068       | 0.071  |
-| Serveur Web | 0.0000030   | 0.0000029   | 0.0       | 0.0014       | 0.0 | 0.0014  |
-| Base de données | 0.00072     | 0.000066    | 0.0       | 0.0000089    | 0.0  | 0.00079    |
+| Navigateur | <del>0.00083</del><br/>0.0014 | <del>0.000045</del><br/>0.000050 | 0.0 | <del>0.0013</del><br/>0.0014 | <del>0.067</del><br/>0.068 | <del>0.070</del><br/>0.071 |
+| Serveur Web | <del>0.0000031</del><br/>0.0000030 | <del>0.0000028</del><br/>0.0000029 | 0.0 | <del>0.0013</del><br/>0.0014 | 0.0 | <del>0.0013</del><br/>0.0014 |
+| Base de données | <del>0.00071</del><br/>0.00072 | <del>0.000071</del><br/>0.000066 | 0.0 | 0.0000089 | 0.0 | 0.00079 |
 
 __Tab.10a__: Estimation de la consommation énergétique après ajout des producteurs locaux - recherche d'un produit ou d'un panier moyen.
 
 #### Scénario 2 : Voir les résultats de la recherche (optimisé)
 
-| Service | cpu (Wh) | mem (Wh)    | disk (Wh) | network (Wh) | screen (Wh) | total (Wh) |
+| Service | cpu (Wh) | mem (Wh) | disk (Wh) | network (Wh) | screen (Wh) | total (Wh) |
 | --- | --- | --- | --- | --- | --- | --- |
-| Navigateur | 0.00094| 0.000046    | 0.0       | 0.0014       | 0.068       | 0.070      |
-| Serveur Web | 0.0000028   | 0.0000029   | 0.0       | 0.0014 | 0.0         | 0.0014     |
-| Base de données      | 0.00071     | 0.000066 | 0.0  | 0.000032     | 0.0   | 0.00081    |
+| Navigateur | <del>0.00081</del><br/>0.00094 | <del>0.000044</del><br/>0.000046 | 0.0 | 0.0014 | <del>0.067</del><br/>0.068 | 0.070 |
+| Serveur Web | <del>0.0000031</del><br/>0.0000028 | <del>0.0000028</del><br/>0.0000029 | 0.0 | 0.0014 | 0.0 | <del>0.0013</del><br/>0.0014 |
+| Base de données | <del>0.00075</del><br/>0.00071 | <del>0.000070</del><br/>0.000066 | 0.0 | <del>0.000025</del><br/>0.000032 | 0.0 | <del>0.00085</del><br/>0.00081 |
 
 __Tab.10b__: Estimation de la consommation énergétique après ajout des producteurs locaux - consultation des résultats.
 
