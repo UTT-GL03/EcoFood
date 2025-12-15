@@ -323,9 +323,9 @@ Cette amélioration (cf. Tab.8) est assez spectaculaire avec notamment (pour les
 
 | Service | cpu (Wh) | mem (Wh) | disk (Wh) | network (Wh) | screen (Wh) | total (Wh) |
 | --- | --- | --- | --- | --- | --- | --- |
-| greenframe-runner | 0.00088 | 0.000045 | 0.0 | 0.0013 | 0.067 | 0.070 |
-| ecofood-static_hosting-1 | 0.0000036 | 0.0000028 | 0.0 | 0.0013 | 0.0 | 0.0013 |
-| ecofood-backend-1 | 0.00084 | 0.000072 | 0.0 | 0.0000075 | 0.0 | 0.00092 |
+| Navigateur | 0.00088 | 0.000045 | 0.0 | 0.0013 | 0.067 | 0.070 |
+| Serveur Web | 0.0000036 | 0.0000028 | 0.0 | 0.0013 | 0.0 | 0.0013 |
+| Base de données | 0.00084 | 0.000072 | 0.0 | 0.0000075 | 0.0 | 0.00092 |
 
 __Tab.8a__: Estimation de la consommation énergétique lors de la recherche d'un produit ou d'un panier moyen.
 
@@ -335,13 +335,13 @@ L'empreinte écologique estimée est de **31.772 mg eq. CO₂ ± 0.7% (71.883 mW
 
 | Service | cpu (Wh) | mem (Wh) | disk (Wh) | network (Wh) | screen (Wh) | total (Wh) |
 | --- | --- | --- | --- | --- | --- | --- |
-| greenframe-runner | 0.00070 | 0.000042 | 0.0 | 0.0013 | 0.068 | 0.070 |
-| ecofood-static_hosting-1 | 0.0000029 | 0.0000028 | 0.0 | 0.0013 | 0.0 | 0.0013 |
-| ecofood-backend-1 | 0.00077 | 0.000071 | 0.0 | 1.3e-7 | 0.0 | 0.00084 |
+| Navigateur | 0.00070 | 0.000042 | 0.0 | 0.0013 | 0.068 | 0.070 |
+| Serveur Web | 0.0000029 | 0.0000028 | 0.0 | 0.0013 | 0.0 | 0.0013 |
+| Base de données | 0.00077 | 0.000071 | 0.0 | 1.3e-7 | 0.0 | 0.00084 |
 
 __Tab.8b__: Estimation de la consommation énergétique lors de la consultation des résultats de la recherche.
 
-Pour la consultation des résultats de la recherche, cette forte diminution de l'utilisation des ressources se traduit par une consommation énergétique estimée (cf. Tab.8b) quasiment minimale puisqu'à peine supérieure à celle de l'écran (0.068 Wh contre 0.070 Wh pour greenframe-runner).
+Pour la consultation des résultats de la recherche, cette forte diminution de l'utilisation des ressources se traduit par une consommation énergétique estimée (cf. Tab.8b) quasiment minimale puisqu'à peine supérieure à celle de l'écran (0.068 Wh contre 0.070 Wh pour navigateur).
 
 Concernant la recherche d'un produit (cf. Tab.8a), par contre, l'ajout de la base de données a eu pour seul effet notable de maintenir une consommation équilibrée entre les différents services. La consommation du réseau reste stable (0.0013 Wh pour le client et le serveur Web), et la base de données consomme très peu (0.0000075 Wh). Pour réduire davantage cette consommation, nous pourrions explorer des stratégies de mise en cache côté client ou de pagination progressive des résultats.
 
@@ -354,9 +354,9 @@ Afin de réduire la taille de nos appels réseau, nous avons implémenté une st
 
 | Service | cpu (Wh) | mem (Wh) | disk (Wh) | network (Wh) | screen (Wh) | total (Wh) |
 | --- | --- | --- | --- | --- | --- | --- |
-| greenframe-runner | 0.00083 | 0.000045 | 0.0 | 0.0013 | 0.067 | 0.070 |
-| ecofood-static_hosting-1 | 0.0000031 | 0.0000028 | 0.0 | 0.0013 | 0.0 | 0.0013 |
-| ecofood-backend-1 | 0.00071 | 0.000071 | 0.0 | 0.0000089 | 0.0 | 0.00079 |
+| Navigateur | 0.00083 | 0.000045 | 0.0 | 0.0013 | 0.067 | 0.070 |
+| Serveur Web | 0.0000031 | 0.0000028 | 0.0 | 0.0013 | 0.0 | 0.0013 |
+| Base de données | 0.00071 | 0.000071 | 0.0 | 0.0000089 | 0.0 | 0.00079 |
 
 __Tab.9a__: Estimation de la consommation énergétique après optimisations - recherche d'un produit ou d'un panier moyen.
 
@@ -365,10 +365,69 @@ __Tab.9a__: Estimation de la consommation énergétique après optimisations - r
 
 | Service | cpu (Wh) | mem (Wh) | disk (Wh) | network (Wh) | screen (Wh) | total (Wh) |
 | --- | --- | --- | --- | --- | --- | --- |
-| greenframe-runner | 0.00081 | 0.000044 | 0.0 | 0.0014 | 0.067 | 0.070 |
-| ecofood-static_hosting-1 | 0.0000031 | 0.0000028 | 0.0 | 0.0013 | 0.0 | 0.0013 |
-| ecofood-backend-1 | 0.00075 | 0.000070 | 0.0 | 0.000025 | 0.0 | 0.00085 |
+| Navigateur | 0.00081 | 0.000044 | 0.0 | 0.0014 | 0.067 | 0.070 |
+| Serveur Web | 0.0000031 | 0.0000028 | 0.0 | 0.0013 | 0.0 | 0.0013 |
+| Base de données | 0.00075 | 0.000070 | 0.0 | 0.000025 | 0.0 | 0.00085 |
 
 __Tab.9b__: Estimation de la consommation énergétique après optimisations - consultation des résultats.
 
 Le peu de variation observé entre les deux étapes est dû à la taille relativement petite du jeu de données utilisé pour les tests, comparée à un jeu de données réelles. Ces optimisations de requêtes révèlent toute leur efficacité avec des bases de données plus volumineuses, où les gains de performance énergétique deviendraient plus significatifs.
+
+## Améliorations du projet
+
+Nous avons réalisé 2 améliorations distinctes afin de rendre ce projet plus complet. La première amélioration est l'amélioration de l'affichage. 
+
+### Affichage
+
+Nous avons remis au goût du jour le style du site web à travers l'amélioration du CSS. Cette amélioration n'augmente pas la consommation du site web et permet seulement un style plus épuré et professionnel. En ce qui concerne l'affichage, nous avons également ajouté un bouton « Afficher plus » dans le cas où l'utilisateur souhaite accéder à plus de résultats. Dans l'objectif de trouver les magasins avec les produits les moins chers, il semble peu probable que l'utilisateur ait besoin de plus de résultats que les 4 premiers magasins. Cependant, nous pouvons afficher plus de résultats si nécessaire.
+
+![image](./docs/home_screenshot_v2.jpg)
+
+**Fig.4**: Page d'accueil avec le nouveau style.
+
+![image](./docs/resultats_screenshot_v2.jpg)
+
+**Fig.5**: Page de résultats avec le nouveau style.
+
+### Ajout des producteurs locaux 
+
+Dans la démarche de mettre en avant les producteurs locaux nous avons décidé de les introduire dans notre projet sur la page résultat. Puisque les producteurs locaux ne peuvent pas rivaliser en termes d'offre, nous avons décidé de mettre en avant tous les producteurs locaux dans la ville que l'on cherche même si ils ne possèdent pas l'objet de recherche de l'utilisateur. De cette façon, les utilisateurs pourront découvrir les producteurs locaux de leurs villes, peu importe leurs besoins (cf. Fig. 5). Cet ajout demande plus de ressources car cela ajoute une requête lors de la récupération des résultats. 
+
+#### Scénario 1 : Chercher un produit ou un panier moyen selon la ville de l'utilisateur 
+
+| Service  | cpu (Wh)    | mem (Wh)    | disk (Wh) | network (Wh) | screen (Wh) | total (Wh) |
+| --- | --- | --- | --- | --- | --- | --- |
+| Navigateur | 0.0014      | 0.000050    | 0.0       | 0.0014 | 0.068       | 0.071  |
+| Serveur Web | 0.0000030   | 0.0000029   | 0.0       | 0.0014       | 0.0 | 0.0014  |
+| Base de données | 0.00072     | 0.000066    | 0.0       | 0.0000089    | 0.0  | 0.00079    |
+
+__Tab.10a__: Estimation de la consommation énergétique après ajout des producteurs locaux - recherche d'un produit ou d'un panier moyen.
+
+#### Scénario 2 : Voir les résultats de la recherche (optimisé)
+
+| Service | cpu (Wh) | mem (Wh)    | disk (Wh) | network (Wh) | screen (Wh) | total (Wh) |
+| --- | --- | --- | --- | --- | --- | --- |
+| Navigateur | 0.00094| 0.000046    | 0.0       | 0.0014       | 0.068       | 0.070      |
+| Serveur Web | 0.0000028   | 0.0000029   | 0.0       | 0.0014 | 0.0         | 0.0014     |
+| Base de données      | 0.00071     | 0.000066 | 0.0  | 0.000032     | 0.0   | 0.00081    |
+
+__Tab.10b__: Estimation de la consommation énergétique après ajout des producteurs locaux - consultation des résultats.
+
+**Comparaison entre les optimisations (Tab.9) et l'ajout de style + producteurs locaux (Tab.10)** :
+
+Entre les tableaux 9 et 10, deux améliorations ont été apportées : l'ajout du style CSS et l'intégration des producteurs locaux (qui nécessite une requête supplémentaire). Malgré ces additions, la consommation énergétique total reste stable ou s'améliore.
+
+Pour le **Scénario 1** (recherche) :
+- Navigateur : CPU augmente de 0.00083 à 0.0014 Wh (+69%), mais le total reste inchangé à 0.071 Wh (vs 0.070 Wh avant)
+- Serveur Web : CPU reste quasi-identique (0.0000031 vs 0.0000030 Wh), total passe de 0.0013 à 0.0014 Wh
+- Base de données : CPU augmente légèrement de 0.00071 à 0.00072 Wh, total reste stable à 0.00079 Wh
+- **Total global : 0.0015 Wh → 0.0015 Wh** (stable)
+
+Pour le **Scénario 2** (résultats) :
+- Navigateur : CPU augmente de 0.00081 à 0.00094 Wh (+16%), total reste inchangé à 0.070 Wh
+- Serveur Web : CPU diminue de 0.0000031 à 0.0000028 Wh, total reste stable à 0.0014 Wh
+- Base de données : CPU diminue légèrement de 0.00075 à 0.00071 Wh, total diminue de 0.00085 à 0.00081 Wh
+- **Total global : 0.0014 Wh → 0.0014 Wh** (stable)
+
+On remarque une certaine stabilité : bien que l'ajout du style CSS augmente la consommation CPU du navigateur, et qu'une requête supplémentaire soit nécessaire pour récupérer les producteurs locaux, la consommation énergétique reste stable. Le service reste donc efficace énergétiquement tout en offrant plus de fonctionnalités.
+
